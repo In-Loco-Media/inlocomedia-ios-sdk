@@ -409,8 +409,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Ubee",
-					SDK,
 					"$(PROJECT_DIR)/UbeeSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -443,8 +441,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Ubee",
-					SDK,
 					"$(PROJECT_DIR)/UbeeSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
