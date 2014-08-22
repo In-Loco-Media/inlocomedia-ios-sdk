@@ -1,4 +1,4 @@
-//
+`//
 //  UBEGADBannerAdapter.h
 //  InLocoMedia IOS Adapters
 //
