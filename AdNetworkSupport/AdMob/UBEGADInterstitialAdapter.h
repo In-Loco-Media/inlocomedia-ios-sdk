@@ -11,6 +11,4 @@
 
 @interface UBEGADInterstitialAdapter : NSObject <GADCustomEventInterstitial>
 
-
-
 @end
