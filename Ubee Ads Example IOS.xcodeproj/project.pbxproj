@@ -23,7 +23,6 @@
 		26545DC71901AC670067A426 /* UBEStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26545DC51901AC670067A426 /* UBEStartViewController.m */; };
 		26545DCA1901ACA20067A426 /* UBENativeAdOnTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26545DC91901ACA20067A426 /* UBENativeAdOnTableViewController.m */; };
 		26545DD71901B81E0067A426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26545DD61901B81E0067A426 /* Main.storyboard */; };
-		265E2C2819A27735006FA0EC /* UbeeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265E2C2719A27735006FA0EC /* UbeeAPI.framework */; };
 		2674FDE61912FDFB0063CEEA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2674FDE51912FDFB0063CEEA /* SystemConfiguration.framework */; };
 		2674FDEF19130E420063CEEA /* UBEAdViewFromStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2674FDEE19130E420063CEEA /* UBEAdViewFromStoryboard.m */; };
 		2674FE5F1914738D0063CEEA /* NativeLarge.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2674FE5E1914738D0063CEEA /* NativeLarge.xib */; };
@@ -35,6 +34,7 @@
 		2685F0E8190013530016A650 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2685F0E7190013530016A650 /* main.m */; };
 		2685F0EC190013540016A650 /* UBEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2685F0EB190013540016A650 /* UBEAppDelegate.m */; };
 		26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A20B221921863B00B74DA5 /* CoreLocation.framework */; };
+		26BA48D419BFB08F00A06436 /* libUbeeAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26BA48D319BFB08F00A06436 /* libUbeeAPI.a */; };
 		26F275F5195209A800A88ACF /* UBEInterstitialAdvertisementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F275F4195209A800A88ACF /* UBEInterstitialAdvertisementViewController.m */; };
 		26F27626195397C600A88ACF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F27625195397C600A88ACF /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
@@ -81,6 +81,7 @@
 		2685F0EB190013540016A650 /* UBEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBEAppDelegate.m; sourceTree = "<group>"; };
 		2685F0FD190013540016A650 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		26A20B221921863B00B74DA5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		26BA48D319BFB08F00A06436 /* libUbeeAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUbeeAPI.a; path = "../../../../Library/Developer/Xcode/DerivedData/Workspace-emntuvakohenxfgjbwaaqygnxjjp/Build/Products/Debug-iphoneos/libUbeeAPI.a"; sourceTree = "<group>"; };
 		26F275F3195209A800A88ACF /* UBEInterstitialAdvertisementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBEInterstitialAdvertisementViewController.h; sourceTree = "<group>"; };
 		26F275F4195209A800A88ACF /* UBEInterstitialAdvertisementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBEInterstitialAdvertisementViewController.m; sourceTree = "<group>"; };
 		26F27625195397C600A88ACF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -91,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				265E2C2819A27735006FA0EC /* UbeeAPI.framework in Frameworks */,
+				26BA48D419BFB08F00A06436 /* libUbeeAPI.a in Frameworks */,
 				26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */,
 				2674FDE61912FDFB0063CEEA /* SystemConfiguration.framework in Frameworks */,
 				2685F0DC190013530016A650 /* Foundation.framework in Frameworks */,
@@ -160,6 +161,7 @@
 		2685F0DA190013530016A650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26BA48D319BFB08F00A06436 /* libUbeeAPI.a */,
 				26A20B221921863B00B74DA5 /* CoreLocation.framework */,
 				2674FE001914205C0063CEEA /* UIKit.framework */,
 				2674FDE51912FDFB0063CEEA /* SystemConfiguration.framework */,
@@ -174,6 +176,7 @@
 			children = (
 				26545DBE1901AC350067A426 /* Models */,
 				26545DB41901ABE80067A426 /* Resources */,
+				26BA48D519BFBBDD00A06436 /* iPad */,
 				2685F117190013D50016A650 /* Controllers */,
 				2685F0EA190013530016A650 /* UBEAppDelegate.h */,
 				2685F0EB190013540016A650 /* UBEAppDelegate.m */,
@@ -213,6 +216,13 @@
 				264D531F196F54D50079B106 /* UBECategoriesTableViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		26BA48D519BFBBDD00A06436 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,7 +429,7 @@
 					"/Users/ubee/workspace/ios/git/ubee-api-ios",
 				);
 				INFOPLIST_FILE = "Ubee Ads Example IOS/Ubee Ads Example IOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Workspace-emntuvakohenxfgjbwaaqygnxjjp/Build/Products/Debug-iphoneos",
@@ -427,7 +437,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -451,7 +461,7 @@
 					"/Users/ubee/workspace/ios/git/ubee-api-ios",
 				);
 				INFOPLIST_FILE = "Ubee Ads Example IOS/Ubee Ads Example IOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Workspace-emntuvakohenxfgjbwaaqygnxjjp/Build/Products/Debug-iphoneos",
@@ -459,7 +469,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

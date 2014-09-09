@@ -19,5 +19,7 @@
 @property (nonatomic, strong) NSString *cellIdentifier;
 
 - (id)initAdType:(UBEAdType)adType andValue:(NSString *)value;
+- (id)initAdType:(UBEAdType)adType value:(NSString *)value andCellIdentifier:(NSString *)cellIdentifier;
+- (id)initAdType:(UBEAdType)adType value:(NSString *)value nibName:(NSString *)nibName andCellIdentifier:(NSString *)cellIdentifier;
 
 @end

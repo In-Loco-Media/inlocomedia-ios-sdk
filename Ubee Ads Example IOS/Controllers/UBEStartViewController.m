@@ -21,44 +21,31 @@
 
 - (void)viewDidLoad
 {
-
-    UBEListElement *displayBannerSmall = [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdBannerSmall andValue:@"Banner Small"];
-    UBEListElement *displayBannerLarge = [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdBannerLarge andValue:@"Banner Large"];
-    UBEListElement *displayTile = [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdTile andValue:@"Tile"];
     
-    UBEListElement *nativeSmall = [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdSmall andValue:@"Native Small"];
-    [nativeSmall setNibName:@"NativeSmall"];
-    UBEListElement *nativeLarge = [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge andValue:@"Native Large"];
-    [nativeLarge setNibName:@"NativeLarge"];;
-    UBEListElement *nativeCoupon = [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdCoupon andValue:@"Native Coupon"];
-    [nativeCoupon setNibName:@"NativeCoupon"];
+    NSArray *displayAds = @[[[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdBannerSmall andValue:@"Banner Small"],
+                            [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdBannerSmallLandscape andValue:@"Banner Small Landscape"],
+                            [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdBannerTablet andValue:@"Banner Small Tablet"],
+                            [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdBannerLarge andValue:@"Banner Large"],
+                            [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdTile andValue:@"Banner Ad Tile"],
+                            [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdSmartBannerPortrait andValue:@"Smartbanner Portrait"],
+                            [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdSmartBannerLandscape andValue:@"Smartbanner Landscape"]];
     
-    UBEListElement *nativeLargeStoryboard = [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge andValue:@"Native From Storyboard"];
-    [nativeLargeStoryboard setCellIdentifier:@"NativeAdFromStoryboardCell"];
+    NSArray *nativeAds = @[[[UBEListElement alloc] initAdType:UBEAdTypeNativeAdSmall value:@"Native Small" nibName:@"NativeSmall" andCellIdentifier:nil],
+                           [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"Native Large" nibName:@"NativeLarge" andCellIdentifier:nil],
+                           [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdCoupon value:@"Native Coupon" nibName:@"NativeCoupon" andCellIdentifier:nil]];
     
-    UBEListElement *nativeOnList = [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge andValue:@"Native on List"];
-    [nativeOnList setCellIdentifier:@"NativeAdOnListCell"];
+    NSArray *interstitialAds = @[[[UBEListElement alloc] initAdType:0 value:@"Interstitial" andCellIdentifier:@"InterstitialAdCell"]];
     
-    UBEListElement *interstitial = [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge andValue:@"Interstitial"];
-    [interstitial setCellIdentifier:@"InterstitialAdCell"];
+    NSArray *customStyles = @[[[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"Native on List" andCellIdentifier:@"NativeAdOnListCell"],
+                              [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"Native From Storyboard" andCellIdentifier:@"NativeAdFromStoryboardCell"],
+                              [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"Ads Feed" andCellIdentifier:@"AdsFeedCell"]];
     
-    UBEListElement *adsFeed = [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge andValue:@"Ads Feed"];
-    [adsFeed setCellIdentifier:@"AdsFeedCell"];
+    _groups = @[@"Display Ads", @"Interstitial", @"Native Ads", @"Custom Usages"];
     
-    NSArray *_displayAds = @[displayBannerSmall, displayBannerLarge, displayTile];
-    
-    NSArray *_nativeAds = @[nativeSmall, nativeLarge, nativeCoupon];
-    
-    NSArray *_interstitialAds = @[interstitial];
-    
-    NSArray *_customStyles = @[nativeLargeStoryboard, nativeOnList, adsFeed];
-    
-    _groups = @[@"Display Ads", @"Native Ads", @"Interstitial", @"Custom Usages"];
-    
-    _tableContents = @{[_groups objectAtIndex:0]:_displayAds,
-                       [_groups objectAtIndex:1]:_nativeAds,
-                       [_groups objectAtIndex:2]:_interstitialAds,
-                       [_groups objectAtIndex:3]:_customStyles};
+    _tableContents = @{[_groups objectAtIndex:0]:displayAds,
+                       [_groups objectAtIndex:1]:interstitialAds,
+                       [_groups objectAtIndex:2]:nativeAds,
+                       [_groups objectAtIndex:3]:customStyles};
     
 }
 
@@ -74,7 +61,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
+    
     return [_groups count];
 }
 

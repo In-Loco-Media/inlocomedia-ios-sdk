@@ -38,8 +38,12 @@
             [adView setRequestTimeout:kUBEAdRequestTimeout];
             break;
         case UBEAdTypeDisplayAdBannerSmall:
+        case UBEAdTypeDisplayAdBannerSmallLandscape:
+        case UBEAdTypeDisplayAdBannerTablet:
         case UBEAdTypeDisplayAdBannerLarge:
         case UBEAdTypeDisplayAdTile:
+        case UBEAdTypeDisplayAdSmartBannerPortrait:
+        case UBEAdTypeDisplayAdSmartBannerLandscape:
             adView = [[UBEDisplayAdView alloc] initWithAdType:_element.adType andOrigin:CGPointMake(0, 0)];
             [adView setRequestTimeout:kUBEAdRequestTimeout];
             break;

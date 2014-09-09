@@ -10,6 +10,29 @@
 
 @implementation UBEListElement
 
+- (id)initAdType:(UBEAdType)adType value:(NSString *)value nibName:(NSString *)nibName andCellIdentifier:(NSString *)cellIdentifier
+{
+    self = [super init];
+    if (self) {
+        self.adType = adType;
+        self.adTypeValue = value;
+        self.cellIdentifier = cellIdentifier;
+        self.nibName = nibName;
+    }
+    return self;
+}
+
+- (id)initAdType:(UBEAdType)adType value:(NSString *)value andCellIdentifier:(NSString *)cellIdentifier
+{
+    self = [super init];
+    if (self) {
+        self.adType = adType;
+        self.adTypeValue = value;
+        self.cellIdentifier = cellIdentifier;
+    }
+    return self;
+}
+
 - (id)initAdType:(UBEAdType)adType andValue:(NSString *)value
 {
     self = [super init];
