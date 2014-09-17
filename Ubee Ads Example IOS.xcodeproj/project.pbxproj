@@ -34,7 +34,7 @@
 		2685F0E8190013530016A650 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2685F0E7190013530016A650 /* main.m */; };
 		2685F0EC190013540016A650 /* UBEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2685F0EB190013540016A650 /* UBEAppDelegate.m */; };
 		26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A20B221921863B00B74DA5 /* CoreLocation.framework */; };
-		26D81B6619CA060300AD3D04 /* UbeeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D81B6519CA060300AD3D04 /* UbeeAPI.framework */; };
+		26A4AB6F19CA265F008A19D1 /* UbeeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A4AB6E19CA265F008A19D1 /* UbeeAPI.framework */; };
 		26F275F5195209A800A88ACF /* UBEInterstitialAdvertisementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F275F4195209A800A88ACF /* UBEInterstitialAdvertisementViewController.m */; };
 		26F27626195397C600A88ACF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F27625195397C600A88ACF /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
@@ -62,7 +62,6 @@
 		26545DC81901ACA20067A426 /* UBENativeAdOnTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBENativeAdOnTableViewController.h; sourceTree = "<group>"; };
 		26545DC91901ACA20067A426 /* UBENativeAdOnTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBENativeAdOnTableViewController.m; sourceTree = "<group>"; };
 		26545DD61901B81E0067A426 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		265E2C2719A27735006FA0EC /* UbeeAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UbeeAPI.framework; sourceTree = "<group>"; };
 		2674FDE51912FDFB0063CEEA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2674FDED19130E420063CEEA /* UBEAdViewFromStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBEAdViewFromStoryboard.h; sourceTree = "<group>"; };
 		2674FDEE19130E420063CEEA /* UBEAdViewFromStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBEAdViewFromStoryboard.m; sourceTree = "<group>"; };
@@ -81,7 +80,7 @@
 		2685F0EB190013540016A650 /* UBEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBEAppDelegate.m; sourceTree = "<group>"; };
 		2685F0FD190013540016A650 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		26A20B221921863B00B74DA5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		26D81B6519CA060300AD3D04 /* UbeeAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UbeeAPI.framework; sourceTree = "<group>"; };
+		26A4AB6E19CA265F008A19D1 /* UbeeAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UbeeAPI.framework; sourceTree = "<group>"; };
 		26F275F3195209A800A88ACF /* UBEInterstitialAdvertisementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBEInterstitialAdvertisementViewController.h; sourceTree = "<group>"; };
 		26F275F4195209A800A88ACF /* UBEInterstitialAdvertisementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBEInterstitialAdvertisementViewController.m; sourceTree = "<group>"; };
 		26F27625195397C600A88ACF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -92,8 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26D81B6619CA060300AD3D04 /* UbeeAPI.framework in Frameworks */,
 				26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */,
+				26A4AB6F19CA265F008A19D1 /* UbeeAPI.framework in Frameworks */,
 				2674FDE61912FDFB0063CEEA /* SystemConfiguration.framework in Frameworks */,
 				2685F0DC190013530016A650 /* Foundation.framework in Frameworks */,
 			);
@@ -132,18 +131,10 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		265E2C2619A27735006FA0EC /* UbeeSDK */ = {
-			isa = PBXGroup;
-			children = (
-				265E2C2719A27735006FA0EC /* UbeeAPI.framework */,
-			);
-			path = UbeeSDK;
-			sourceTree = "<group>";
-		};
 		2685F0CF190013530016A650 = {
 			isa = PBXGroup;
 			children = (
-				265E2C2619A27735006FA0EC /* UbeeSDK */,
+				26A4AB6D19CA265F008A19D1 /* InLocoMedia SDK */,
 				2685F0E1190013530016A650 /* Ubee Ads Example IOS */,
 				2685F0DA190013530016A650 /* Frameworks */,
 				2685F0D9190013530016A650 /* Products */,
@@ -161,7 +152,6 @@
 		2685F0DA190013530016A650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				26D81B6519CA060300AD3D04 /* UbeeAPI.framework */,
 				26A20B221921863B00B74DA5 /* CoreLocation.framework */,
 				2674FE001914205C0063CEEA /* UIKit.framework */,
 				2674FDE51912FDFB0063CEEA /* SystemConfiguration.framework */,
@@ -216,6 +206,14 @@
 				264D531F196F54D50079B106 /* UBECategoriesTableViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		26A4AB6D19CA265F008A19D1 /* InLocoMedia SDK */ = {
+			isa = PBXGroup;
+			children = (
+				26A4AB6E19CA265F008A19D1 /* UbeeAPI.framework */,
+			);
+			path = "InLocoMedia SDK";
 			sourceTree = "<group>";
 		};
 		26BA48D519BFBBDD00A06436 /* iPad */ = {
@@ -418,8 +416,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/UbeeSDK",
+					"$(PROJECT_DIR)/InLocoMedia\\ SDK/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ubee Ads Example IOS/Ubee Ads Example IOS-Prefix.pch";
@@ -430,12 +427,7 @@
 				);
 				INFOPLIST_FILE = "Ubee Ads Example IOS/Ubee Ads Example IOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Workspace-emntuvakohenxfgjbwaaqygnxjjp/Build/Products/Debug-iphoneos",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Workspace-emntuvakohenxfgjbwaaqygnxjjp/Build/Products/Release-iphoneos",
-					"/Users/ubee/workspace/ios/ubee-api-ios/UbeeAPI/build/Release-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -451,8 +443,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/UbeeSDK",
+					"$(PROJECT_DIR)/InLocoMedia\\ SDK/",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ubee Ads Example IOS/Ubee Ads Example IOS-Prefix.pch";
@@ -463,12 +454,7 @@
 				);
 				INFOPLIST_FILE = "Ubee Ads Example IOS/Ubee Ads Example IOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Workspace-emntuvakohenxfgjbwaaqygnxjjp/Build/Products/Debug-iphoneos",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Workspace-emntuvakohenxfgjbwaaqygnxjjp/Build/Products/Release-iphoneos",
-					"/Users/ubee/workspace/ios/ubee-api-ios/UbeeAPI/build/Release-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
