@@ -27,6 +27,7 @@
                             [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdBannerTablet andValue:@"Banner Small Tablet"],
                             [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdBannerLarge andValue:@"Banner Large"],
                             [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdTile andValue:@"Banner Ad Tile"],
+                            [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdFullBannerIAB andValue:@"Full Banner IAB"],
                             [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdSmartBannerPortrait andValue:@"Smartbanner Portrait"],
                             [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdSmartBannerLandscape andValue:@"Smartbanner Landscape"]];
     

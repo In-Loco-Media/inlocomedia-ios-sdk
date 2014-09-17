@@ -42,9 +42,11 @@
         case UBEAdTypeDisplayAdBannerTablet:
         case UBEAdTypeDisplayAdBannerLarge:
         case UBEAdTypeDisplayAdTile:
+        case UBEAdTypeDisplayAdFullBannerIAB:
         case UBEAdTypeDisplayAdSmartBannerPortrait:
         case UBEAdTypeDisplayAdSmartBannerLandscape:
-            adView = [[UBEDisplayAdView alloc] initWithAdType:_element.adType andOrigin:CGPointMake(0, 0)];
+            adView = [[UBEDisplayAdView alloc] init];
+            [adView setAdType:_element.adType];
             [adView setRequestTimeout:kUBEAdRequestTimeout];
             break;
         default:

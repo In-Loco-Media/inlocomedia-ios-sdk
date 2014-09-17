@@ -34,7 +34,7 @@
 		2685F0E8190013530016A650 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2685F0E7190013530016A650 /* main.m */; };
 		2685F0EC190013540016A650 /* UBEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2685F0EB190013540016A650 /* UBEAppDelegate.m */; };
 		26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A20B221921863B00B74DA5 /* CoreLocation.framework */; };
-		26BA48D419BFB08F00A06436 /* libUbeeAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26BA48D319BFB08F00A06436 /* libUbeeAPI.a */; };
+		26D81B6619CA060300AD3D04 /* UbeeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D81B6519CA060300AD3D04 /* UbeeAPI.framework */; };
 		26F275F5195209A800A88ACF /* UBEInterstitialAdvertisementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F275F4195209A800A88ACF /* UBEInterstitialAdvertisementViewController.m */; };
 		26F27626195397C600A88ACF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F27625195397C600A88ACF /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
@@ -81,7 +81,7 @@
 		2685F0EB190013540016A650 /* UBEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBEAppDelegate.m; sourceTree = "<group>"; };
 		2685F0FD190013540016A650 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		26A20B221921863B00B74DA5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		26BA48D319BFB08F00A06436 /* libUbeeAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUbeeAPI.a; path = "../../../../Library/Developer/Xcode/DerivedData/Workspace-emntuvakohenxfgjbwaaqygnxjjp/Build/Products/Debug-iphoneos/libUbeeAPI.a"; sourceTree = "<group>"; };
+		26D81B6519CA060300AD3D04 /* UbeeAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UbeeAPI.framework; sourceTree = "<group>"; };
 		26F275F3195209A800A88ACF /* UBEInterstitialAdvertisementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBEInterstitialAdvertisementViewController.h; sourceTree = "<group>"; };
 		26F275F4195209A800A88ACF /* UBEInterstitialAdvertisementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBEInterstitialAdvertisementViewController.m; sourceTree = "<group>"; };
 		26F27625195397C600A88ACF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26BA48D419BFB08F00A06436 /* libUbeeAPI.a in Frameworks */,
+				26D81B6619CA060300AD3D04 /* UbeeAPI.framework in Frameworks */,
 				26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */,
 				2674FDE61912FDFB0063CEEA /* SystemConfiguration.framework in Frameworks */,
 				2685F0DC190013530016A650 /* Foundation.framework in Frameworks */,
@@ -161,7 +161,7 @@
 		2685F0DA190013530016A650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				26BA48D319BFB08F00A06436 /* libUbeeAPI.a */,
+				26D81B6519CA060300AD3D04 /* UbeeAPI.framework */,
 				26A20B221921863B00B74DA5 /* CoreLocation.framework */,
 				2674FE001914205C0063CEEA /* UIKit.framework */,
 				2674FDE51912FDFB0063CEEA /* SystemConfiguration.framework */,
@@ -434,6 +434,7 @@
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Workspace-emntuvakohenxfgjbwaaqygnxjjp/Build/Products/Debug-iphoneos",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Workspace-emntuvakohenxfgjbwaaqygnxjjp/Build/Products/Release-iphoneos",
+					"/Users/ubee/workspace/ios/ubee-api-ios/UbeeAPI/build/Release-iphoneos",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -466,6 +467,7 @@
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Workspace-emntuvakohenxfgjbwaaqygnxjjp/Build/Products/Debug-iphoneos",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Workspace-emntuvakohenxfgjbwaaqygnxjjp/Build/Products/Release-iphoneos",
+					"/Users/ubee/workspace/ios/ubee-api-ios/UbeeAPI/build/Release-iphoneos",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
