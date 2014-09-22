@@ -34,7 +34,7 @@
 		2685F0E8190013530016A650 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2685F0E7190013530016A650 /* main.m */; };
 		2685F0EC190013540016A650 /* UBEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2685F0EB190013540016A650 /* UBEAppDelegate.m */; };
 		26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A20B221921863B00B74DA5 /* CoreLocation.framework */; };
-		26A4AB6F19CA265F008A19D1 /* UbeeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A4AB6E19CA265F008A19D1 /* UbeeAPI.framework */; };
+		26BDB76719D0DEA9004C4BE6 /* UbeeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A4AB6E19CA265F008A19D1 /* UbeeAPI.framework */; };
 		26F275F5195209A800A88ACF /* UBEInterstitialAdvertisementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F275F4195209A800A88ACF /* UBEInterstitialAdvertisementViewController.m */; };
 		26F27626195397C600A88ACF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F27625195397C600A88ACF /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
@@ -91,8 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26BDB76719D0DEA9004C4BE6 /* UbeeAPI.framework in Frameworks */,
 				26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */,
-				26A4AB6F19CA265F008A19D1 /* UbeeAPI.framework in Frameworks */,
 				2674FDE61912FDFB0063CEEA /* SystemConfiguration.framework in Frameworks */,
 				2685F0DC190013530016A650 /* Foundation.framework in Frameworks */,
 			);
@@ -411,19 +411,19 @@
 		2685F10E190013540016A650 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/InLocoMedia\\ SDK/",
+					"$(PROJECT_DIR)/InLocoMedia",
+					SDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ubee Ads Example IOS/Ubee Ads Example IOS-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"/Users/ubee/workspace/ios/git/ubee-api-ios",
 				);
 				INFOPLIST_FILE = "Ubee Ads Example IOS/Ubee Ads Example IOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -438,19 +438,19 @@
 		2685F10F190013540016A650 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/InLocoMedia\\ SDK/",
+					"$(PROJECT_DIR)/InLocoMedia",
+					SDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ubee Ads Example IOS/Ubee Ads Example IOS-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"/Users/ubee/workspace/ios/git/ubee-api-ios",
 				);
 				INFOPLIST_FILE = "Ubee Ads Example IOS/Ubee Ads Example IOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;

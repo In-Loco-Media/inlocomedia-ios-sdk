@@ -18,7 +18,7 @@
 @property (nonatomic) NSString<Optional> *state;
 @property (nonatomic) NSString<Optional> *phone;
 @property (nonatomic) NSString<Optional> *website;
-@property (nonatomic) NSString<Optional> *description;
+@property (nonatomic) NSString<Optional> *desc;
 @property (nonatomic) NSString<Optional> *imageUrl;
 @property (nonatomic) NSString<Optional> *imageThumbnailUrl;
 
