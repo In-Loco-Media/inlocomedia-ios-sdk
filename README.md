@@ -1,11 +1,10 @@
-Ubee Ads Example for Ubee IOS SDK
+InLocoMedia IOS SDK
 ====================
 
-## Ubee Ads
 Currently delivers context based advertisement, accordingly with the user current position and profile.
-Check our [website](http://ads.ubee.in)
+Check our [website](http://inlocomedia.com)
 
 ### Minimum supported version: 6.0
 
 ## Documentation
-* [Wiki] (https://github.com/ubee/Ubee-Ads-Example-IOS/wiki)
+* [Wiki] (https://github.com/in-loco-media/inlocomedia-ios-sdk/wiki)
