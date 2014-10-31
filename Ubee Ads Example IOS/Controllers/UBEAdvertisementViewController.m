@@ -82,10 +82,4 @@
     [_descLabel setHidden:YES];
 }
 
-- (void)a:(UBEAdView *)adView
-{
-    [adView setHidden:YES];
-}
-
-
 @end

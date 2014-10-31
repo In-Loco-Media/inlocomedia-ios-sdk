@@ -24,9 +24,7 @@
     [options setLocationEnabled:YES]; // YES by default
     
     [Ubee initWithOptions:options];
-    
-    
-    
+
     
     return YES;
 }
