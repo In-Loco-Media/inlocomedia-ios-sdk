@@ -35,19 +35,19 @@
         case UBEAdTypeNativeAdLarge:
         case UBEAdTypeNativeAdCoupon:
             adView = [[UBENativeAdView alloc] initWithType:_element.adType andNibName:_element.nibName];
-            [adView setRequestTimeout:kUBEAdRequestTimeout];
+            [adView setRequestTimeout:kUBEAdRequestTimeoutDefault];
             break;
         case UBEAdTypeDisplayAdBannerSmall:
         case UBEAdTypeDisplayAdBannerSmallLandscape:
         case UBEAdTypeDisplayAdBannerTablet:
         case UBEAdTypeDisplayAdBannerLarge:
         case UBEAdTypeDisplayAdTile:
+        case UBEAdTypeDisplayAdMediumRectangleIAB:
         case UBEAdTypeDisplayAdFullBannerIAB:
         case UBEAdTypeDisplayAdSmartBannerPortrait:
         case UBEAdTypeDisplayAdSmartBannerLandscape:
-            adView = [[UBEDisplayAdView alloc] init];
-            [adView setAdType:_element.adType];
-            [adView setRequestTimeout:kUBEAdRequestTimeout];
+            adView = [[UBEDisplayAdView alloc] initWithAdType:_element.adType andOrigin:CGPointMake(0, 0)];
+            [adView setRequestTimeout:kUBEAdRequestTimeoutDefault];
             break;
         default:
             NSAssert(NO, @"Missing advertisement type");
@@ -74,7 +74,6 @@
     [_descLabel setHidden:NO];
     [_descLabel setText:error.localizedDescription];
     NSLog(@"App: %@", [error localizedDescription]);
-    
 }
 
 - (void)ubeAdViewDidReceiveAd:(UBEAdView *)adView
