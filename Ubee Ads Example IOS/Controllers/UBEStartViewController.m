@@ -39,7 +39,8 @@
 
     NSArray *customStyles = @[ [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"Native on List" andCellIdentifier:@"NativeAdOnListCell"],
                                [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"Native From Storyboard" andCellIdentifier:@"NativeAdFromStoryboardCell"],
-                               [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"Ads Feed" andCellIdentifier:@"AdsFeedCell"] ];
+                               [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"Ads Feed" andCellIdentifier:@"AdsFeedCell"],
+                               [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"AdMob Mediation" andCellIdentifier:@"MediationCell"] ];
 
     _groups = @[ @"Display Ads", @"Interstitial", @"Native Ads", @"Custom Usages" ];
 
