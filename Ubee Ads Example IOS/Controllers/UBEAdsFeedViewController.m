@@ -16,14 +16,13 @@
 
 @implementation UBEAdsFeedViewController
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     self.tableView.dataSource = self;
-    
-    _manager = [[UBEAdsTableViewManager alloc] initWithAdType:UBEAdTypeNativeAdCoupon andNumberOfAdsPerPage:10];
+
+    _manager = [[UBEAdsTableViewManager alloc] initWithAdType:UBEAdTypeNativeAdSmall andNumberOfAdsPerPage:10];
     _manager.delegate = self;
     [_manager fetchNextPage];
 }
@@ -38,21 +37,20 @@
     static NSString *AdCellIdentifier = @"Cell";
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:AdCellIdentifier forIndexPath:indexPath];
-    
+
     [_manager loadContentForCell:cell atIndexPath:indexPath];
-    
+
     return cell;
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    if (scrollView.contentOffset.y == scrollView.contentSize.height - scrollView.bounds.size.height)
-    {
+    if (scrollView.contentOffset.y == scrollView.contentSize.height - scrollView.bounds.size.height) {
         [_manager fetchNextPage];
     }
 }
 
-- (void)tableView: (UITableView *)tableView didSelectRowAtIndexPath: (NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
