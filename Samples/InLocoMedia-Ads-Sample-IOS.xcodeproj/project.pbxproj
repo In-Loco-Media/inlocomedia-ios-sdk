@@ -76,12 +76,12 @@
 		268370531911346500B39CB4 /* MyStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyStoryboard.storyboard; sourceTree = "<group>"; };
 		2683705C1911695D00B39CB4 /* UbeeNativeAdPlaceholderCoupon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UbeeNativeAdPlaceholderCoupon.png; sourceTree = "<group>"; };
 		2683705D1911695D00B39CB4 /* UbeeNativeAdPlaceholderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UbeeNativeAdPlaceholderIcon.png; sourceTree = "<group>"; };
-		2685F0D8190013530016A650 /* InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2685F0D8190013530016A650 /* InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2685F0DB190013530016A650 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		2685F0E3190013530016A650 /* InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename-Info.plist"; sourceTree = "<group>"; };
+		2685F0E3190013530016A650 /* InLocoMedia-Ads-Sample-IOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InLocoMedia-Ads-Sample-IOS.plist"; sourceTree = "<group>"; };
 		2685F0E5190013530016A650 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2685F0E7190013530016A650 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2685F0E9190013530016A650 /* InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
+		2685F0E9190013530016A650 /* InLocoMedia-Ads-Sample-IOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InLocoMedia-Ads-Sample-IOS-Prefix.pch"; sourceTree = "<group>"; };
 		2685F0EA190013530016A650 /* UBEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBEAppDelegate.h; sourceTree = "<group>"; };
 		2685F0EB190013540016A650 /* UBEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBEAppDelegate.m; sourceTree = "<group>"; };
 		2685F0FD190013540016A650 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -147,7 +147,7 @@
 		2685F0CF190013530016A650 = {
 			isa = PBXGroup;
 			children = (
-				2685F0E1190013530016A650 /* Inlocomedia-Ads-Sample */,
+				2685F0E1190013530016A650 /* InLocomedia-Ads-Sample */,
 				2685F0DA190013530016A650 /* Frameworks */,
 				2685F0D9190013530016A650 /* Products */,
 			);
@@ -156,7 +156,7 @@
 		2685F0D9190013530016A650 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2685F0D8190013530016A650 /* InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename.app */,
+				2685F0D8190013530016A650 /* InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,7 +173,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2685F0E1190013530016A650 /* Inlocomedia-Ads-Sample */ = {
+		2685F0E1190013530016A650 /* InLocomedia-Ads-Sample */ = {
 			isa = PBXGroup;
 			children = (
 				C02D471B1A950CAC000A49E4 /* InLocoMediaSDK */,
@@ -187,16 +187,17 @@
 				26545DD61901B81E0067A426 /* Main.storyboard */,
 				2685F0E2190013530016A650 /* Supporting Files */,
 			);
+			name = "InLocomedia-Ads-Sample";
 			path = "Inlocomedia-Ads-Sample";
 			sourceTree = "<group>";
 		};
 		2685F0E2190013530016A650 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2685F0E3190013530016A650 /* InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename-Info.plist */,
+				2685F0E3190013530016A650 /* InLocoMedia-Ads-Sample-IOS.plist */,
 				2685F0E4190013530016A650 /* InfoPlist.strings */,
 				2685F0E7190013530016A650 /* main.m */,
-				2685F0E9190013530016A650 /* InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename-Prefix.pch */,
+				2685F0E9190013530016A650 /* InLocoMedia-Ads-Sample-IOS-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -279,9 +280,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2685F0D7190013530016A650 /* InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename */ = {
+		2685F0D7190013530016A650 /* InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2685F10D190013540016A650 /* Build configuration list for PBXNativeTarget "InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename" */;
+			buildConfigurationList = 2685F10D190013540016A650 /* Build configuration list for PBXNativeTarget "InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				2685F0D4190013530016A650 /* Sources */,
 				2685F0D5190013530016A650 /* Frameworks */,
@@ -291,9 +292,9 @@
 			);
 			dependencies = (
 			);
-			name = "InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename";
+			name = "InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename";
 			productName = "Ubee Ads Example IOS";
-			productReference = 2685F0D8190013530016A650 /* InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename.app */;
+			productReference = 2685F0D8190013530016A650 /* InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -315,7 +316,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2685F0D3190013530016A650 /* Build configuration list for PBXProject "InLocoMedia Ads Sample IOS" */;
+			buildConfigurationList = 2685F0D3190013530016A650 /* Build configuration list for PBXProject "InLocoMedia-Ads-Sample-IOS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -328,7 +329,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2685F0D7190013530016A650 /* InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename */,
+				2685F0D7190013530016A650 /* InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename */,
 			);
 		};
 /* End PBXProject section */
@@ -475,19 +476,19 @@
 					"$(PROJECT_DIR)/../InLocoMediaSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Inlocomedia-Ads-Sample/InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename-Prefix.pch";
+				GCC_PREFIX_HEADER = "Inlocomedia-Ads-Sample/InLocoMedia-Ads-Sample-IOS-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
-				INFOPLIST_FILE = "Inlocomedia-Ads-Sample/InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Inlocomedia-Ads-Sample/InLocoMedia-Ads-Sample-IOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../InLocoMediaSDK/AdNetworkSupport/AdMob",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -506,19 +507,19 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Inlocomedia-Ads-Sample/InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename-Prefix.pch";
+				GCC_PREFIX_HEADER = "Inlocomedia-Ads-Sample/InLocoMedia-Ads-Sample-IOS-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
-				INFOPLIST_FILE = "Inlocomedia-Ads-Sample/InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Inlocomedia-Ads-Sample/InLocoMedia-Ads-Sample-IOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../InLocoMediaSDK/AdNetworkSupport/AdMob",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -527,7 +528,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2685F0D3190013530016A650 /* Build configuration list for PBXProject "InLocoMedia Ads Sample IOS" */ = {
+		2685F0D3190013530016A650 /* Build configuration list for PBXProject "InLocoMedia-Ads-Sample-IOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2685F10B190013540016A650 /* Debug */,
@@ -536,7 +537,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2685F10D190013540016A650 /* Build configuration list for PBXNativeTarget "InLocoMedia Ads Sample IOS.temp_caseinsensitive_rename" */ = {
+		2685F10D190013540016A650 /* Build configuration list for PBXNativeTarget "InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2685F10E190013540016A650 /* Debug */,
