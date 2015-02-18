@@ -76,7 +76,7 @@
 		268370531911346500B39CB4 /* MyStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyStoryboard.storyboard; sourceTree = "<group>"; };
 		2683705C1911695D00B39CB4 /* UbeeNativeAdPlaceholderCoupon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UbeeNativeAdPlaceholderCoupon.png; sourceTree = "<group>"; };
 		2683705D1911695D00B39CB4 /* UbeeNativeAdPlaceholderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UbeeNativeAdPlaceholderIcon.png; sourceTree = "<group>"; };
-		2685F0D8190013530016A650 /* InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2685F0D8190013530016A650 /* InLocoMedia-Ads-Sample-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InLocoMedia-Ads-Sample-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2685F0DB190013530016A650 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2685F0E3190013530016A650 /* InLocoMedia-Ads-Sample-IOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InLocoMedia-Ads-Sample-IOS.plist"; sourceTree = "<group>"; };
 		2685F0E5190013530016A650 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		2685F0D9190013530016A650 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2685F0D8190013530016A650 /* InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename.app */,
+				2685F0D8190013530016A650 /* InLocoMedia-Ads-Sample-IOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -294,7 +294,7 @@
 			);
 			name = "InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename";
 			productName = "Ubee Ads Example IOS";
-			productReference = 2685F0D8190013530016A650 /* InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename.app */;
+			productReference = 2685F0D8190013530016A650 /* InLocoMedia-Ads-Sample-IOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -488,7 +488,7 @@
 					"$(PROJECT_DIR)/../InLocoMediaSDK/AdNetworkSupport/AdMob",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "InLocoMedia-Ads-Sample-IOS";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -519,7 +519,7 @@
 					"$(PROJECT_DIR)/../InLocoMediaSDK/AdNetworkSupport/AdMob",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "InLocoMedia-Ads-Sample-IOS";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
