@@ -43,6 +43,7 @@
 
 - (void)adView:(GADBannerView *)view didFailToReceiveAdWithError:(GADRequestError *)error
 {
+    NSLog(@"AdMediation request error: %@", error.localizedDescription);
     [self.desc setHidden:NO];
     [self.desc setText:error.description];
 }
