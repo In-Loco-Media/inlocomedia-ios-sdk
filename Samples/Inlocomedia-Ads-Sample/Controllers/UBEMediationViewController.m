@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Ubee. All rights reserved.
 //
 
+#define MEDIATION_BANNER_AD_UNIT @"ca-app-pub-9313505358879389/7273743353" //Put your mediation id here to test
+
 #import "UBEMediationViewController.h"
 @import GoogleMobileAds;
 
@@ -20,20 +22,25 @@
 - (void)viewDidLoad
 {
     _bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
-    
+
     // Especificar o ID do bloco de anúncios.
-    _bannerView.adUnitID = @"";
-    
+    _bannerView.adUnitID = MEDIATION_BANNER_AD_UNIT;
+
     _bannerView.rootViewController = self;
     [self.view addSubview:_bannerView];
-    
+
     GADRequest *request = [GADRequest request];
+    [request setGender:kGADGenderMale];
     
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"dd/MM/yyyy"];
+    NSDate *date = [dateFormatter dateFromString:@"27/05/1991"];
+    [request setBirthday:date];
+
     //request.testDevices = @[ GAD_SIMULATOR_ID ];
     [_bannerView loadRequest:request];
-    
+
     [_bannerView setDelegate:self];
-    
 }
 
 - (void)adViewDidReceiveAd:(GADBannerView *)view
@@ -43,9 +50,15 @@
 
 - (void)adView:(GADBannerView *)view didFailToReceiveAdWithError:(GADRequestError *)error
 {
-    NSLog(@"AdMediation request error: %@", error.localizedDescription);
+    if (MEDIATION_BANNER_AD_UNIT.length == 0) {
+        NSLog(@"AdMediation request error: Missing AdUnit");
+        [self.desc setText:@"AdMediation request error: Missing AdUnit"];
+    } else {
+        NSLog(@"AdMediation request error: %@", error.localizedDescription);
+        [self.desc setText:error.description];
+    }
+
     [self.desc setHidden:NO];
-    [self.desc setText:error.description];
 }
 
 @end

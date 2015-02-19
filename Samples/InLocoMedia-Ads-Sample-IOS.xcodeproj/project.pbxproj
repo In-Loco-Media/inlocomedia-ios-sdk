@@ -40,7 +40,7 @@
 		C00679C01A955247002D35DA /* libUbeeAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C00679BF1A955247002D35DA /* libUbeeAPI.a */; };
 		C02D470D1A950BEB000A49E4 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02D470C1A950BEB000A49E4 /* GoogleMobileAds.framework */; };
 		C02D47231A950CAC000A49E4 /* InLocoMediaAdMobAdapters.zip in Resources */ = {isa = PBXBuildFile; fileRef = C02D471E1A950CAC000A49E4 /* InLocoMediaAdMobAdapters.zip */; };
-		C02D47241A950CAC000A49E4 /* libInLocoMediaAdMobAdapters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C02D471F1A950CAC000A49E4 /* libInLocoMediaAdMobAdapters.a */; };
+		C0C7A9E01A966C79007D93FE /* libInLocoMedia IOS Adapters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C7A9DF1A966C79007D93FE /* libInLocoMedia IOS Adapters.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +96,7 @@
 		C02D47201A950CAC000A49E4 /* UBEGADBannerAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBEGADBannerAdapter.h; sourceTree = "<group>"; };
 		C02D47211A950CAC000A49E4 /* UBEGADInterstitialAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBEGADInterstitialAdapter.h; sourceTree = "<group>"; };
 		C02D47221A950CAC000A49E4 /* UbeeAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UbeeAPI.framework; sourceTree = "<group>"; };
+		C0C7A9DF1A966C79007D93FE /* libInLocoMedia IOS Adapters.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libInLocoMedia IOS Adapters.a"; path = "../../../../../../../Library/Developer/Xcode/DerivedData/UbeeAPI-flmvsuvsiroaatbmqmbzxeownxgj/Build/Products/Debug-iphoneos/libInLocoMedia IOS Adapters.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C7A9E01A966C79007D93FE /* libInLocoMedia IOS Adapters.a in Frameworks */,
 				C00679C01A955247002D35DA /* libUbeeAPI.a in Frameworks */,
-				C02D47241A950CAC000A49E4 /* libInLocoMediaAdMobAdapters.a in Frameworks */,
 				26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */,
 				2674FDE61912FDFB0063CEEA /* SystemConfiguration.framework in Frameworks */,
 				C02D470D1A950BEB000A49E4 /* GoogleMobileAds.framework in Frameworks */,
@@ -165,6 +166,7 @@
 		2685F0DA190013530016A650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0C7A9DF1A966C79007D93FE /* libInLocoMedia IOS Adapters.a */,
 				C00679BF1A955247002D35DA /* libUbeeAPI.a */,
 				26A20B221921863B00B74DA5 /* CoreLocation.framework */,
 				2674FE001914205C0063CEEA /* UIKit.framework */,
