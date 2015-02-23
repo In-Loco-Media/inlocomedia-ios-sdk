@@ -24,6 +24,11 @@
     [options setLocationEnabled:YES]; // YES by default
     
     [Ubee initWithOptions:options];
+    
+    UBEAdRequest *adRequest = [[UBEAdRequest alloc] init];
+    UBEUserProfile *userProfile = [[UBEUserProfile alloc] initWithAge:20 andGender:UBEGenderMale];
+    [adRequest setUserProfile:userProfile];
+    [adRequest saveAsDefaultAdRequest];
 
     
     return YES;

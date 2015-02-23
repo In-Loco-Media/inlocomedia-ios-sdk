@@ -14,4 +14,5 @@
 @import Foundation;
 @import SystemConfiguration;
 @import UIKit;
+@import CoreTelephony;
 #endif

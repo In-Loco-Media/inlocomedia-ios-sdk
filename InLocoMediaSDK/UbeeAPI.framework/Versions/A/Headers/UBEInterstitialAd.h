@@ -13,6 +13,9 @@
 
 @class UIViewController;
 
+//InterstitialAd minimum request timeout interval, value = 5
+extern NSTimeInterval const kUBEAdRequestTimeoutMin;
+
 @interface UBEInterstitialAd : NSObject
 
 - (void)loadAd;
@@ -20,6 +23,8 @@
 - (void)loadAdWithRequest:(UBEAdRequest *)request;
 
 - (void)presentFromViewController:(UIViewController *)viewController;
+
+- (void)present;
 
 - (void)setRequestTimeout:(NSTimeInterval)requestInterval;
 

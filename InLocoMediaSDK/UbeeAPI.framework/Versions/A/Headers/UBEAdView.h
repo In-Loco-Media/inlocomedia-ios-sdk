@@ -13,16 +13,34 @@
 #import "UBEAdRequest.h"
 #import "UBEAdViewDelegate.h"
 
+//Minimum AdView refresh interval, value = 30
+extern NSTimeInterval const kUBEAdRefreshIntervalMin;
+
+//Maximum AdView refresh interval, value = 120
+extern NSTimeInterval const kUBEAdRefreshIntervalMax;
+
+//AdView refresh deactivated, value = 0
+extern NSTimeInterval const kUBEAdRefreshDeactivated;
+
+//AdView minimum request timeout interval, value = 5
+extern NSTimeInterval const kUBEAdRequestTimeoutMin;
+
+//AdView request timeout, value = 7
+extern NSTimeInterval const kUBEAdRequestTimeoutDefault;
+
+//AdView long request timeout, value = 10
+extern NSTimeInterval const kUBEAdRequestTimeoutLong;
+
 /*
  UBEAdView is the parent view that hold the generic Advertisement Properties. It should not be instantiated directly.
  */
 @interface UBEAdView : UIView
 
-//If YES, the loadAd method will be called on the - (void)awakeFromNib method
-@property (nonatomic, assign) BOOL loadOnAwake;
-
 //Property to determine the adType in a NSString value for loading on the User Defined Runtime Attributes in the Interface editor.
-@property (nonatomic, strong) NSString *adTypeKey;
+@property (nonatomic, strong) IBInspectable NSString *adTypeKey;
+
+//If YES, the loadAd method will be called on the - (void)awakeFromNib method
+@property (nonatomic, assign) IBInspectable BOOL loadOnAwake;
 
 //AdView manager
 @property (nonatomic, strong) id viewManager;

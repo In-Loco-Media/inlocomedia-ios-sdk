@@ -23,12 +23,19 @@
         _element = newElement;
         if (self.isViewLoaded) {
             [self createAd];
+            [self.view setClipsToBounds:YES];
         }
     }
 }
 
 - (void)createAd
 {
+    CGFloat containerHeight = self.view.bounds.size.height - self.navigationController.navigationBar.frame.size.height - [UIApplication sharedApplication].statusBarFrame.size.height;
+    CGFloat containerWidth = self.view.bounds.size.width;
+    
+    CGSize adSize = CGSizeFromUBEAdType(_element.adType);
+    CGPoint adViewOrigin = CGPointMake((containerWidth - adSize.width)/2, containerHeight - adSize.height);
+    
     UBEAdView *adView;
     switch (_element.adType) {
         case UBEAdTypeNativeAdSmall:
@@ -43,14 +50,18 @@
         case UBEAdTypeDisplayAdTile:
         case UBEAdTypeDisplayAdMediumRectangleIAB:
         case UBEAdTypeDisplayAdFullBannerIAB:
+            adView = [[UBEDisplayAdView alloc] initWithAdType:_element.adType
+                                                    andOrigin:adViewOrigin];
+            break;
         case UBEAdTypeDisplayAdSmartBannerPortrait:
         case UBEAdTypeDisplayAdSmartBannerLandscape:
-            adView = [[UBEDisplayAdView alloc] initWithAdType:_element.adType andOrigin:CGPointMake(0, 0)];
+            adView = [[UBEDisplayAdView alloc] initWithAdType:_element.adType andOrigin:CGPointMake(0, adViewOrigin.y)];
             break;
         default:
             NSAssert(NO, @"Missing advertisement type");
             break;
     }
+
     [adView setDelegate:self];
     [adView loadAd];
     [self.view addSubview:adView];

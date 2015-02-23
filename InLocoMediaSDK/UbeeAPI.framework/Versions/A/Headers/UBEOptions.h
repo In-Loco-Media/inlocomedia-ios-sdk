@@ -16,7 +16,7 @@
 @property (nonatomic, strong) NSString *mapsKey;
 @property (nonatomic, strong) NSString *mapsSecret;
 
-@property (nonatomic, assign, getter = isDevelopmentEnviroment, setter = setDevelopmentEnvironment:) BOOL developmentEnviroment; 
+@property (nonatomic, assign, getter = isDevelopmentEnvironment, setter = setDevelopmentEnvironment:) BOOL developmentEnvironment;
 
 @property (nonatomic, assign, getter = isLocationEnabled) BOOL locationEnabled;
 
