@@ -23,7 +23,6 @@
         _element = newElement;
         if (self.isViewLoaded) {
             [self createAd];
-            [self.view setClipsToBounds:YES];
         }
     }
 }
@@ -75,6 +74,7 @@
             [view removeFromSuperview];
         }
     }
+    [self.view setClipsToBounds:YES];
     [self createAd];
 }
 
