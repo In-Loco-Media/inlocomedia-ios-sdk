@@ -1,4 +1,4 @@
-InLocoMedia Android SDK
+InLocoMedia iOS SDK
 ===
 Monetize your mobile apps with In Loco Media, the most profitable Ad Network in Latin America.
 
