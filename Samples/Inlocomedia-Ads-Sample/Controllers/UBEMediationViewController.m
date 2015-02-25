@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Ubee. All rights reserved.
 //
 
-#define MEDIATION_BANNER_AD_UNIT @"ca-app-pub-9313505358879389/7273743353" //Put your mediation id here to test
+#define MEDIATION_BANNER_AD_UNIT @"_____________________" //Put your mediation id here to test
 
 #import "UBEMediationViewController.h"
 #import <GoogleMobileAds/GoogleMobileAds.h>

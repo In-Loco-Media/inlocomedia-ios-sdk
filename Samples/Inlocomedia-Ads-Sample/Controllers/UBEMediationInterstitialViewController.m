@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Ubee. All rights reserved.
 //
 
-#define MEDIATION_INTERSTITIAL_AD_UNIT @"ca-app-pub-9313505358879389/8750476556" //Put your mediation id here to test
+#define MEDIATION_INTERSTITIAL_AD_UNIT @"_____________________" //Put your mediation id here to test
 
 #import "UBEMediationInterstitialViewController.h"
 #import <GoogleMobileAds/GoogleMobileAds.h>
