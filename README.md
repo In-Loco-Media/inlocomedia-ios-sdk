@@ -1,10 +1,21 @@
-InLocoMedia IOS SDK
-====================
+InLocoMedia Android SDK
+===
+Monetize your mobile apps with In Loco Media, the most profitable Ad Network in Latin America.
 
-Currently delivers context based advertisement, accordingly with the user current position and profile.
-Check our [website](http://inlocomedia.com)
+In Loco Media's SDK is easy to install and start monetizing with relevant ads to the user, thanks to its powerful targeting capabilities. 
 
-### Minimum supported version: 6.0
+Integration
+===
+Available on our **[wiki] [documentation]**.
 
-## Documentation
-* [Wiki] (https://github.com/in-loco-media/inlocomedia-ios-sdk/wiki)
+Latest Updates
+===
+Check our [changelog]
+
+Requirements
+==
+* Minimum supported version: iOS 6
+
+[documentation]: https://github.com/In-Loco-Media/inlocomedia-ios-sdk/wiki
+[sign_up]: http://inlocomedia.com/
+[changelog]: https://github.com/In-Loco-Media/inlocomedia-ios-sdk/blob/master/CHANGELOG.md
