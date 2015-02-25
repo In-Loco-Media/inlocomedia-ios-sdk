@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "6.0"
   s.source       = { :git => "https://github.com/In-Loco-Media/inlocomedia-ios-sdk.git", :tag => "1.5.0" }
-  s.vendored_frameworks = 'InLocoMedia SDK/UbeeAPI.framework'
+  s.vendored_frameworks = 'InLocoMediaSDK/UbeeAPI.framework'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.requires_arc = true
   
