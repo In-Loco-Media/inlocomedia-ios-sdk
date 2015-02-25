@@ -12,35 +12,40 @@
 
 @interface UBEAdRequest : NSObject
 
-//Minimum AdView refresh interval, value = 30
-extern NSTimeInterval const kUBEAdRefreshIntervalMin;
-
-//Maximum AdView refresh interval, value = 120
-extern NSTimeInterval const kUBEAdRefreshIntervalMax;
-
-//AdView refresh minimum interval, value = 30
-extern NSTimeInterval const kUBEAdRefreshIntervalMin;
-
-//AdView refresh deactivated, value = 0
-extern NSTimeInterval const kUBEAdRefreshDeactivated;
-
-//AdView request timeout, value = 15
-extern NSTimeInterval const kUBEAdRequestTimeout;
-
-//AdView minimum request timeout interval, value = 5
-extern NSTimeInterval const kUBEAdRequestTimeoutMin;
-
+//User profile used to filter the AdRequest results
 @property (nonatomic, strong) UBEUserProfile *userProfile;
 
+//Set of UBECategory to filter the AdRequest results
 @property (nonatomic, strong) NSMutableSet *categories;
 
-@property (nonatomic, assign, getter = isDevelopmentEnabled, setter = setDevelopmentEnabled:) BOOL developmentEnabled;
+//Set of NSString to optimize the AdRequest results
+@property (nonatomic, strong) NSMutableSet *keywords;
+
+//Locale for the keywords
+@property (nonatomic, strong) NSString *locale;
+
+//Query for filtering the Ad Request
+@property (nonatomic, strong) NSString *query;
+
+//Id for showing a specific advertisement
+@property (nonatomic, strong) NSString *advertisementId;
+
+@property (nonatomic, assign, getter=isDevelopmentEnabled, setter=setDevelopmentEnabled:) BOOL developmentEnabled;
 
 //Uses the default UserProfile
 + (instancetype)defaultRequest;
 
 //Add a Set of UBECategories to the AdRequest target
-- (void)addCategories:(NSSet *)objects;
+- (void)addCategories:(NSSet *)categories;
+
+//Add a UBECategories to the AdRequest target
+- (void)addCategory:(UBECategory *)category;
+
+//Add a Set of keywords to the AdRequest target
+- (void)addKeywords:(NSSet *)keywords;
+
+//Add a keyword to the AdRequest target
+- (void)addKeyword:(NSString *)keyword;
 
 //Save the CurrentAdRequest configurations as default
 - (void)saveAsDefaultAdRequest;

@@ -7,9 +7,9 @@
 //
 
 typedef enum {
+    UBEGenderUndefined = 0,
     UBEGenderMale = 1,
-    UBEGenderFemale = 2,
-    UBEGenderUndefined = 3
+    UBEGenderFemale = 2
 } UBEGender;
 
 @interface UBEUserProfile : NSObject <NSCoding>
@@ -20,5 +20,7 @@ typedef enum {
 - (id)initWithAge:(NSUInteger)age andGender:(UBEGender)gender;
 
 - (NSDictionary *)toDictionary;
+
+- (BOOL)isValid;
 
 @end

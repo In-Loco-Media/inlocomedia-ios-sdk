@@ -21,7 +21,7 @@
 @interface UBENativeAdView : UBEAdView
 
 //The name of the nib file containing the NativeAd Content
-@property(nonatomic) NSString *nibName;
+@property (nonatomic) UBEInspectable NSString *nibName;
 
 //Init the NativeAdView with a AdType and nibName
 - (id)initWithType:(UBEAdType)adType andNibName:(NSString *)nibName;

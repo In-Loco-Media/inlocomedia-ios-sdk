@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GADCustomEventBanner.h"
+@import GoogleMobileAds;
 
 @interface UBEGADBannerAdapter : NSObject <GADCustomEventBanner>
 

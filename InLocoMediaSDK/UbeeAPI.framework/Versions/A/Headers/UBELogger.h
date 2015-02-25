@@ -10,24 +10,9 @@
 
 @class UBEError;
 
-#define UBELogD(args...) \
-    [[UBELogger sharedInstance] logD:__PRETTY_FUNCTION__ :__LINE__ :args]
-
-#define UBELog(args...) \
-    [[UBELogger sharedInstance] log:nil :0 :args]
-
-#define UBELogTime(args...) \
-    [[UBELogger sharedInstance] logTime:nil :0 :args]
-
-#define UBELogRequest(args...) \
-    [[UBELogger sharedInstance] logCommunication:nil :0 :args]
-
-//#define UBELogFile(args...) \
-//    [[UBELogger sharedInstance] logOnFile:args]
-
 @interface UBELogger : NSObject
 
-@property(assign) BOOL enabled;
+@property (assign) BOOL enabled;
 
 + (id)sharedInstance;
 

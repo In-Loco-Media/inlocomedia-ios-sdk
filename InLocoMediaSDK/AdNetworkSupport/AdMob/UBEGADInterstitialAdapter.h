@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GADCustomEventInterstitial.h"
+@import GoogleMobileAds;
 
 @interface UBEGADInterstitialAdapter : NSObject <GADCustomEventInterstitial>
 

@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Ubee. All rights reserved.
 //
 
-#define MEDIATION_BANNER_AD_UNIT @"" //Put your mediation id here to test
+#define MEDIATION_BANNER_AD_UNIT @"_____________________" //Put your mediation id here to test
 
 #import "UBEMediationViewController.h"
-@import GoogleMobileAds;
+#import <GoogleMobileAds/GoogleMobileAds.h>
 
 @interface UBEMediationViewController () <GADBannerViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *desc;
@@ -30,12 +30,14 @@
     [self.view addSubview:_bannerView];
 
     GADRequest *request = [GADRequest request];
-    [request setGender:kGADGenderMale];
+    [request setGender:kGADGenderFemale];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"dd/MM/yyyy"];
     NSDate *date = [dateFormatter dateFromString:@"27/05/1991"];
     [request setBirthday:date];
+    
+    [request setKeywords:@[@"Comida", @"Gastronomia"]];
 
     //request.testDevices = @[ GAD_SIMULATOR_ID ];
     [_bannerView loadRequest:request];
