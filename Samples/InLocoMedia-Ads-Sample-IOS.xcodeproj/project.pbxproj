@@ -39,10 +39,19 @@
 		26F27626195397C600A88ACF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F27625195397C600A88ACF /* Default-568h@2x.png */; };
 		C01B923B1A9B9B6700B555CE /* UBEMediationInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C01B923A1A9B9B6700B555CE /* UBEMediationInterstitialViewController.m */; };
 		C01B932B1A9BDD9300B555CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C01B932A1A9BDD9300B555CE /* LaunchScreen.xib */; };
-		C01B93331A9BE26D00B555CE /* libInLocoMediaAdMobAdapters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C01B932F1A9BE26D00B555CE /* libInLocoMediaAdMobAdapters.a */; };
 		C01B93341A9BE26E00B555CE /* libInLocoMediaAdMobAdapters.a.zip in Resources */ = {isa = PBXBuildFile; fileRef = C01B93301A9BE26D00B555CE /* libInLocoMediaAdMobAdapters.a.zip */; };
-		C01B93371A9BE34900B555CE /* UbeeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01B93351A9BE32C00B555CE /* UbeeAPI.framework */; };
 		C02D470D1A950BEB000A49E4 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02D470C1A950BEB000A49E4 /* GoogleMobileAds.framework */; };
+		C077C8A41A9E1E9700C1B19D /* UbeeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02D47221A950CAC000A49E4 /* UbeeAPI.framework */; };
+		C09621951A9E37E60055EEEE /* libInLocoMediaAdMobAdapters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C01B932F1A9BE26D00B555CE /* libInLocoMediaAdMobAdapters.a */; };
+		C09621971A9E38460055EEEE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621961A9E38460055EEEE /* AdSupport.framework */; };
+		C09621991A9E3AFC0055EEEE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621981A9E3AFC0055EEEE /* AudioToolbox.framework */; };
+		C096219B1A9E3B020055EEEE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C096219A1A9E3B020055EEEE /* AVFoundation.framework */; };
+		C096219D1A9E3B080055EEEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C096219C1A9E3B080055EEEE /* CoreGraphics.framework */; };
+		C096219F1A9E3B0E0055EEEE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C096219E1A9E3B0E0055EEEE /* CoreTelephony.framework */; };
+		C09621A21A9E3B150055EEEE /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A01A9E3B150055EEEE /* EventKit.framework */; };
+		C09621A31A9E3B150055EEEE /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A11A9E3B150055EEEE /* EventKitUI.framework */; };
+		C09621A51A9E3B1D0055EEEE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A41A9E3B1D0055EEEE /* MessageUI.framework */; };
+		C09621A71A9E3B230055EEEE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A61A9E3B230055EEEE /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +111,16 @@
 		C01B93351A9BE32C00B555CE /* UbeeAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UbeeAPI.framework; path = "../../inlocomedia-ios-adapters/Vendors/InLocoMedia/UbeeAPI.framework"; sourceTree = "<group>"; };
 		C02D470C1A950BEB000A49E4 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		C02D47221A950CAC000A49E4 /* UbeeAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UbeeAPI.framework; sourceTree = "<group>"; };
+		C077C8A21A9E19BF00C1B19D /* libUbeeAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUbeeAPI.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/UbeeAPI-flmvsuvsiroaatbmqmbzxeownxgj/Build/Products/Debug-iphoneos/libUbeeAPI.a"; sourceTree = "<group>"; };
+		C09621961A9E38460055EEEE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		C09621981A9E3AFC0055EEEE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C096219A1A9E3B020055EEEE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C096219C1A9E3B080055EEEE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C096219E1A9E3B0E0055EEEE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		C09621A01A9E3B150055EEEE /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		C09621A11A9E3B150055EEEE /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		C09621A41A9E3B1D0055EEEE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C09621A61A9E3B230055EEEE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +128,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C01B93371A9BE34900B555CE /* UbeeAPI.framework in Frameworks */,
-				C01B93331A9BE26D00B555CE /* libInLocoMediaAdMobAdapters.a in Frameworks */,
-				26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */,
 				2674FDE61912FDFB0063CEEA /* SystemConfiguration.framework in Frameworks */,
+				C09621A71A9E3B230055EEEE /* StoreKit.framework in Frameworks */,
+				C09621A51A9E3B1D0055EEEE /* MessageUI.framework in Frameworks */,
+				C09621A21A9E3B150055EEEE /* EventKit.framework in Frameworks */,
+				C09621A31A9E3B150055EEEE /* EventKitUI.framework in Frameworks */,
+				C096219F1A9E3B0E0055EEEE /* CoreTelephony.framework in Frameworks */,
+				C096219D1A9E3B080055EEEE /* CoreGraphics.framework in Frameworks */,
+				C096219B1A9E3B020055EEEE /* AVFoundation.framework in Frameworks */,
+				C09621991A9E3AFC0055EEEE /* AudioToolbox.framework in Frameworks */,
+				C09621971A9E38460055EEEE /* AdSupport.framework in Frameworks */,
+				C09621951A9E37E60055EEEE /* libInLocoMediaAdMobAdapters.a in Frameworks */,
+				C077C8A41A9E1E9700C1B19D /* UbeeAPI.framework in Frameworks */,
+				26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */,
 				C02D470D1A950BEB000A49E4 /* GoogleMobileAds.framework in Frameworks */,
 				2685F0DC190013530016A650 /* Foundation.framework in Frameworks */,
 			);
@@ -172,6 +200,16 @@
 		2685F0DA190013530016A650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C09621A61A9E3B230055EEEE /* StoreKit.framework */,
+				C09621A41A9E3B1D0055EEEE /* MessageUI.framework */,
+				C09621A01A9E3B150055EEEE /* EventKit.framework */,
+				C09621A11A9E3B150055EEEE /* EventKitUI.framework */,
+				C096219E1A9E3B0E0055EEEE /* CoreTelephony.framework */,
+				C096219C1A9E3B080055EEEE /* CoreGraphics.framework */,
+				C096219A1A9E3B020055EEEE /* AVFoundation.framework */,
+				C09621981A9E3AFC0055EEEE /* AudioToolbox.framework */,
+				C09621961A9E38460055EEEE /* AdSupport.framework */,
+				C077C8A21A9E19BF00C1B19D /* libUbeeAPI.a */,
 				C01B93351A9BE32C00B555CE /* UbeeAPI.framework */,
 				C01B92371A9B936D00B555CE /* libInLocoMediaAdMobAdapters.a */,
 				26A20B221921863B00B74DA5 /* CoreLocation.framework */,
@@ -488,6 +526,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Inlocomedia-Ads-Sample/Vendors/GoogleMobileAdsSdkiOS-7.0.0",
 					"$(PROJECT_DIR)/../InLocoMediaSDK",
+					"/Users/gabriel/workspace/ios/ubee-api-ios/UbeeAPI/submodules/inlocomedia-ios-sdk/InLocoMediaSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Inlocomedia-Ads-Sample/InLocoMedia-Ads-Sample-IOS-Prefix.pch";
@@ -496,11 +535,12 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Inlocomedia-Ads-Sample/InLocoMedia-Ads-Sample-IOS.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../InLocoMediaSDK/AdNetworkSupport/AdMob",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/UbeeAPI-flmvsuvsiroaatbmqmbzxeownxgj/Build/Products/Debug-iphoneos",
+					"/Users/gabriel/workspace/ios/ubee-api-ios/UbeeAPI/submodules/inlocomedia-ios-sdk/InLocoMediaSDK/AdNetworkSupport/AdMob",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "InLocoMedia-Ads-Sample-IOS";
@@ -519,6 +559,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Inlocomedia-Ads-Sample/Vendors/GoogleMobileAdsSdkiOS-7.0.0",
 					"$(PROJECT_DIR)/../InLocoMediaSDK",
+					"/Users/gabriel/workspace/ios/ubee-api-ios/UbeeAPI/submodules/inlocomedia-ios-sdk/InLocoMediaSDK",
 				);
 				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -528,11 +569,12 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Inlocomedia-Ads-Sample/InLocoMedia-Ads-Sample-IOS.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../InLocoMediaSDK/AdNetworkSupport/AdMob",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/UbeeAPI-flmvsuvsiroaatbmqmbzxeownxgj/Build/Products/Debug-iphoneos",
+					"/Users/gabriel/workspace/ios/ubee-api-ios/UbeeAPI/submodules/inlocomedia-ios-sdk/InLocoMediaSDK/AdNetworkSupport/AdMob",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "InLocoMedia-Ads-Sample-IOS";

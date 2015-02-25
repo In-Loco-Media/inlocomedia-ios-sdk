@@ -12,6 +12,7 @@
 #import "UBEUserProfile.h"
 #import "UBEAdRequest.h"
 #import "UBEAdViewDelegate.h"
+#import "UBEPublicMacros.h"
 
 //Minimum AdView refresh interval, value = 30
 extern NSTimeInterval const kUBEAdRefreshIntervalMin;
@@ -37,10 +38,10 @@ extern NSTimeInterval const kUBEAdRequestTimeoutLong;
 @interface UBEAdView : UIView
 
 //Property to determine the adType in a NSString value for loading on the User Defined Runtime Attributes in the Interface editor.
-@property (nonatomic, strong) IBInspectable NSString *adTypeKey;
+@property (nonatomic, strong) UBEInspectable NSString *adTypeKey;
 
 //If YES, the loadAd method will be called on the - (void)awakeFromNib method
-@property (nonatomic, assign) IBInspectable BOOL loadOnAwake;
+@property (nonatomic, assign) UBEInspectable BOOL loadOnAwake;
 
 //AdView manager
 @property (nonatomic, strong) id viewManager;

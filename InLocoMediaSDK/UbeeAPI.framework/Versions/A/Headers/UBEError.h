@@ -48,7 +48,9 @@ enum {
     UBEInvalidAdType = 5000,
     UBEMissingAdType = 5001,
     UBEInterstitialAdAlreadyLoaded = 5002,
-    UBEInvalidAdRequest = 5003
+    UBEInvalidAdRequest = 5003,
+    UBEAdRequestNoFill = 5004
+    
 
 };
 

@@ -9,7 +9,7 @@
 #define MEDIATION_BANNER_AD_UNIT @"ca-app-pub-9313505358879389/7273743353" //Put your mediation id here to test
 
 #import "UBEMediationViewController.h"
-@import GoogleMobileAds;
+#import <GoogleMobileAds/GoogleMobileAds.h>
 
 @interface UBEMediationViewController () <GADBannerViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *desc;
