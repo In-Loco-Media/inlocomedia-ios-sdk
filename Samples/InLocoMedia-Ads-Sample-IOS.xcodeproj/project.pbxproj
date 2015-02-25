@@ -330,9 +330,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2685F0D7190013530016A650 /* InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename */ = {
+		2685F0D7190013530016A650 /* InLocoMedia-Ads-Sample-IOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2685F10D190013540016A650 /* Build configuration list for PBXNativeTarget "InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename" */;
+			buildConfigurationList = 2685F10D190013540016A650 /* Build configuration list for PBXNativeTarget "InLocoMedia-Ads-Sample-IOS" */;
 			buildPhases = (
 				2685F0D4190013530016A650 /* Sources */,
 				2685F0D5190013530016A650 /* Frameworks */,
@@ -342,7 +342,7 @@
 			);
 			dependencies = (
 			);
-			name = "InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename";
+			name = "InLocoMedia-Ads-Sample-IOS";
 			productName = "Ubee Ads Example IOS";
 			productReference = 2685F0D8190013530016A650 /* InLocoMedia-Ads-Sample-IOS.app */;
 			productType = "com.apple.product-type.application";
@@ -379,7 +379,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2685F0D7190013530016A650 /* InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename */,
+				2685F0D7190013530016A650 /* InLocoMedia-Ads-Sample-IOS */,
 			);
 		};
 /* End PBXProject section */
@@ -595,7 +595,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2685F10D190013540016A650 /* Build configuration list for PBXNativeTarget "InLocoMedia-Ads-Sample-IOS.temp_caseinsensitive_rename" */ = {
+		2685F10D190013540016A650 /* Build configuration list for PBXNativeTarget "InLocoMedia-Ads-Sample-IOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2685F10E190013540016A650 /* Debug */,
