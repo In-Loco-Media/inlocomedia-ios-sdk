@@ -72,8 +72,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSArray *listData = [_tableContents objectForKey:[_groups objectAtIndex:[indexPath section]]];
-    UBEListElement *element = [listData objectAtIndex:indexPath.row];
+    UBEListElement *element = [self listElementAtIndexPath:indexPath];
 
     UITableViewCell *cell;
 
@@ -92,11 +91,17 @@
 {
     if ([[segue identifier] isEqualToString:@"OpenAdViewController"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSArray *listData = [_tableContents objectForKey:[_groups objectAtIndex:[indexPath section]]];
-        UBEListElement *element = [listData objectAtIndex:indexPath.row];
+        UBEListElement *element = [self listElementAtIndexPath:indexPath];
         UBEAdvertisementViewController *adViewController = [segue destinationViewController];
         [adViewController setElement:element];
     }
+}
+
+- (UBEListElement *)listElementAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *group = _groups[indexPath.section];
+    NSArray *listData = _tableContents[group];
+    return listData[indexPath.row];
 }
 
 @end

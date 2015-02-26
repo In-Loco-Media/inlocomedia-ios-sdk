@@ -12,7 +12,7 @@
 @interface UBENativeAdOnTableViewController ()
 
 @property (nonatomic, strong) UBEAdsTableViewManager *manager;
-@property(nonatomic) NSArray *tableContent;
+@property (nonatomic) NSArray *tableContent;
 
 @end
 
@@ -21,7 +21,7 @@
 - (void)viewDidLoad
 {
     _tableContent = [NSMutableArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Advertisement", @"Creme Brelee", @"White Chocolate Donut", @"Coffee", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Advertisement", @"Angry Cake", @"Ham and Cheese Panini", nil];
-    
+
     [self reloadInputViews];
 }
 
@@ -39,25 +39,24 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
     static NSString *AdCellIdentifier = @"NativeAdCell";
     static NSString *CellIdentifier = @"Cell";
-    
+
     UITableViewCell *cell;
-    
+
     id content = [_tableContent objectAtIndex:indexPath.row];
-    
+
     if ([content isEqualToString:@"Advertisement"]) {
         cell = [tableView dequeueReusableCellWithIdentifier:AdCellIdentifier forIndexPath:indexPath];
     } else {
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-        cell.textLabel.text =[_tableContent objectAtIndex:indexPath.row];
+        cell.textLabel.text = [_tableContent objectAtIndex:indexPath.row];
     }
-    
+
     return cell;
 }
 
-- (void)tableView: (UITableView *)tableView didSelectRowAtIndexPath: (NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }

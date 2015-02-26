@@ -13,7 +13,6 @@
 @property (weak, nonatomic) IBOutlet UBENativeAdView *adView;
 @property (weak, nonatomic) IBOutlet UILabel *descLabel;
 
-
 @end
 
 @implementation UBEAdViewFromStoryboard
