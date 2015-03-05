@@ -10,7 +10,7 @@
 #import <UbeeAPI/Ubee.h>
 
 @interface UBEAdViewFromStoryboard () <UBEAdViewDelegate>
-@property (weak, nonatomic) IBOutlet UBENativeAdView *adView;
+@property (weak, nonatomic) IBOutlet UBEAdView *adView;
 @property (weak, nonatomic) IBOutlet UILabel *descLabel;
 
 @end
@@ -26,7 +26,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    
 }
 
 - (void)ubeAdViewDidReceiveAd:(UBEAdView *)adView
