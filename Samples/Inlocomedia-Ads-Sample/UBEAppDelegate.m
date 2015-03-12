@@ -16,7 +16,7 @@
     UBEOptions *options = [[UBEOptions alloc] init];
     
     [options setLogEnabled:YES]; // YES by default
-    [options setDevelopmentEnvironment:NO];
+    [options setDevelopmentEnvironment:YES];
     [options setAdsKey:@"cc0272758493bdf5173ef419c77668de8c730a53a5ea4d7cfaa2c9bcd36f77db"
              andSecret:@"391ec1721b87dc865e015b4e62dd6512e6d6906388485a2f283cd22f2610c261"];
     
