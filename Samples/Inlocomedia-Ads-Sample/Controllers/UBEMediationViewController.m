@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Ubee. All rights reserved.
 //
 
-#define MEDIATION_BANNER_AD_UNIT @"_____________________" //Put your mediation id here to test
+#define MEDIATION_BANNER_AD_UNIT @"_________________________" //Put your mediation id here to test
 
 #import "UBEMediationViewController.h"
 #import <GoogleMobileAds/GoogleMobileAds.h>
@@ -36,6 +36,7 @@
     [dateFormatter setDateFormat:@"dd/MM/yyyy"];
     NSDate *date = [dateFormatter dateFromString:@"27/05/1991"];
     [request setBirthday:date];
+    [request setGender:kGADGenderFemale];
     
     [request setKeywords:@[@"Comida", @"Gastronomia"]];
 
