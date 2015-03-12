@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Ubee. All rights reserved.
 //
 
-#define MEDIATION_INTERSTITIAL_AD_UNIT @"_____________________" //Put your mediation id here to test
+#define MEDIATION_INTERSTITIAL_AD_UNIT @"_________________________" //Put your mediation id here to test
 
 #import "UBEMediationInterstitialViewController.h"
 #import <GoogleMobileAds/GoogleMobileAds.h>
@@ -28,6 +28,15 @@
     self.interstitial.adUnitID = MEDIATION_INTERSTITIAL_AD_UNIT;
     
     GADRequest *request = [GADRequest request];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"dd/MM/yyyy"];
+    NSDate *date = [dateFormatter dateFromString:@"27/05/1991"];
+    [request setBirthday:date];
+    [request setGender:kGADGenderFemale];
+    
+    [request setKeywords:@[@"Comida", @"Gastronomia"]];
+    
     [self.interstitial loadRequest:request];
     [self.interstitial setDelegate:self];
 }
