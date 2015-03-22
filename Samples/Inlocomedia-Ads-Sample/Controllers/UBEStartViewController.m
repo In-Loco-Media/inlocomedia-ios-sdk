@@ -30,21 +30,22 @@
                              [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdFullBannerIAB andValue:@"Full Banner IAB"],
                              [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdSmartBannerPortrait andValue:@"Smartbanner Portrait"],
                              [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdSmartBannerLandscape andValue:@"Smartbanner Landscape"] ];
-
+    
     NSArray *nativeAds = @[ [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdSmall value:@"Native Small" nibName:@"NativeSmall" andCellIdentifier:nil],
                             [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"Native Large" nibName:@"NativeLarge" andCellIdentifier:nil],
                             [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdCoupon value:@"Native Coupon" nibName:@"NativeCoupon" andCellIdentifier:nil] ];
-
+    
     NSArray *interstitialAds = @[ [[UBEListElement alloc] initAdType:0 value:@"Interstitial" andCellIdentifier:@"InterstitialAdCell"] ];
-
+    
     NSArray *customStyles = @[ [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"Native on List" andCellIdentifier:@"NativeAdOnListCell"],
                                [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"Native From Storyboard" andCellIdentifier:@"NativeAdFromStoryboardCell"],
                                [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"Ads Feed" andCellIdentifier:@"AdsFeedCell"],
                                [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"AdMob Mediation" andCellIdentifier:@"MediationCell"],
-                               [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"AdMob Interstitial Mediation" andCellIdentifier:@"MediationInterstitialCell"]];
-
+                               [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"AdMob Interstitial Mediation" andCellIdentifier:@"MediationInterstitialCell"],
+                               [[UBEListElement alloc] initAdType:0 value:@"Notification" andCellIdentifier:@"NotificationCell"]];
+    
     _groups = @[ @"Display Ads", @"Interstitial", @"Native Ads", @"Custom Usages" ];
-
+    
     _tableContents = @{[_groups objectAtIndex:0] : displayAds,
                        [_groups objectAtIndex:1] : interstitialAds,
                        [_groups objectAtIndex:2] : nativeAds,
@@ -74,17 +75,17 @@
 {
     NSArray *listData = [_tableContents objectForKey:[_groups objectAtIndex:[indexPath section]]];
     UBEListElement *element = [listData objectAtIndex:indexPath.row];
-
+    
     UITableViewCell *cell;
-
+    
     if (element.cellIdentifier) {
         cell = [tableView dequeueReusableCellWithIdentifier:element.cellIdentifier forIndexPath:indexPath];
     } else {
         cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     }
-
+    
     cell.textLabel.text = element.adTypeValue;
-
+    
     return cell;
 }
 

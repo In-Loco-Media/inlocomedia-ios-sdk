@@ -42,7 +42,6 @@
 		C01B93341A9BE26E00B555CE /* libInLocoMediaAdMobAdapters.a.zip in Resources */ = {isa = PBXBuildFile; fileRef = C01B93301A9BE26D00B555CE /* libInLocoMediaAdMobAdapters.a.zip */; };
 		C01BE26E1AB122340042482F /* libInLocoMediaAdMobAdapters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C01B932F1A9BE26D00B555CE /* libInLocoMediaAdMobAdapters.a */; };
 		C02D470D1A950BEB000A49E4 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02D470C1A950BEB000A49E4 /* GoogleMobileAds.framework */; };
-		C077C8A41A9E1E9700C1B19D /* UbeeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02D47221A950CAC000A49E4 /* UbeeAPI.framework */; };
 		C09621971A9E38460055EEEE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621961A9E38460055EEEE /* AdSupport.framework */; };
 		C09621991A9E3AFC0055EEEE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621981A9E3AFC0055EEEE /* AudioToolbox.framework */; };
 		C096219B1A9E3B020055EEEE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C096219A1A9E3B020055EEEE /* AVFoundation.framework */; };
@@ -51,7 +50,8 @@
 		C09621A21A9E3B150055EEEE /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A01A9E3B150055EEEE /* EventKit.framework */; };
 		C09621A31A9E3B150055EEEE /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A11A9E3B150055EEEE /* EventKitUI.framework */; };
 		C09621A51A9E3B1D0055EEEE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A41A9E3B1D0055EEEE /* MessageUI.framework */; };
-		C09621A71A9E3B230055EEEE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A61A9E3B230055EEEE /* StoreKit.framework */; };
+		C0B5ACDC1ABF37460060A90C /* libUbeeAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B5ACDB1ABF37460060A90C /* libUbeeAPI.a */; };
+		C0B5ACDF1ABF40F50060A90C /* UBENotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B5ACDE1ABF40F50060A90C /* UBENotificationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,7 +121,9 @@
 		C09621A01A9E3B150055EEEE /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		C09621A11A9E3B150055EEEE /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		C09621A41A9E3B1D0055EEEE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		C09621A61A9E3B230055EEEE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C0B5ACDB1ABF37460060A90C /* libUbeeAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUbeeAPI.a; path = "../../../build/Debug-iphoneos/libUbeeAPI.a"; sourceTree = "<group>"; };
+		C0B5ACDD1ABF40F50060A90C /* UBENotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBENotificationViewController.h; sourceTree = "<group>"; };
+		C0B5ACDE1ABF40F50060A90C /* UBENotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBENotificationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,9 +131,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B5ACDC1ABF37460060A90C /* libUbeeAPI.a in Frameworks */,
 				C01BE26E1AB122340042482F /* libInLocoMediaAdMobAdapters.a in Frameworks */,
 				2674FDE61912FDFB0063CEEA /* SystemConfiguration.framework in Frameworks */,
-				C09621A71A9E3B230055EEEE /* StoreKit.framework in Frameworks */,
 				C09621A51A9E3B1D0055EEEE /* MessageUI.framework in Frameworks */,
 				C09621A21A9E3B150055EEEE /* EventKit.framework in Frameworks */,
 				C09621A31A9E3B150055EEEE /* EventKitUI.framework in Frameworks */,
@@ -140,7 +142,6 @@
 				C096219B1A9E3B020055EEEE /* AVFoundation.framework in Frameworks */,
 				C09621991A9E3AFC0055EEEE /* AudioToolbox.framework in Frameworks */,
 				C09621971A9E38460055EEEE /* AdSupport.framework in Frameworks */,
-				C077C8A41A9E1E9700C1B19D /* UbeeAPI.framework in Frameworks */,
 				26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */,
 				C02D470D1A950BEB000A49E4 /* GoogleMobileAds.framework in Frameworks */,
 				2685F0DC190013530016A650 /* Foundation.framework in Frameworks */,
@@ -201,8 +202,8 @@
 		2685F0DA190013530016A650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0B5ACDB1ABF37460060A90C /* libUbeeAPI.a */,
 				C01BE26B1AB11FA90042482F /* libInLocoMedia IOS Adapters.a */,
-				C09621A61A9E3B230055EEEE /* StoreKit.framework */,
 				C09621A41A9E3B1D0055EEEE /* MessageUI.framework */,
 				C09621A01A9E3B150055EEEE /* EventKit.framework */,
 				C09621A11A9E3B150055EEEE /* EventKitUI.framework */,
@@ -273,6 +274,8 @@
 				264C05EC19F830D300C26C95 /* UBEMediationViewController.m */,
 				C01B92391A9B9B6700B555CE /* UBEMediationInterstitialViewController.h */,
 				C01B923A1A9B9B6700B555CE /* UBEMediationInterstitialViewController.m */,
+				C0B5ACDD1ABF40F50060A90C /* UBENotificationViewController.h */,
+				C0B5ACDE1ABF40F50060A90C /* UBENotificationViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -360,9 +363,13 @@
 				ORGANIZATIONNAME = Ubee;
 				TargetAttributes = {
 					2685F0D7190013530016A650 = {
+						DevelopmentTeam = 23VP4TP4D7;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
 							};
 						};
 					};
@@ -423,6 +430,7 @@
 				26545DCA1901ACA20067A426 /* UBENativeAdOnTableViewController.m in Sources */,
 				26545DC71901AC670067A426 /* UBEStartViewController.m in Sources */,
 				26F275F5195209A800A88ACF /* UBEInterstitialAdvertisementViewController.m in Sources */,
+				C0B5ACDF1ABF40F50060A90C /* UBENotificationViewController.m in Sources */,
 				C01B923B1A9B9B6700B555CE /* UBEMediationInterstitialViewController.m in Sources */,
 				264D5320196F54D50079B106 /* UBECategoriesTableViewController.m in Sources */,
 				26545DC61901AC670067A426 /* UBEAdvertisementViewController.m in Sources */,
