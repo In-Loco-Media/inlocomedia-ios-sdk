@@ -24,6 +24,8 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>The app will need location to improve the content</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The app will need location to improve the content</string>
 	<key>NSMainNibFile~ipad</key>
