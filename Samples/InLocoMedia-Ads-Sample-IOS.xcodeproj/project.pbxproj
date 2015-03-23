@@ -51,7 +51,6 @@
 		C09621A31A9E3B150055EEEE /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A11A9E3B150055EEEE /* EventKitUI.framework */; };
 		C09621A51A9E3B1D0055EEEE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A41A9E3B1D0055EEEE /* MessageUI.framework */; };
 		C0B5ACDC1ABF37460060A90C /* libUbeeAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B5ACDB1ABF37460060A90C /* libUbeeAPI.a */; };
-		C0B5ACDF1ABF40F50060A90C /* UBENotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B5ACDE1ABF40F50060A90C /* UBENotificationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,8 +121,6 @@
 		C09621A11A9E3B150055EEEE /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		C09621A41A9E3B1D0055EEEE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		C0B5ACDB1ABF37460060A90C /* libUbeeAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUbeeAPI.a; path = "../../../build/Debug-iphoneos/libUbeeAPI.a"; sourceTree = "<group>"; };
-		C0B5ACDD1ABF40F50060A90C /* UBENotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBENotificationViewController.h; sourceTree = "<group>"; };
-		C0B5ACDE1ABF40F50060A90C /* UBENotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBENotificationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,8 +271,6 @@
 				264C05EC19F830D300C26C95 /* UBEMediationViewController.m */,
 				C01B92391A9B9B6700B555CE /* UBEMediationInterstitialViewController.h */,
 				C01B923A1A9B9B6700B555CE /* UBEMediationInterstitialViewController.m */,
-				C0B5ACDD1ABF40F50060A90C /* UBENotificationViewController.h */,
-				C0B5ACDE1ABF40F50060A90C /* UBENotificationViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -430,7 +425,6 @@
 				26545DCA1901ACA20067A426 /* UBENativeAdOnTableViewController.m in Sources */,
 				26545DC71901AC670067A426 /* UBEStartViewController.m in Sources */,
 				26F275F5195209A800A88ACF /* UBEInterstitialAdvertisementViewController.m in Sources */,
-				C0B5ACDF1ABF40F50060A90C /* UBENotificationViewController.m in Sources */,
 				C01B923B1A9B9B6700B555CE /* UBEMediationInterstitialViewController.m in Sources */,
 				264D5320196F54D50079B106 /* UBECategoriesTableViewController.m in Sources */,
 				26545DC61901AC670067A426 /* UBEAdvertisementViewController.m in Sources */,
