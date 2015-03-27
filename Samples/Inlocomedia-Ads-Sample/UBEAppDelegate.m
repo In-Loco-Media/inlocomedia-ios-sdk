@@ -30,8 +30,31 @@
     [adRequest setUserProfile:userProfile];
     [adRequest saveAsDefaultAdRequest];
 
+    UILocalNotification *notification = launchOptions[UIApplicationLaunchOptionsLocalNotificationKey];
+    if (notification) {
+        UBEAdvertisement *advertisement = [Ubee didReceivedNotification:notification];
+        if (advertisement) {
+            NSLog(@"Ads Sample: App launched with the notification");
+        }
+    }
+
     
     return YES;
+}
+
+- (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    [Ubee applicationPerformFetchWithResult:^(UIBackgroundFetchResult fetchResult) {
+        completionHandler(fetchResult);
+    }];
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    UBEAdvertisement *advertisement = [Ubee didReceivedNotification:notification];
+    if (advertisement) {
+        NSLog(@"Ads Sample: Notification received as local notification");
+    }
 }
 
 @end

@@ -50,13 +50,14 @@ enum {
     UBEInterstitialAdAlreadyLoaded = 5002,
     UBEInvalidAdRequest = 5003,
     UBEAdRequestNoFill = 5004
-    
 
 };
 
 @interface UBEError : NSError
 
 // FIXME: remove the properties below and use the NSError's userInfo Dictionary to store the data. (https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSError_Class/Reference/Reference.html)
+
+@property (nonatomic, strong) NSDictionary *extraInfo;
 
 - (id)initWithDomain:(NSString *)domain code:(NSInteger)code description:(NSString *)description;
 
