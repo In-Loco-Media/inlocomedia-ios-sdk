@@ -16,7 +16,7 @@
     UBEOptions *options = [[UBEOptions alloc] init];
     
     [options setLogEnabled:YES]; // YES by default
-    [options setDevelopmentEnvironment:NO];
+    [options setDevelopmentEnvironment:YES];
     [options setAdsKey:@"cc0272758493bdf5173ef419c77668de8c730a53a5ea4d7cfaa2c9bcd36f77db"
              andSecret:@"391ec1721b87dc865e015b4e62dd6512e6d6906388485a2f283cd22f2610c261"];
     
@@ -30,8 +30,31 @@
     [adRequest setUserProfile:userProfile];
     [adRequest saveAsDefaultAdRequest];
 
+    UILocalNotification *notification = launchOptions[UIApplicationLaunchOptionsLocalNotificationKey];
+    if (notification) {
+        UBEAdvertisement *advertisement = [Ubee didReceivedNotification:notification];
+        if (advertisement) {
+            NSLog(@"Ads Sample: App launched with the notification");
+        }
+    }
+
     
     return YES;
+}
+
+- (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    [Ubee applicationPerformFetchWithResult:^(UIBackgroundFetchResult fetchResult) {
+        completionHandler(fetchResult);
+    }];
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    UBEAdvertisement *advertisement = [Ubee didReceivedNotification:notification];
+    if (advertisement) {
+        NSLog(@"Ads Sample: Notification received as local notification");
+    }
 }
 
 @end
