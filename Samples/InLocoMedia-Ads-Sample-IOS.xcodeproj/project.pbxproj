@@ -40,8 +40,9 @@
 		C01B923B1A9B9B6700B555CE /* UBEMediationInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C01B923A1A9B9B6700B555CE /* UBEMediationInterstitialViewController.m */; };
 		C01B932B1A9BDD9300B555CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C01B932A1A9BDD9300B555CE /* LaunchScreen.xib */; };
 		C01B93341A9BE26E00B555CE /* libInLocoMediaAdMobAdapters.a.zip in Resources */ = {isa = PBXBuildFile; fileRef = C01B93301A9BE26D00B555CE /* libInLocoMediaAdMobAdapters.a.zip */; };
-		C01BE26E1AB122340042482F /* libInLocoMediaAdMobAdapters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C01B932F1A9BE26D00B555CE /* libInLocoMediaAdMobAdapters.a */; };
 		C02D470D1A950BEB000A49E4 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02D470C1A950BEB000A49E4 /* GoogleMobileAds.framework */; };
+		C02FC0AB1AC5D7DC00BA60A9 /* UbeeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02FC0A21AC5CC8A00BA60A9 /* UbeeAPI.framework */; };
+		C02FC0AC1AC5D8A200BA60A9 /* libInLocoMediaAdMobAdapters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C01B932F1A9BE26D00B555CE /* libInLocoMediaAdMobAdapters.a */; };
 		C09621971A9E38460055EEEE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621961A9E38460055EEEE /* AdSupport.framework */; };
 		C09621991A9E3AFC0055EEEE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621981A9E3AFC0055EEEE /* AudioToolbox.framework */; };
 		C096219B1A9E3B020055EEEE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C096219A1A9E3B020055EEEE /* AVFoundation.framework */; };
@@ -50,7 +51,6 @@
 		C09621A21A9E3B150055EEEE /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A01A9E3B150055EEEE /* EventKit.framework */; };
 		C09621A31A9E3B150055EEEE /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A11A9E3B150055EEEE /* EventKitUI.framework */; };
 		C09621A51A9E3B1D0055EEEE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A41A9E3B1D0055EEEE /* MessageUI.framework */; };
-		C0B5ACDC1ABF37460060A90C /* libUbeeAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B5ACDB1ABF37460060A90C /* libUbeeAPI.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,7 +110,8 @@
 		C01B93351A9BE32C00B555CE /* UbeeAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UbeeAPI.framework; path = "../../inlocomedia-ios-adapters/Vendors/InLocoMedia/UbeeAPI.framework"; sourceTree = "<group>"; };
 		C01BE26B1AB11FA90042482F /* libInLocoMedia IOS Adapters.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libInLocoMedia IOS Adapters.a"; path = "../../inlocomedia-ios-adapters/build/Debug-iphoneos/libInLocoMedia IOS Adapters.a"; sourceTree = "<group>"; };
 		C02D470C1A950BEB000A49E4 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		C02D47221A950CAC000A49E4 /* UbeeAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UbeeAPI.framework; sourceTree = "<group>"; };
+		C02FC0A21AC5CC8A00BA60A9 /* UbeeAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UbeeAPI.framework; sourceTree = "<group>"; };
+		C02FC0A41AC5D0CA00BA60A9 /* libUbeeAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUbeeAPI.a; path = "../../../build/Debug-iphoneos/libUbeeAPI.a"; sourceTree = "<group>"; };
 		C077C8A21A9E19BF00C1B19D /* libUbeeAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUbeeAPI.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/UbeeAPI-flmvsuvsiroaatbmqmbzxeownxgj/Build/Products/Debug-iphoneos/libUbeeAPI.a"; sourceTree = "<group>"; };
 		C09621961A9E38460055EEEE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		C09621981A9E3AFC0055EEEE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -128,8 +129,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0B5ACDC1ABF37460060A90C /* libUbeeAPI.a in Frameworks */,
-				C01BE26E1AB122340042482F /* libInLocoMediaAdMobAdapters.a in Frameworks */,
+				C02FC0AC1AC5D8A200BA60A9 /* libInLocoMediaAdMobAdapters.a in Frameworks */,
+				C02FC0AB1AC5D7DC00BA60A9 /* UbeeAPI.framework in Frameworks */,
 				2674FDE61912FDFB0063CEEA /* SystemConfiguration.framework in Frameworks */,
 				C09621A51A9E3B1D0055EEEE /* MessageUI.framework in Frameworks */,
 				C09621A21A9E3B150055EEEE /* EventKit.framework in Frameworks */,
@@ -199,6 +200,7 @@
 		2685F0DA190013530016A650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C02FC0A41AC5D0CA00BA60A9 /* libUbeeAPI.a */,
 				C0B5ACDB1ABF37460060A90C /* libUbeeAPI.a */,
 				C01BE26B1AB11FA90042482F /* libInLocoMedia IOS Adapters.a */,
 				C09621A41A9E3B1D0055EEEE /* MessageUI.framework */,
@@ -301,8 +303,8 @@
 		C02D471B1A950CAC000A49E4 /* InLocoMediaSDK */ = {
 			isa = PBXGroup;
 			children = (
+				C02FC0A21AC5CC8A00BA60A9 /* UbeeAPI.framework */,
 				C02D471C1A950CAC000A49E4 /* AdNetworkSupport */,
-				C02D47221A950CAC000A49E4 /* UbeeAPI.framework */,
 			);
 			name = InLocoMediaSDK;
 			path = ../../InLocoMediaSDK;

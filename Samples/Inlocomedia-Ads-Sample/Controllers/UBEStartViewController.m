@@ -45,7 +45,7 @@
                                [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"AdMob Interstitial Mediation" andCellIdentifier:@"MediationInterstitialCell"],
                                [[UBEListElement alloc] initAdType:0 value:@"Notification" andCellIdentifier:@"NotificationCell"] ];
 
-    _groups = @[ @"Display Ads", @"Interstitial", @"Native Ads", @"Custom Usages" ];
+    _groups = @[ @"Display Ads", @"InterUbeeAPI.frameworkstitial", @"Native Ads", @"Custom Usages" ];
 
     _tableContents = @{[_groups objectAtIndex:0] : displayAds,
                        [_groups objectAtIndex:1] : interstitialAds,
