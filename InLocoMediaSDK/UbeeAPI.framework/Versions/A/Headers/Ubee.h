@@ -32,12 +32,27 @@
 /**
  Request single location for the user current position
 **/
-+ (void)requestLocationAtBlock:(void (^) (UBELocation *location))success failure:(void (^) (UBEError *error))failure;
++ (void)requestLocationAtBlock:(void (^)(UBELocation *location))success failure:(void (^)(UBEError *error))failure;
 
 /**
- Method to enable notification ads
- **/
-+ (void)enableNotificationAds:(BOOL)enabled withFrequency:(NSTimeInterval)frequency andIntervalAfterNotification:(NSTimeInterval)interval;
+ Method to enable Notification Ads with location tracking. Notification can be created both when the app is running in background and when is in foreground.
+ */
++ (void)enableNotificationAds;
+
+/**
+ Method to enable Notification Ads with location tracking. Notification can be created only whe app is in background.
+ */
++ (void)enableNotificationAdsOnlyInBackground;
+
+/**
+ Method to disable Notification Ads.
+ */
++ (void)disableNotificationAds;
+
+/**
+ Method to verify if NotificationAds is enabled
+ */
++ (BOOL)isNotificationAdsEnabled;
 
 /**
  Method to be called when you receive a local notification after enabling notification ads
@@ -47,18 +62,19 @@
 /**
  Method to request a list of the retails registered to your application
  **/
-+ (void)requestRetails:(id <UBERetailsDelegate>)delegate;
++ (void)requestRetails:(id<UBERetailsDelegate>)delegate;
 
 /**
  Method to request a list of the categories available for this application
  **/
-+ (void)requestAdCategoriesWithLocale:(NSString *)locale withDelegate:(id <UBECategoriesDelegate>)delegate;
++ (void)requestAdCategoriesWithLocale:(NSString *)locale withDelegate:(id<UBECategoriesDelegate>)delegate;
 
 /**
  Call it in your:
-    - (void)applicationDidEnterBackground:(UIApplication *)application method.
- It will start monitoring location significant changes if notification is available.
- **/
-+ (void)applicationDidEnterBackground;
+    - (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+ 
+ In its execution, it will verify if the application should monitor location changes for notification ads.
+ */
++ (void)applicationPerformFetchWithResult:(void (^)(UIBackgroundFetchResult))fetchResultBlock;
 
 @end

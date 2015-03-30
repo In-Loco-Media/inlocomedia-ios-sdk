@@ -24,12 +24,17 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>The app will need location to improve the content</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The app will need location to improve the content</string>
 	<key>NSMainNibFile~ipad</key>
 	<string>Main-iPad</string>
 	<key>UIBackgroundModes</key>
-	<array/>
+	<array>
+		<string>fetch</string>
+		<string>location</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
