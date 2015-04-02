@@ -11,15 +11,15 @@
 
 @interface UBEListElement : NSObject
 
-@property (nonatomic, assign) UBEAdType adType;
+@property (nonatomic, strong) UBEAdType *adType;
 @property (nonatomic, strong) NSString *adTypeValue;
 
 @property (nonatomic, strong) NSString *nibName;
 
 @property (nonatomic, strong) NSString *cellIdentifier;
 
-- (id)initAdType:(UBEAdType)adType andValue:(NSString *)value;
-- (id)initAdType:(UBEAdType)adType value:(NSString *)value andCellIdentifier:(NSString *)cellIdentifier;
-- (id)initAdType:(UBEAdType)adType value:(NSString *)value nibName:(NSString *)nibName andCellIdentifier:(NSString *)cellIdentifier;
+- (id)initAdType:(UBEAdType *)adType andValue:(NSString *)value;
+- (id)initAdType:(UBEAdType *)adType value:(NSString *)value andCellIdentifier:(NSString *)cellIdentifier;
+- (id)initAdType:(UBEAdType *)adType value:(NSString *)value nibName:(NSString *)nibName andCellIdentifier:(NSString *)cellIdentifier;
 
 @end
