@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
     NSArray *displayAds = @[ [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdBannerSmall andValue:@"Banner Small"],
                              [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdBannerSmallLandscape andValue:@"Banner Small Landscape"],
                              [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdBannerTablet andValue:@"Banner Small Tablet"],

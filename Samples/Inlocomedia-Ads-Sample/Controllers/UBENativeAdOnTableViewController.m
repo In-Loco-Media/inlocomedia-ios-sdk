@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
     _tableContent = [NSMutableArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Advertisement", @"Creme Brelee", @"White Chocolate Donut", @"Coffee", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Advertisement", @"Angry Cake", @"Ham and Cheese Panini", nil];
 
     [self reloadInputViews];

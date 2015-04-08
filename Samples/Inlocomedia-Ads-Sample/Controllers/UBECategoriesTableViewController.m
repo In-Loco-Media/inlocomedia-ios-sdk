@@ -39,6 +39,7 @@
         [adRequest setCategories:self.selectedCategories];
         [adRequest saveAsDefaultAdRequest];
     }
+    [super viewWillDisappear:animated];
 }
 
 - (void)refresh

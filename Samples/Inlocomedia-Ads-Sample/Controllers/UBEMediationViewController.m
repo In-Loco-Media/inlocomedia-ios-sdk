@@ -21,6 +21,7 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
     _bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
 
     // Especificar o ID do bloco de anúncios.
