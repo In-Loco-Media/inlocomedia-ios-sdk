@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 
 //Keys for each advertisement type that may be used for the view runtime attributes on the Interface Builder
+#define UBE_ADTYPE_KEY_NOTIFICATION @"notification"
+
 #define UBE_ADTYPE_KEY_NATIVE_SMALL @"native_small"
 #define UBE_ADTYPE_KEY_NATIVE_LARGE @"native_large"
 #define UBE_ADTYPE_KEY_NATIVE_COUPON @"native_coupon"
@@ -32,71 +34,100 @@
 #define UBE_ADTYPE_KEY_DISPLAY_FULLSCREEN_TABLET @"display_full_screen_tablet"
 #define UBE_ADTYPE_KEY_DISPLAY_FULLSCREEN_TABLET_LANDSCAPE @"display_full_screen_tablet_landscape"
 
-//Advertisements Types
-typedef NS_ENUM(NSUInteger, UBEAdType) {
+#define UBE_ADTYPE_KEY_DISPLAY_TILE @"display_tile"
 
-    UBEAdTypeNotification = 1,
+#define UBEAdTypeNotification UBEAdType.notification
+#define UBEAdTypeNativeAdSmall UBEAdType.nativeSmall
+#define UBEAdTypeNativeAdLarge UBEAdType.nativeLarge
+#define UBEAdTypeNativeAdCoupon UBEAdType.nativeCoupon
+#define UBEAdTypeDisplayAdBannerSmall UBEAdType.displaySmall
+#define UBEAdTypeDisplayAdBannerSmallLandscape UBEAdType.displaySmallLandscape
+#define UBEAdTypeDisplayAdBannerTablet UBEAdType.displayTablet
+#define UBEAdTypeDisplayAdSmartBannerPortrait UBEAdType.displaySmartPortrait
+#define UBEAdTypeDisplayAdSmartBannerLandscape UBEAdType.displaySmartLandscape
+#define UBEAdTypeDisplayAdMediumRectangleIAB UBEAdType.displayMediumRectangleIAB
+#define UBEAdTypeDisplayAdFullBannerIAB UBEAdType.displayFullIAB
+#define UBEAdTypeDisplayAdBannerLarge UBEAdType.displayLarge
+#define UBEAdTypeDisplayAdFullScreen UBEAdType.displayFullScreen
+#define UBEAdTypeDisplayAdFullScreenLandscape UBEAdType.displayFullScreenLandscape
+#define UBEAdTypeDisplayAdFullScreenTablet UBEAdType.displayFullScreenTablet
+#define UBEAdTypeDisplayAdFullScreenTabletLandscape UBEAdType.displayFullScreenTabletLandscape
+#define UBEAdTypeDisplayAdTile UBEAdType.displayTile
 
-    //An ad that will be filled accordingly with the nib file that was used to inflate it.
-    UBEAdTypeNativeAdSmall,
+@interface UBEAdType : NSObject
 
-    //An ad that will be filled accordingly with the nib file that was used to inflate it.
-    UBEAdTypeNativeAdLarge,
+@property (nonatomic, assign, readonly) CGSize size;
+@property (nonatomic, strong, readonly) NSString *key;
 
-    //An ad that will be filled accordingly with the nib file that was used to inflate it.
-    UBEAdTypeNativeAdCoupon,
+@property (nonatomic, assign, readonly) BOOL isFullscreen;
+@property (nonatomic, assign, readonly) BOOL isNative;
+@property (nonatomic, assign, readonly) BOOL isDisplay;
+@property (nonatomic, assign, readonly) BOOL isSmart;
 
-    //CGSize(320,50)
-    UBEAdTypeDisplayAdBannerSmall, //320x50
+- (instancetype)init NS_UNAVAILABLE;
 
-    //CGSize(480,32)
-    UBEAdTypeDisplayAdBannerSmallLandscape, //480x32
+- (BOOL)isKeyEqual:(NSString *)key;
 
-    //CGSize(728,90)
-    UBEAdTypeDisplayAdBannerTablet, //728x90
+- (UBEAdType *)smartAdType;
 
-    // An ad that will fill the width of the screen.
-    // The size will be either 50px for iphone/ipod, or 90px for ipad.
-    UBEAdTypeDisplayAdSmartBannerPortrait,
++ (UBEAdType *)adTypeFromKey:(NSString *)key;
 
-    // An ad that will fill the width of the screen.
-    // The size will be either 32px for iphone/ipod, or 90px for ipad.
-    UBEAdTypeDisplayAdSmartBannerLandscape,
++ (UBEAdType *)adTypeFromSize:(CGSize)size;
 
-    //CGSize(300,250)
-    UBEAdTypeDisplayAdMediumRectangleIAB,
+/// Notification
++ (UBEAdType *)notification;
 
-    //CGSize(468x60)
-    UBEAdTypeDisplayAdFullBannerIAB,
+/// An ad that will be filled accordingly with the nib file that was used to inflate it.
++ (UBEAdType *)nativeSmall;
 
-    //CGSize(320x100)
-    UBEAdTypeDisplayAdBannerLarge,
+/// An ad that will be filled accordingly with the nib file that was used to inflate it.
++ (UBEAdType *)nativeLarge;
 
-    //CGSize(320x480)
-    UBEAdTypeDisplayAdFullScreen,
+/// An ad that will be filled accordingly with the nib file that was used to inflate it.
++ (UBEAdType *)nativeCoupon;
 
-    //CGSize(480x320)
-    UBEAdTypeDisplayAdFullScreenLandscape,
+/// 320x50
++ (UBEAdType *)displaySmall;
 
-    //CGSize(768x1024)
-    UBEAdTypeDisplayAdFullScreenTablet,
+/// 480x32
++ (UBEAdType *)displaySmallLandscape;
 
-    //CGSize(1024x768)
-    UBEAdTypeDisplayAdFullScreenTabletLandscape,
+/// 728x90
++ (UBEAdType *)displayTablet;
 
-    //CGSize(240x240)
-    UBEAdTypeDisplayAdTile
+/// An ad that will fill the width of the screen.
+/// The height will be either 50px for iphone/ipod, or 90px for ipad.
++ (UBEAdType *)displaySmartPortrait;
 
-};
+/// An ad that will fill the width of the screen.
+/// The height will be either 32px for iphone/ipod, or 90px for ipad.
++ (UBEAdType *)displaySmartLandscape;
 
-extern NSString *UBEAdTypeToString(UBEAdType type);
+/// 300x250
++ (UBEAdType *)displayMediumRectangleIAB;
 
-extern CGSize CGSizeFromUBEAdType(UBEAdType type);
+/// 468x60
++ (UBEAdType *)displayFullIAB;
 
-extern UBEAdType UBEAdTypeFromSmartBanner(UBEAdType adType);
+/// 320x100
++ (UBEAdType *)displayLarge;
 
-extern UBEAdType UBEAdTypeFromCGSize(CGSize size);
+/// 320x480
++ (UBEAdType *)displayFullScreen;
 
-extern BOOL UBEIsAdTypeFullScreen(UBEAdType adType);
+/// 480x320
++ (UBEAdType *)displayFullScreenLandscape;
 
-extern BOOL UBEIsAdTypeSmart(UBEAdType adType);
+/// 768x1024
++ (UBEAdType *)displayFullScreenTablet;
+
+/// 1024x768
++ (UBEAdType *)displayFullScreenTabletLandscape;
+
+/// 240x240
++ (UBEAdType *)displayTile;
+
+@end
+
+extern CGSize CGSizeFromUBEAdType(UBEAdType *adType) __deprecated_msg("Use adType.size instead");
+extern UBEAdType *UBEAdTypeFromCGSize(CGSize size) __deprecated_msg("Use [UBEAdType adTypeFromSize:size] instead");

@@ -2,17 +2,14 @@
 //  UBEAdView.h
 //  UbeeAPI
 //
-//  Created by Ubee on 2/27/14.
-//  Copyright (c) 2014 Ubee. All rights reserved.
+//  Created by Vitor on 2/18/15.
+//  Copyright (c) 2015 Ubee. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "UBEError.h"
 #import "UBEAdType.h"
-#import "UBEUserProfile.h"
-#import "UBEAdRequest.h"
 #import "UBEAdViewDelegate.h"
-#import "UBEPublicMacros.h"
+#import "UBEAdRequest.h"
 
 //Minimum AdView refresh interval, value = 30
 extern NSTimeInterval const kUBEAdRefreshIntervalMin;
@@ -32,27 +29,53 @@ extern NSTimeInterval const kUBEAdRequestTimeoutDefault;
 //AdView long request timeout, value = 10
 extern NSTimeInterval const kUBEAdRequestTimeoutLong;
 
-/*
- UBEAdView is the parent view that hold the generic Advertisement Properties. It should not be instantiated directly.
- */
 @interface UBEAdView : UIView
 
-//Property to determine the adType in a NSString value for loading on the User Defined Runtime Attributes in the Interface editor.
-@property (nonatomic, strong) UBEInspectable NSString *adTypeKey;
+/// The object that acts as a delegate of the UBEAdView
+@property (nonatomic, weak) NSObject<UBEAdViewDelegate> *delegate;
 
-//If YES, the loadAd method will be called on the - (void)awakeFromNib method
-@property (nonatomic, assign) UBEInspectable BOOL loadOnAwake;
+/// The timeout of the requests that searches for Ads.
+@property (nonatomic, assign) NSTimeInterval requestTimeout;
 
-//AdView manager
-@property (nonatomic, strong) id viewManager;
+/// The frequency that the Ads will be changed
+@property (nonatomic, assign) NSTimeInterval refreshInterval;
 
-- (instancetype)initWithAdType:(UBEAdType)type;
+/// Property to determine the adType in a NSString value from the Interface Builder.
+@property (nonatomic, strong) IBInspectable NSString *adTypeKey;
 
-//Sets the AdView Delegate
-- (void)setDelegate:(id<UBEAdViewDelegate>)delegate;
+/// Property to determine the Native XIB file name in a NSString value from the Interface Builder.
+@property (nonatomic, strong) IBInspectable NSString *nativeXibName;
 
-//Sets the AdView Type
-- (void)setAdType:(UBEAdType)adType;
+/// Default init constructor is not available.
+- (instancetype)init NS_UNAVAILABLE;
+
+/// Default initWithFrame constructor is not available.
+- (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;
+
+/**
+ Constructor initWithCoder is available when creating UBEAdView in the Interface Builder.
+ Certify that the UBEAdView in the nib file contains all required properties or an exception may be thrown.
+ */
+- (instancetype)initWithCoder:(NSCoder *)aDecoder;
+
+/**
+ Constructor for Display Ad types.
+ The origin of the Ad is considered {0,0}.
+ The size is automatically set according to the adType.
+ */
+- (instancetype)initWithDisplayAdType:(UBEAdType *)adType;
+
+/**
+ Constructor for Display Ad types.
+ The size is automatically set according to the adType.
+ */
+- (instancetype)initWithDisplayAdType:(UBEAdType *)adType andOrigin:(CGPoint)origin;
+
+/**
+ Constructor for Native Ad Types.
+ Certify that in the nib file all required properties are set or an exception may be thrown.
+ */
+- (instancetype)initWithNativeAdType:(UBEAdType *)adType andNibName:(NSString *)nibName;
 
 //Sets the AdView Refresh Timeout
 - (void)setRefreshInterval:(NSTimeInterval)refreshInterval;
@@ -63,7 +86,7 @@ extern NSTimeInterval const kUBEAdRequestTimeoutLong;
 //Method to load an Advertisement. It uses the default UBEAdRequest
 - (void)loadAd;
 
-//Method to load
+//Method to load an Advertisement.
 - (void)loadAdWithRequest:(UBEAdRequest *)request;
 
 @end

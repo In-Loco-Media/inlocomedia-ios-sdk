@@ -14,7 +14,7 @@
 
 @property (assign) BOOL enabled;
 
-+ (id)sharedInstance;
++ (UBELogger*)sharedInstance;
 
 //Log errors to the developer
 - (void)log:(const char*)prettyFunction :(int)line :(NSString*)format, ...;

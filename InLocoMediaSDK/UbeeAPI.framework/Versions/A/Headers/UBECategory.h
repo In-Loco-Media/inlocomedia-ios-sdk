@@ -6,14 +6,12 @@
 //  Copyright (c) 2014 Ubee. All rights reserved.
 //
 
-#import "JSONModelLib.h"
-
 NSComparator UBECategoriesComparator();
 
-@interface UBECategory : JSONModel <NSCoding, NSCopying>
+@interface UBECategory : NSObject <NSCoding, NSCopying>
 
-@property (nonatomic, strong) NSString<Optional> *identifier;
-@property (nonatomic, strong) NSString<Optional> *name;
+@property (nonatomic, strong) NSString *identifier;
+@property (nonatomic, strong) NSString *name;
 
 - (instancetype)initWithIdentifier:(NSString *)identifier andName:(NSString *)name;
 

@@ -1,0 +1,8 @@
+
+framework module UbeeAPI {
+  umbrella header "Ubee.h"
+
+  export *
+  module * { export * }
+
+}
