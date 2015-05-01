@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "UBEAdView.h"
 #import "UBEAdType.h"
 
+
+@class UBEAdContentView;
 @class UBEAdsTableViewManager;
 
 @protocol UBEAdTableViewManagerDelegate <NSObject>
@@ -23,14 +24,12 @@
 
 @end
 
-
 @interface UBEAdsTableViewManager : NSObject
 
-@property (nonatomic, assign) UBEAdType adType;
-@property (nonatomic, strong) id <UBEAdTableViewManagerDelegate> delegate;
+@property (nonatomic, assign) UBEAdType *adType;
+@property (nonatomic, strong) id<UBEAdTableViewManagerDelegate> delegate;
 
-- (instancetype)initWithAdType:(UBEAdType)adType andNumberOfAdsPerPage:(NSUInteger)adsPerPage;
-
+- (instancetype)initWithAdType:(UBEAdType *)adType andNumberOfAdsPerPage:(NSUInteger)adsPerPage;
 
 //Request the next advertisement page. Thread-safe. Will only perform once, regardless of how many fetches are called until the block is called.
 - (void)fetchNextPage;
@@ -39,6 +38,6 @@
 - (NSUInteger)count;
 
 //Loads the content of a cell that has an UBEAdView with the content of the advertisement
-- (UBEAdView *)loadContentForCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
+- (UBEAdContentView *)loadContentForCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 
 @end

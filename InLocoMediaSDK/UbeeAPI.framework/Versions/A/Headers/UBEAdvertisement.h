@@ -18,6 +18,9 @@
 //The url with the content of the advertisement
 @property (nonatomic, strong) NSString *url;
 
+//The url with the content of the deeplink
+@property (nonatomic, strong) NSString *deeplink;
+
 //The url with the content of the advertisement
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *message;
@@ -26,6 +29,3 @@
 - (id)initWithModel:(UBEAdvertisementModel *)model;
 
 @end
-
-
-

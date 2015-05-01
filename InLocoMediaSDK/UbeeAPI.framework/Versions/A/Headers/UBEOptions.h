@@ -16,6 +16,8 @@
 @property (nonatomic, strong) NSString *mapsKey;
 @property (nonatomic, strong) NSString *mapsSecret;
 
+@property (nonatomic, assign) BOOL logEnabled;
+
 @property (nonatomic, assign, getter = isDevelopmentEnvironment, setter = setDevelopmentEnvironment:) BOOL developmentEnvironment;
 
 @property (nonatomic, assign, getter = isLocationEnabled) BOOL locationEnabled;
@@ -25,7 +27,5 @@
 - (void)setAdsKey:(NSString *)adsKey andSecret:(NSString *)adsSecret;
 
 - (void)setMapsKey:(NSString *)mapsKey andSecret:(NSString *)mapsSecret;
-
-- (void)setLogEnabled:(BOOL)enabled;
 
 @end

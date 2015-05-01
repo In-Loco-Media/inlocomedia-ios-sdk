@@ -12,8 +12,7 @@
 #import "UBERequestDelegate.h"
 #import "UBEAdvertisement.h"
 #import "UBEOptions.h"
-#import "UBEDisplayAdView.h"
-#import "UBENativeAdView.h"
+#import "UBEAdView.h"
 #import "UBEAdsTableViewManager.h"
 #import "UBEURLParser.h"
 #import "UBERetail.h"
@@ -21,6 +20,19 @@
 #import "UBEError.h"
 #import "UBEAdRequest.h"
 #import "UBEInterstitialAd.h"
+#import "UBEAdTableViewCell.h"
+#import "UBEButton.h"
+#import "UBEContentImageView.h"
+#import "UBEDescriptionLabel.h"
+#import "UBEDiscountLabel.h"
+#import "UBEHighlightLabel.h"
+#import "UBEIconImageView.h"
+#import "UBELogger.h"
+#import "UBEOriginalPriceLabel.h"
+#import "UBEPriceLabel.h"
+#import "UBEPublicMacros.h"
+#import "UBETitleLabel.h"
+#import "UBEWebImageView.h"
 
 @interface Ubee : NSObject
 
@@ -67,7 +79,7 @@
 /**
  Method to request a list of the categories available for this application
  **/
-+ (void)requestAdCategoriesWithLocale:(NSString *)locale withDelegate:(id<UBECategoriesDelegate>)delegate;
++ (void)requestAdCategoriesWithLocale:(NSString *)locale withDelegate:(NSObject<UBECategoriesDelegate> *)delegate;
 
 /**
  Call it in your:

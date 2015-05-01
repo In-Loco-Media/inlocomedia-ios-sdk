@@ -1,3 +1,8 @@
+v1.6.0
+
+* The access to AdType is now different. Check our documentation (New mediation adapters are required for this version)
+* Optimizations on AdRequest
+
 v1.5.2
 
 * Hotfix on the NotificationAd register
