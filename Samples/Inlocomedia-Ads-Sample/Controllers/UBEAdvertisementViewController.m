@@ -36,8 +36,8 @@
     if (adType.isNative) {
         adView = [[UBEAdView alloc] initWithNativeAdType:adType andNibName:_element.nibName];
     } else if (adType.isDisplay) {
-        CGFloat containerHeight = self.view.bounds.size.height - self.navigationController.navigationBar.frame.size.height - [UIApplication sharedApplication].statusBarFrame.size.height;
-        CGFloat containerWidth = self.view.bounds.size.width;
+        CGFloat containerHeight = self.view.frame.size.height;
+        CGFloat containerWidth = self.view.frame.size.width;
 
         CGSize adSize = _element.adType.size;
         CGPoint adViewOrigin = CGPointMake((containerWidth - adSize.width) / 2, containerHeight - adSize.height);
@@ -47,6 +47,7 @@
         }
 
         adView = [[UBEAdView alloc] initWithDisplayAdType:adType andOrigin:adViewOrigin];
+        adView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
 
     } else {
         NSAssert(NO, @"Missing advertisement type");
