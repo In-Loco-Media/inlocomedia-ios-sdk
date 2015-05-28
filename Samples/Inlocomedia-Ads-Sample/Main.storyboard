@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="rS3-R9-Ivy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="rS3-R9-Ivy">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -182,7 +182,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MediationCell" textLabel="43z-7W-JcV" style="IBUITableViewCellStyleDefault" id="Cte-py-7DM">
-                                <rect key="frame" x="0.0" y="198" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="242" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cte-py-7DM" id="erV-EV-9Z3">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -203,7 +203,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MediationInterstitialCell" textLabel="sDA-MI-WLN" style="IBUITableViewCellStyleDefault" id="eHG-t5-BhP">
-                                <rect key="frame" x="0.0" y="198" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="286" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eHG-t5-BhP" id="cUa-sO-JWc">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -224,10 +224,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NotificationCell" textLabel="nAN-Wy-xuo" style="IBUITableViewCellStyleDefault" id="c3V-7v-5cn">
-                                <rect key="frame" x="0.0" y="198" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="330" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c3V-7v-5cn" id="wyi-Ga-pgd">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Notification" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nAN-Wy-xuo">
@@ -354,7 +354,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view hidden="YES" contentMode="scaleToFill" id="atv-SY-aU0" customClass="UBENativeAdView">
+                                        <view hidden="YES" contentMode="scaleToFill" id="atv-SY-aU0" customClass="UBEAdView">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -389,10 +389,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="kHU-8c-b3S">
-                                <rect key="frame" x="0.0" y="22" width="320" height="144"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kHU-8c-b3S" id="eNB-aI-7nU">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" id="1db-b0-faZ" customClass="UBENativeAdView">
@@ -426,7 +426,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="Nkr-H7-YdO" customClass="UBEDisplayAdView">
+                            <view contentMode="scaleToFill" id="Nkr-H7-YdO" customClass="UBEAdView">
                                 <rect key="frame" x="0.0" y="454" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -435,7 +435,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="loadOnAwake" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" id="YFd-7T-nJH" customClass="UBENativeAdView">
+                            <view contentMode="scaleToFill" id="YFd-7T-nJH" customClass="UBEAdView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="194"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
