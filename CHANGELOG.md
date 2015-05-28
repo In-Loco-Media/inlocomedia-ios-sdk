@@ -1,3 +1,9 @@
+v1.6.1
+* Hotfix: Error on AdView loadAd call on iOS 7
+* Hotfix: Sample project regular AdView examples which were not showing the view on landscape
+* Hotfix: AdView loadOnAwake not being used
+* Hotfix: AdView adTypeKey and loadOnAwake not being working from storyboard
+
 v1.6.0
 
 * The access to AdType is now different. Check our documentation (New mediation adapters are required for this version)
