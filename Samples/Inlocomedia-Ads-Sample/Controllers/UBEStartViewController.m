@@ -34,8 +34,7 @@
                              [[UBEListElement alloc] initAdType:UBEAdTypeDisplayAdSmartBannerLandscape andValue:@"Smartbanner Landscape"] ];
 
     NSArray *nativeAds = @[ [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdSmall value:@"Native Small" nibName:@"NativeSmall" andCellIdentifier:nil],
-                            [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"Native Large" nibName:@"NativeLarge" andCellIdentifier:nil],
-                            [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdCoupon value:@"Native Coupon" nibName:@"NativeCoupon" andCellIdentifier:nil] ];
+                            [[UBEListElement alloc] initAdType:UBEAdTypeNativeAdLarge value:@"Native Large" nibName:@"NativeLarge" andCellIdentifier:nil] ];
 
     NSArray *interstitialAds = @[ [[UBEListElement alloc] initAdType:0 value:@"Interstitial" andCellIdentifier:@"InterstitialAdCell"] ];
 
