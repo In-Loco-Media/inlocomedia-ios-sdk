@@ -43,8 +43,11 @@ extern NSTimeInterval const kUBEAdRequestTimeoutLong;
 /// Property to determine the adType in a NSString value from the Interface Builder.
 @property (nonatomic, strong) IBInspectable NSString *adTypeKey;
 
+/// Loads ad when it is awaken from nib file
+@property (nonatomic, assign) IBInspectable BOOL loadOnAwake;
+
 /// Property to determine the Native XIB file name in a NSString value from the Interface Builder.
-@property (nonatomic, strong) IBInspectable NSString *nativeXibName;
+@property (nonatomic, strong) IBInspectable NSString *nibName;
 
 /// Default init constructor is not available.
 - (instancetype)init NS_UNAVAILABLE;

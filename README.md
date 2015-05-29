@@ -14,7 +14,7 @@ Check our [changelog]
 
 Requirements
 ==
-* Minimum supported version: iOS 6
+* Minimum supported version: iOS 7 
 
 [documentation]: https://github.com/In-Loco-Media/inlocomedia-ios-sdk/wiki
 [sign_up]: http://inlocomedia.com/

@@ -40,7 +40,6 @@
 		C01065371AF1742D00A9D5F8 /* UBENotificationAdAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C01065361AF1742D00A9D5F8 /* UBENotificationAdAlertView.m */; };
 		C01065441AF286BF00A9D5F8 /* libInLocoMediaAdMobAdapters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C01B932F1A9BE26D00B555CE /* libInLocoMediaAdMobAdapters.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		C01065491AF2BE9C00A9D5F8 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02D470C1A950BEB000A49E4 /* GoogleMobileAds.framework */; };
-		C01215BC1AF2D9F7003B1DAA /* UbeeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02FC0A21AC5CC8A00BA60A9 /* UbeeAPI.framework */; };
 		C01B923B1A9B9B6700B555CE /* UBEMediationInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C01B923A1A9B9B6700B555CE /* UBEMediationInterstitialViewController.m */; };
 		C01B932B1A9BDD9300B555CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C01B932A1A9BDD9300B555CE /* LaunchScreen.xib */; };
 		C09621971A9E38460055EEEE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621961A9E38460055EEEE /* AdSupport.framework */; };
@@ -51,6 +50,7 @@
 		C09621A21A9E3B150055EEEE /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A01A9E3B150055EEEE /* EventKit.framework */; };
 		C09621A31A9E3B150055EEEE /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A11A9E3B150055EEEE /* EventKitUI.framework */; };
 		C09621A51A9E3B1D0055EEEE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A41A9E3B1D0055EEEE /* MessageUI.framework */; };
+		C0F652F71B191D9800D343B6 /* UbeeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02FC0A21AC5CC8A00BA60A9 /* UbeeAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,7 +100,6 @@
 		26F27625195397C600A88ACF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C01065351AF1742D00A9D5F8 /* UBENotificationAdAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBENotificationAdAlertView.h; sourceTree = "<group>"; };
 		C01065361AF1742D00A9D5F8 /* UBENotificationAdAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBENotificationAdAlertView.m; sourceTree = "<group>"; };
-		C010654A1AF2CB4800A9D5F8 /* libUbeeAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUbeeAPI.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/UbeeAPI-flmvsuvsiroaatbmqmbzxeownxgj/Build/Products/Debug-iphoneos/libUbeeAPI.a"; sourceTree = "<group>"; };
 		C01B92391A9B9B6700B555CE /* UBEMediationInterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBEMediationInterstitialViewController.h; sourceTree = "<group>"; };
 		C01B923A1A9B9B6700B555CE /* UBEMediationInterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBEMediationInterstitialViewController.m; sourceTree = "<group>"; };
 		C01B932A1A9BDD9300B555CE /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
@@ -125,9 +124,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F652F71B191D9800D343B6 /* UbeeAPI.framework in Frameworks */,
 				C01065491AF2BE9C00A9D5F8 /* GoogleMobileAds.framework in Frameworks */,
 				C01065441AF286BF00A9D5F8 /* libInLocoMediaAdMobAdapters.a in Frameworks */,
-				C01215BC1AF2D9F7003B1DAA /* UbeeAPI.framework in Frameworks */,
 				2674FDE61912FDFB0063CEEA /* SystemConfiguration.framework in Frameworks */,
 				C09621A51A9E3B1D0055EEEE /* MessageUI.framework in Frameworks */,
 				C09621A21A9E3B150055EEEE /* EventKit.framework in Frameworks */,
@@ -196,7 +195,6 @@
 		2685F0DA190013530016A650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C010654A1AF2CB4800A9D5F8 /* libUbeeAPI.a */,
 				C09621A41A9E3B1D0055EEEE /* MessageUI.framework */,
 				C09621A01A9E3B150055EEEE /* EventKit.framework */,
 				C09621A11A9E3B150055EEEE /* EventKitUI.framework */,
