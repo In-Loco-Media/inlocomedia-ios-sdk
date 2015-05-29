@@ -42,10 +42,6 @@
         CGSize adSize = _element.adType.size;
         CGPoint adViewOrigin = CGPointMake((containerWidth - adSize.width) / 2, containerHeight - adSize.height);
 
-        if (adType.isSmart) {
-            adViewOrigin.x = 0;
-        }
-
         adView = [[UBEAdView alloc] initWithDisplayAdType:adType andOrigin:adViewOrigin];
         adView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
 

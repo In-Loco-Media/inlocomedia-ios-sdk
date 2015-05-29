@@ -35,7 +35,7 @@
 
 - (void)ubeAdView:(UBEAdView *)adView didFailToReceiveAdWithError:(UBEError *)error
 {
-    [self.descLabel setText:@"No advertisement available"];
+    [self.descLabel setText:[error localizedDescription]];
 }
 
 @end
