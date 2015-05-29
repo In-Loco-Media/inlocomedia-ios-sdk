@@ -14,7 +14,6 @@
 @interface UBEMediationViewController () <GADBannerViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *desc;
 @property GADBannerView *bannerView;
-@property GADInterstitial *interstitial;
 @end
 
 @implementation UBEMediationViewController
@@ -22,8 +21,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
-
+    
+    CGFloat containerHeight = self.view.frame.size.height;
+    CGFloat containerWidth = self.view.frame.size.width;
+    
+    CGSize adSize = GAD_SIZE_320x50;
+    CGPoint adViewOrigin = CGPointMake((containerWidth - adSize.width) / 2, containerHeight - adSize.height);
+    
+    _bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner origin:adViewOrigin];
+    _bannerView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+    
     // Especificar o ID do bloco de anúncios.
     _bannerView.adUnitID = MEDIATION_BANNER_AD_UNIT;
 
