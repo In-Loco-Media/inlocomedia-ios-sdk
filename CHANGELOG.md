@@ -1,22 +1,54 @@
-v1.6.0
+# CHANGELOG
+All notable changes to this project will be documented in this file.
 
-* The access to AdType is now different. Check our documentation (New mediation adapters are required for this version)
+---
+
+## [2.0.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.0.0) (05/30/2016)
+
+#### Feature:
+* Autolayout support on native ads.
+* Default handling for notification ads
+* UserProfile persistence
+
+#### Updated:
+* Asking permissions required by ios 8, 7 and 9
+* Renamed all prefixes
+* Native Ad remade. Now it uses native types on labels and buttons and IBOutlets were create to connect with the xib
+* Activation of development mode
+
+#### Removed:
+* Categories
+* Native Coupon
+* AdRequest persistence
+
+## [1.6.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/1.6.1) (05/29/2015)
+
+## [1.6.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/1.6.0) (03/30/2015)
+
+#### Updated:
 * Optimizations on AdRequest
+* The access to AdType is now different. Check our documentation (New mediation adapters are required for this version)
 
-v1.5.2
+## [1.5.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/1.5.2) (03/11/2015)
 
+#### Fixed:
 * Hotfix on the NotificationAd register
 
-v1.5.1
+## [1.5.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/1.5.1) (03/11/2015)
 
+#### Fixed:
 * Hotfix on the InterstitialAd that was automatically closed after returning from a AdClick
 
-v1.5
+## [1.5.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/1.5.0) (02/25/2015)
 
+#### Feature:
 * Cocoapods support
-* Optimizating the Ad deliver (Speed and Fill Rate)
 * Included new AdSize: MEDIUM_RECTANGLE
 * Included interface for DSP exchange
-* Memory usage optimizations
-* Hotfix: Advertisement align on iOS 8 
 
+#### Updated:
+* Optimizating the Ad deliver (Speed and Fill Rate)
+* Memory usage optimizations
+
+#### Fixed:
+* Advertisement align on iOS 8
