@@ -128,17 +128,17 @@
 		26545DB41901ABE80067A426 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C01B932A1A9BDD9300B555CE /* LaunchScreen.xib */,
-				2638E9B8195B990900F067E6 /* seta@2x.png */,
-				2638E9B4195B98D700F067E6 /* seta.png */,
-				2638E99C195B6B1A00F067E6 /* ios7-arrow-left.png */,
-				2638E98E195B598900F067E6 /* ub_bt_closed_press.png */,
 				26F27625195397C600A88ACF /* Default-568h@2x.png */,
-				2683705C1911695D00B39CB4 /* InLocoMediaNativeAdPlaceholderCoupon.png */,
-				2683705D1911695D00B39CB4 /* InLocoMediaNativeAdPlaceholderIcon.png */,
-				260089DE190AF2E80064080B /* InLocoMediaNativeAdDiscountFlag.png */,
 				260089D3190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png */,
 				260089D4190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png */,
+				260089DE190AF2E80064080B /* InLocoMediaNativeAdDiscountFlag.png */,
+				2683705C1911695D00B39CB4 /* InLocoMediaNativeAdPlaceholderCoupon.png */,
+				2683705D1911695D00B39CB4 /* InLocoMediaNativeAdPlaceholderIcon.png */,
+				2638E99C195B6B1A00F067E6 /* ios7-arrow-left.png */,
+				2638E9B4195B98D700F067E6 /* seta.png */,
+				2638E9B8195B990900F067E6 /* seta@2x.png */,
+				2638E98E195B598900F067E6 /* ub_bt_closed_press.png */,
+				C01B932A1A9BDD9300B555CE /* LaunchScreen.xib */,
 				2674FE5E1914738D0063CEEA /* NativeLarge.xib */,
 				26545DB81901ABE80067A426 /* NativeSmall.xib */,
 				006FA32E1CD7D206009E6EEA /* NativeView.xib */,
@@ -196,8 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				4927717A1CF4D005009174E6 /* ILMAppDelegate.h */,
-				4927717B1CF4D005009174E6 /* ILMAppDelegate.m */,
 				4995B2D31CEE31040084F8D6 /* ILMConstants.h */,
+				4927717B1CF4D005009174E6 /* ILMAppDelegate.m */,
 				26545DD61901B81E0067A426 /* Main.storyboard */,
 				2685F117190013D50016A650 /* Controllers */,
 				C01065341AF1742D00A9D5F8 /* Dialogs */,
@@ -212,10 +212,10 @@
 		2685F0E2190013530016A650 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2685F0E3190013530016A650 /* InLocoMedia-Ads-Sample-IOS.plist */,
-				2685F0E4190013530016A650 /* InfoPlist.strings */,
 				2685F0E7190013530016A650 /* main.m */,
 				2685F0E9190013530016A650 /* InLocoMedia-Ads-Sample-Prefix.pch */,
+				2685F0E3190013530016A650 /* InLocoMedia-Ads-Sample-IOS.plist */,
+				2685F0E4190013530016A650 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -224,16 +224,16 @@
 			isa = PBXGroup;
 			children = (
 				00074E9C1CE6625E00228820 /* ILMAdvertisementViewController.h */,
-				00074E9D1CE6625E00228820 /* ILMAdvertisementViewController.m */,
 				00074E9E1CE6625E00228820 /* ILMAdViewFromStoryboard.h */,
-				00074E9F1CE6625E00228820 /* ILMAdViewFromStoryboard.m */,
 				00074EA21CE6625E00228820 /* ILMInterstitialAdvertisementViewController.h */,
-				00074EA31CE6625E00228820 /* ILMInterstitialAdvertisementViewController.m */,
 				00074EAA1CE6625E00228820 /* ILMNativeAdStoryboardViewController.h */,
-				00074EAB1CE6625E00228820 /* ILMNativeAdStoryboardViewController.m */,
 				00074EAC1CE6625E00228820 /* ILMNativeAdvertisementViewController.h */,
-				00074EAD1CE6625E00228820 /* ILMNativeAdvertisementViewController.m */,
 				00074EAE1CE6625E00228820 /* ILMStartViewController.h */,
+				00074E9D1CE6625E00228820 /* ILMAdvertisementViewController.m */,
+				00074E9F1CE6625E00228820 /* ILMAdViewFromStoryboard.m */,
+				00074EA31CE6625E00228820 /* ILMInterstitialAdvertisementViewController.m */,
+				00074EAB1CE6625E00228820 /* ILMNativeAdStoryboardViewController.m */,
+				00074EAD1CE6625E00228820 /* ILMNativeAdvertisementViewController.m */,
 				00074EAF1CE6625E00228820 /* ILMStartViewController.m */,
 			);
 			path = Controllers;

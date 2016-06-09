@@ -1,5 +1,5 @@
 //
-//  UBAdvertisement.h
+//  ILMAdvertisement.h
 //  InLocoMediaAPI
 //
 //  Created by InLocoMedia on 1/17/14.
