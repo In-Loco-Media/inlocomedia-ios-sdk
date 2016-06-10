@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>in.ubee.api.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -24,8 +24,20 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>The app will need location to improve the content</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>telprompt</string>
+		<string>twitter</string>
+		<string>tel</string>
+		<string>fbapi</string>
+	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The app will need location to improve the content</string>
 	<key>NSMainNibFile~ipad</key>
