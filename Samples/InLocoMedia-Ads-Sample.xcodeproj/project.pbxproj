@@ -15,6 +15,7 @@
 		00074EB71CE6625E00228820 /* ILMNativeAdStoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00074EAB1CE6625E00228820 /* ILMNativeAdStoryboardViewController.m */; };
 		00074EB81CE6625E00228820 /* ILMNativeAdvertisementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00074EAD1CE6625E00228820 /* ILMNativeAdvertisementViewController.m */; };
 		00074EB91CE6625E00228820 /* ILMStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00074EAF1CE6625E00228820 /* ILMStartViewController.m */; };
+		0007C65F1D36E85E000EBAC2 /* InLocoMediaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0007C65E1D36E85E000EBAC2 /* InLocoMediaAPI.framework */; };
 		006FA32F1CD7D206009E6EEA /* NativeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 006FA32E1CD7D206009E6EEA /* NativeView.xib */; };
 		260089D6190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 260089D3190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png */; };
 		260089D7190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 260089D4190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png */; };
@@ -35,7 +36,6 @@
 		26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A20B221921863B00B74DA5 /* CoreLocation.framework */; };
 		26F27626195397C600A88ACF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F27625195397C600A88ACF /* Default-568h@2x.png */; };
 		4927717C1CF4D005009174E6 /* ILMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4927717B1CF4D005009174E6 /* ILMAppDelegate.m */; };
-		497FED7D1CF601E0009503E3 /* InLocoMediaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497FED7C1CF601E0009503E3 /* InLocoMediaAPI.framework */; };
 		C01B932B1A9BDD9300B555CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C01B932A1A9BDD9300B555CE /* LaunchScreen.xib */; };
 		C09621971A9E38460055EEEE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621961A9E38460055EEEE /* AdSupport.framework */; };
 		C09621991A9E3AFC0055EEEE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621981A9E3AFC0055EEEE /* AudioToolbox.framework */; };
@@ -64,6 +64,7 @@
 		00074EAD1CE6625E00228820 /* ILMNativeAdvertisementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMNativeAdvertisementViewController.m; sourceTree = "<group>"; };
 		00074EAE1CE6625E00228820 /* ILMStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMStartViewController.h; sourceTree = "<group>"; };
 		00074EAF1CE6625E00228820 /* ILMStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMStartViewController.m; sourceTree = "<group>"; };
+		0007C65E1D36E85E000EBAC2 /* InLocoMediaAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoMediaAPI.framework; sourceTree = "<group>"; };
 		006FA32E1CD7D206009E6EEA /* NativeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeView.xib; sourceTree = "<group>"; };
 		260089D3190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InLocoMediaNativeAdButtonNormal.png; sourceTree = "<group>"; };
 		260089D4190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InLocoMediaNativeAdButtonPressed.png; sourceTree = "<group>"; };
@@ -89,7 +90,6 @@
 		26F27625195397C600A88ACF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4927717A1CF4D005009174E6 /* ILMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMAppDelegate.h; sourceTree = "<group>"; };
 		4927717B1CF4D005009174E6 /* ILMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMAppDelegate.m; sourceTree = "<group>"; };
-		497FED7C1CF601E0009503E3 /* InLocoMediaAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InLocoMediaAPI.framework; path = ../InLocoMediaSDK/InLocoMediaAPI.framework; sourceTree = "<group>"; };
 		4995B2D31CEE31040084F8D6 /* ILMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMConstants.h; sourceTree = "<group>"; };
 		C01B932A1A9BDD9300B555CE /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		C09621961A9E38460055EEEE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -107,7 +107,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				497FED7D1CF601E0009503E3 /* InLocoMediaAPI.framework in Frameworks */,
 				2674FDE61912FDFB0063CEEA /* SystemConfiguration.framework in Frameworks */,
 				C09621A51A9E3B1D0055EEEE /* MessageUI.framework in Frameworks */,
 				C09621A21A9E3B150055EEEE /* EventKit.framework in Frameworks */,
@@ -118,6 +117,7 @@
 				C09621991A9E3AFC0055EEEE /* AudioToolbox.framework in Frameworks */,
 				C09621971A9E38460055EEEE /* AdSupport.framework in Frameworks */,
 				26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */,
+				0007C65F1D36E85E000EBAC2 /* InLocoMediaAPI.framework in Frameworks */,
 				2685F0DC190013530016A650 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,7 +175,7 @@
 		2685F0DA190013530016A650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				497FED7C1CF601E0009503E3 /* InLocoMediaAPI.framework */,
+				0007C65E1D36E85E000EBAC2 /* InLocoMediaAPI.framework */,
 				C09621A41A9E3B1D0055EEEE /* MessageUI.framework */,
 				C09621A01A9E3B150055EEEE /* EventKit.framework */,
 				C09621A11A9E3B150055EEEE /* EventKitUI.framework */,
@@ -449,6 +449,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../InLocoMediaSDK",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Inlocomedia-Ads-Sample/InLocoMedia-Ads-Sample-Prefix.pch";
@@ -483,6 +484,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../InLocoMediaSDK",
+					"$(PROJECT_DIR)",
 				);
 				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

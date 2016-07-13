@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 
 ---
+## [2.0.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.0.1) (15/06/2016)
+
+#### Fixed:
+* Hotfix on the AdView load to reuse adRequest on refresh
+* SDK events were not being logged 
 
 ## [2.0.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.0.0) (05/30/2016)
 
