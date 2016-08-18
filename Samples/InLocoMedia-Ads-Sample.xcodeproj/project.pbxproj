@@ -16,7 +16,13 @@
 		00074EB81CE6625E00228820 /* ILMNativeAdvertisementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00074EAD1CE6625E00228820 /* ILMNativeAdvertisementViewController.m */; };
 		00074EB91CE6625E00228820 /* ILMStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00074EAF1CE6625E00228820 /* ILMStartViewController.m */; };
 		0007C65F1D36E85E000EBAC2 /* InLocoMediaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0007C65E1D36E85E000EBAC2 /* InLocoMediaAPI.framework */; };
+		001CEFE41D3D76B10019A195 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001CEFE31D3D76B10019A195 /* Image.xcassets */; };
 		006FA32F1CD7D206009E6EEA /* NativeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 006FA32E1CD7D206009E6EEA /* NativeView.xib */; };
+		007BAE311D6378450053807D /* InLocoMediaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007BAE301D6378450053807D /* InLocoMediaAPI.framework */; };
+		00D9099B1D46AF7600EF15F4 /* ILMNativeAdTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D9099A1D46AF7600EF15F4 /* ILMNativeAdTableView.m */; };
+		00D9099D1D46B13C00EF15F4 /* NativeAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D9099C1D46B13C00EF15F4 /* NativeAdCell.xib */; };
+		00D9099F1D46B14600EF15F4 /* NativeAdSmallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D9099E1D46B14600EF15F4 /* NativeAdSmallCell.xib */; };
+		00D909A11D46B15000EF15F4 /* MySmallCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D909A01D46B15000EF15F4 /* MySmallCustomCell.xib */; };
 		260089D6190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 260089D3190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png */; };
 		260089D7190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 260089D4190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png */; };
 		260089DF190AF2E80064080B /* InLocoMediaNativeAdDiscountFlag.png in Resources */ = {isa = PBXBuildFile; fileRef = 260089DE190AF2E80064080B /* InLocoMediaNativeAdDiscountFlag.png */; };
@@ -65,7 +71,14 @@
 		00074EAE1CE6625E00228820 /* ILMStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMStartViewController.h; sourceTree = "<group>"; };
 		00074EAF1CE6625E00228820 /* ILMStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMStartViewController.m; sourceTree = "<group>"; };
 		0007C65E1D36E85E000EBAC2 /* InLocoMediaAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoMediaAPI.framework; sourceTree = "<group>"; };
+		001CEFE31D3D76B10019A195 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		006FA32E1CD7D206009E6EEA /* NativeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeView.xib; sourceTree = "<group>"; };
+		007BAE301D6378450053807D /* InLocoMediaAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoMediaAPI.framework; sourceTree = "<group>"; };
+		00D909991D46AF7600EF15F4 /* ILMNativeAdTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMNativeAdTableView.h; sourceTree = "<group>"; };
+		00D9099A1D46AF7600EF15F4 /* ILMNativeAdTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMNativeAdTableView.m; sourceTree = "<group>"; };
+		00D9099C1D46B13C00EF15F4 /* NativeAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdCell.xib; sourceTree = "<group>"; };
+		00D9099E1D46B14600EF15F4 /* NativeAdSmallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdSmallCell.xib; sourceTree = "<group>"; };
+		00D909A01D46B15000EF15F4 /* MySmallCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySmallCustomCell.xib; sourceTree = "<group>"; };
 		260089D3190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InLocoMediaNativeAdButtonNormal.png; sourceTree = "<group>"; };
 		260089D4190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InLocoMediaNativeAdButtonPressed.png; sourceTree = "<group>"; };
 		260089DE190AF2E80064080B /* InLocoMediaNativeAdDiscountFlag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InLocoMediaNativeAdDiscountFlag.png; sourceTree = "<group>"; };
@@ -119,6 +132,7 @@
 				26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */,
 				0007C65F1D36E85E000EBAC2 /* InLocoMediaAPI.framework in Frameworks */,
 				2685F0DC190013530016A650 /* Foundation.framework in Frameworks */,
+				007BAE311D6378450053807D /* InLocoMediaAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +142,7 @@
 		26545DB41901ABE80067A426 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				00D9099C1D46B13C00EF15F4 /* NativeAdCell.xib */,
 				26F27625195397C600A88ACF /* Default-568h@2x.png */,
 				260089D3190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png */,
 				260089D4190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png */,
@@ -139,6 +154,8 @@
 				2638E9B8195B990900F067E6 /* seta@2x.png */,
 				2638E98E195B598900F067E6 /* ub_bt_closed_press.png */,
 				C01B932A1A9BDD9300B555CE /* LaunchScreen.xib */,
+				00D909A01D46B15000EF15F4 /* MySmallCustomCell.xib */,
+				00D9099E1D46B14600EF15F4 /* NativeAdSmallCell.xib */,
 				2674FE5E1914738D0063CEEA /* NativeLarge.xib */,
 				26545DB81901ABE80067A426 /* NativeSmall.xib */,
 				006FA32E1CD7D206009E6EEA /* NativeView.xib */,
@@ -158,6 +175,7 @@
 		2685F0CF190013530016A650 = {
 			isa = PBXGroup;
 			children = (
+				001CEFE31D3D76B10019A195 /* Image.xcassets */,
 				2685F0DA190013530016A650 /* Frameworks */,
 				2685F0E1190013530016A650 /* InLocomedia-Ads-Sample */,
 				2685F0D9190013530016A650 /* Products */,
@@ -175,7 +193,7 @@
 		2685F0DA190013530016A650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0007C65E1D36E85E000EBAC2 /* InLocoMediaAPI.framework */,
+				007BAE301D6378450053807D /* InLocoMediaAPI.framework */,
 				C09621A41A9E3B1D0055EEEE /* MessageUI.framework */,
 				C09621A01A9E3B150055EEEE /* EventKit.framework */,
 				C09621A11A9E3B150055EEEE /* EventKitUI.framework */,
@@ -223,6 +241,8 @@
 		2685F117190013D50016A650 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				00D909991D46AF7600EF15F4 /* ILMNativeAdTableView.h */,
+				00D9099A1D46AF7600EF15F4 /* ILMNativeAdTableView.m */,
 				00074E9C1CE6625E00228820 /* ILMAdvertisementViewController.h */,
 				00074E9E1CE6625E00228820 /* ILMAdViewFromStoryboard.h */,
 				00074EA21CE6625E00228820 /* ILMInterstitialAdvertisementViewController.h */,
@@ -279,7 +299,7 @@
 				ORGANIZATIONNAME = InLocoMedia;
 				TargetAttributes = {
 					2685F0D7190013530016A650 = {
-						DevelopmentTeam = 4NR2W2E7MF;
+						DevelopmentTeam = L2X4CZJ2U2;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -322,14 +342,18 @@
 				2638E9B9195B990900F067E6 /* seta@2x.png in Resources */,
 				26F27626195397C600A88ACF /* Default-568h@2x.png in Resources */,
 				2683705F1911695D00B39CB4 /* InLocoMediaNativeAdPlaceholderIcon.png in Resources */,
+				00D9099D1D46B13C00EF15F4 /* NativeAdCell.xib in Resources */,
 				2638E98F195B598900F067E6 /* ub_bt_closed_press.png in Resources */,
 				2638E99D195B6B1A00F067E6 /* ios7-arrow-left.png in Resources */,
+				001CEFE41D3D76B10019A195 /* Image.xcassets in Resources */,
+				00D9099F1D46B14600EF15F4 /* NativeAdSmallCell.xib in Resources */,
 				260089D6190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png in Resources */,
 				26545DD71901B81E0067A426 /* Main.storyboard in Resources */,
 				2638E9B5195B98D700F067E6 /* seta.png in Resources */,
 				2685F0E6190013530016A650 /* InfoPlist.strings in Resources */,
 				C01B932B1A9BDD9300B555CE /* LaunchScreen.xib in Resources */,
 				260089DF190AF2E80064080B /* InLocoMediaNativeAdDiscountFlag.png in Resources */,
+				00D909A11D46B15000EF15F4 /* MySmallCustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +372,7 @@
 				00074E981CE6623800228820 /* ILMListElement.m in Sources */,
 				00074EB11CE6625E00228820 /* ILMAdViewFromStoryboard.m in Sources */,
 				00074EB81CE6625E00228820 /* ILMNativeAdvertisementViewController.m in Sources */,
+				00D9099B1D46AF7600EF15F4 /* ILMNativeAdTableView.m in Sources */,
 				2685F0E8190013530016A650 /* main.m in Sources */,
 				00074E951CE6622E00228820 /* ILMNotificationAdAlertView.m in Sources */,
 			);
@@ -441,7 +466,7 @@
 		2685F10E190013540016A650 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_USE_OPTIMIZATION_PROFILE = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -459,13 +484,13 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Inlocomedia-Ads-Sample/InLocoMedia-Ads-Sample-IOS.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../InLocoMediaSDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.inlocomedia.ads.sample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inlocomedia.AdsSample;
 				PRODUCT_NAME = "InLocoMedia-Ads-Sample";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -476,7 +501,7 @@
 		2685F10F190013540016A650 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_USE_OPTIMIZATION_PROFILE = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -495,13 +520,13 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Inlocomedia-Ads-Sample/InLocoMedia-Ads-Sample-IOS.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../InLocoMediaSDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.inlocomedia.ads.sample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inlocomedia.AdsSample;
 				PRODUCT_NAME = "InLocoMedia-Ads-Sample";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

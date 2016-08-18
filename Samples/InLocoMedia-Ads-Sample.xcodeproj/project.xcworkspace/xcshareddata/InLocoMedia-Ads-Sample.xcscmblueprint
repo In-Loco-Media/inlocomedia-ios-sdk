@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E7357AB361E88DFBA79C0A39563FEA2461F0CF0F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9171BE2C16814118787DE370458DC88D34C71AEA" : 0,
+    "E7357AB361E88DFBA79C0A39563FEA2461F0CF0F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "71C85560-848D-4D50-983E-9D374A39E12B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9171BE2C16814118787DE370458DC88D34C71AEA" : "inlocomedia-ios-sdk\/",
+    "E7357AB361E88DFBA79C0A39563FEA2461F0CF0F" : "inlocomedia-ios-sdk-public\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "InLocoMedia-Ads-Sample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Samples\/InLocoMedia-Ads-Sample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:ubeedev\/inlocomedia-ios-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9171BE2C16814118787DE370458DC88D34C71AEA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:ubeedev\/inlocomedia-ios-sdk-public.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E7357AB361E88DFBA79C0A39563FEA2461F0CF0F"
+    }
+  ]
+}

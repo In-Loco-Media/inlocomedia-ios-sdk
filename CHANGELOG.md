@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 
 ---
+## [2.1.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.1.0) (15/06/2016)
+ * Support to Native on tableViews.
+ * Notification Ad Request (adUnit for notification ads)
+ * MRAID
+
 ## [2.0.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.0.1) (15/06/2016)
 
 #### Fixed:

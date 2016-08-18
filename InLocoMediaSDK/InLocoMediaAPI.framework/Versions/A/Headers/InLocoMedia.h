@@ -22,6 +22,11 @@
 #import "ILMLogger.h"
 #import "ILMPublicMacros.h"
 #import "ILMWebImageView.h"
+#import "ILMNotificationAdRequest.h"
+#import "ILMNativeAdTableViewManager.h"
+#import "ILMNativeAdResponse.h"
+#import "ILMNativeAdManager.h"
+#import "ILMNativeAdDelegate.h"
 
 @interface InLocoMedia : NSObject
 
@@ -44,6 +49,11 @@
  Method to disable Notification Ads.
  */
 + (void)disableNotificationAds;
+
+/**
+ Method sets the notificationAdRequest to be used on notificationAds requested
+ */
++ (void)setNotiticationAdRequest:(ILMNotificationAdRequest *)notificationAdRequest;
 
 /**
  Method to verify if NotificationAds is enabled

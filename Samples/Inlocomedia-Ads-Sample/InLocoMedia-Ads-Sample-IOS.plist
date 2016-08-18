@@ -8,6 +8,10 @@
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIcons</key>
+	<dict/>
+	<key>CFBundleIcons~ipad</key>
+	<dict/>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -17,11 +21,18 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>telprompt</string>
+		<string>twitter</string>
+		<string>tel</string>
+		<string>fbapi</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -31,17 +42,8 @@
 	</dict>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>The app will need location to improve the content</string>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>telprompt</string>
-		<string>twitter</string>
-		<string>tel</string>
-		<string>fbapi</string>
-	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The app will need location to improve the content</string>
-	<key>NSMainNibFile~ipad</key>
-	<string>Main-iPad</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
