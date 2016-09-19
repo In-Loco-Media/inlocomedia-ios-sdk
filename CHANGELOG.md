@@ -1,6 +1,10 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [2.1.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.1.2) (12/09/2016)
+#### Fixed:
+ * Mangle auto-generated code
+
 ---
 ## [2.1.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.1.1) (23/08/2016)
 #### Fixed:
