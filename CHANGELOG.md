@@ -1,7 +1,7 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
-## [2.1.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.1.2) (21/09/2016)
+## [2.1.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.1.3) (21/09/2016)
 #### Removed:
  * Removed save picture and save to calendar functionality from ads.
 
