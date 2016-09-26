@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
  
   s.name         = "InLocoMedia-Ads-SDK"
-  s.version      = "2.2.0"
 
+  s.version      = "2.2.0"
   s.summary      = "Monetize your mobile apps with In Loco Media, the most profitable Ad Network in Latin America."
 
   s.description  = <<-DESC

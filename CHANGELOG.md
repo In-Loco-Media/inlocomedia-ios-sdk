@@ -1,6 +1,18 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [2.2.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.1.3) (26/09/2016)
+
+#### Fixed:
+ * iOS 10 compatibility
+
+#### Feature:
+ * First Opening Tracker
+
+## [2.1.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.1.3) (21/09/2016)
+#### Removed:
+ * Removed save picture and save to calendar functionality from ads.
+
 ## [2.1.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.1.2) (12/09/2016)
 #### Fixed:
  * Mangle auto-generated code
