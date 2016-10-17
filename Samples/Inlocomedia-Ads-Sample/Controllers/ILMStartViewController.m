@@ -53,6 +53,7 @@
 
     _groups = @[DISPLAY_ADS, INTERSTITIAL_ADS, NATIVE_ADS, CUSTOM_ADS];
     _tableContents = @{[_groups objectAtIndex:0] : displayAds, [_groups objectAtIndex:1] : interstitialAds, [_groups objectAtIndex:2] : nativeAds, [_groups objectAtIndex:3] : customStyles};
+    [showInfoButton setTintColor:[UIColor whiteColor]];
 }
 
 - (ILMListElement *)listElementAtIndexPath:(NSIndexPath *)indexPath
