@@ -20,6 +20,7 @@
     NSDictionary *_tableContents;
     NSArray *_groups;
     UISwitch *_notificationSwitch;
+    __weak IBOutlet UIButton *showInfoButton;
 }
 
 @end
@@ -70,6 +71,49 @@
     } else {
         [InLocoMedia disableNotificationAds];
     }
+}
+- (IBAction)actionShowInfo:(id)sender {
+    NSString *ilmId = [InLocoMedia inlocomediaId];
+    NSString *madId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+    BOOL trackingEnabled = [[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled];
+    NSString *strTrackingEnabled =  trackingEnabled ? @"YES" : @"NO";
+    NSString *info = [NSString stringWithFormat:@"Advertidsing ID: %@\nILM ID: %@\nAdvertising Tracking Enabled: %@", madId, ilmId, strTrackingEnabled];
+    
+    UIAlertController *alert = [UIAlertController
+                                alertControllerWithTitle:@"Informations"
+                                message:info
+                                preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *okButton = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler: ^(UIAlertAction *action) {}];
+    
+    UIAlertAction *shareButtton = [UIAlertAction
+                                   actionWithTitle:@"Share"
+                                   style:UIAlertActionStyleDefault
+                                   handler: ^(UIAlertAction *action) {
+                                       [self shareInformation:@[info]];
+                                   }];
+    
+    [alert addAction:okButton];
+    [alert addAction:shareButtton];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)shareInformation:(NSArray *)info
+{
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:info applicationActivities:nil];
+    
+    NSArray *excludeActivities = @[UIActivityTypeAirDrop,
+                                   UIActivityTypeAssignToContact,
+                                   UIActivityTypeSaveToCameraRoll,
+                                   UIActivityTypeAddToReadingList,
+                                   UIActivityTypePostToFlickr,
+                                   UIActivityTypePostToVimeo];
+    activityVC.excludedActivityTypes = excludeActivities;
+    
+    [self presentViewController:activityVC animated:YES completion:nil];
 }
 
 #pragma UITableViewDataSource
