@@ -1,7 +1,12 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
-## [2.2.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.1.3) (26/09/2016)
+## [2.2.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.2.1) (20/10/2016)
+
+#### Fixed:
+ * Fixing synchronization error on geofences services
+
+## [2.2.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.2.0) (26/09/2016)
 
 #### Fixed:
  * iOS 10 compatibility
