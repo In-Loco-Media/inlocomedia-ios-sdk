@@ -36,7 +36,7 @@ Add our SDK to your podfile
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '7.0'
 
-pod 'InLocoMedia-Ads-SDK', '~> 2.2.0'
+pod 'InLocoMedia-Ads-SDK', '~> 2.2.1'
 ```
 
 ##Using the SDK download
@@ -101,7 +101,7 @@ Check our [changelog]
 If you have any problems with your integration open an issue on github or contact us at publishers@inlocomedia.com
 
 [cocoapods]: http://guides.cocoapods.org/using/getting-started.html
-[framework]: https://s3.amazonaws.com/mobile-api/IOS/v2/Release+Files/2.1/2.2.0/InLocoMediaAPI-2.2.0.zip
+[framework]: https://s3.amazonaws.com/mobile-api/IOS/v2/Release+Files/2.2/2.2.1/InLocoMediaAPI-2.2.1.zip
 [logo]: https://s3.amazonaws.com/mobile-api/IOS/v2/Documentation/Logo+Black.png
 [documentation]: https://github.com/In-Loco-Media/inlocomedia-ios-sdk/wiki
 [sign_up]: http://inlocomedia.com/
