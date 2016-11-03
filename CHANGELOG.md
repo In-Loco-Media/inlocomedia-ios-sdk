@@ -1,6 +1,12 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [2.3.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.3.0) (03/11/2016)
+
+#### Fixed:
+ * Recover iOS 7 compatibility
+ * Adjusts on location data collection
+
 ## [2.2.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.2.1) (20/10/2016)
 
 #### Fixed:
