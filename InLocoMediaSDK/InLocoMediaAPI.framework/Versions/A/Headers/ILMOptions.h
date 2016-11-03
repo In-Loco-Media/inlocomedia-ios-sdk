@@ -7,17 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ILMError.h"
 
 @interface ILMOptions : NSObject
 
 // Ads key identifies your app to our Ads server, you get this value when you register your app on our dashboard
 @property (nonatomic, strong) NSString *adsKey;
-
-// Maps key identifies your app to our Maps server, you get this value when you register your app on our dashboard
-@property (nonatomic, strong) NSString *mapsKey;
-
-// Maps secret key is used to authenticate your requests on the map server
-@property (nonatomic, strong) NSString *mapsSecret;
 
 // This array identifies the devices used in development. This way, these devices will receive only test ads. You must use this while developing.
 @property (nonatomic, strong) NSArray *developmentDevices;
@@ -37,7 +32,6 @@
 // Sets Ads key
 - (void)setAdsKey:(NSString *)adsKey;
 
-// Sets Maps key and Secret
-- (void)setMapsKey:(NSString *)mapsKey andSecret:(NSString *)mapsSecret;
++ (BOOL)checkCredentialsForOptions:(ILMOptions *)options error:(ILMError **)error;
 
 @end
