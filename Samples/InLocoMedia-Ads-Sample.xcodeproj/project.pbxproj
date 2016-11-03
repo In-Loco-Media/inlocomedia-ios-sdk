@@ -16,12 +16,12 @@
 		00074EB81CE6625E00228820 /* ILMNativeAdvertisementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00074EAD1CE6625E00228820 /* ILMNativeAdvertisementViewController.m */; };
 		00074EB91CE6625E00228820 /* ILMStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00074EAF1CE6625E00228820 /* ILMStartViewController.m */; };
 		001CEFE41D3D76B10019A195 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001CEFE31D3D76B10019A195 /* Image.xcassets */; };
+		001E75A91DC3C07D00DD97DC /* InLocoMediaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001E75A81DC3C07D00DD97DC /* InLocoMediaAPI.framework */; };
 		006FA32F1CD7D206009E6EEA /* NativeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 006FA32E1CD7D206009E6EEA /* NativeView.xib */; };
 		00D9099B1D46AF7600EF15F4 /* ILMNativeAdTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D9099A1D46AF7600EF15F4 /* ILMNativeAdTableView.m */; };
 		00D9099D1D46B13C00EF15F4 /* NativeAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D9099C1D46B13C00EF15F4 /* NativeAdCell.xib */; };
 		00D9099F1D46B14600EF15F4 /* NativeAdSmallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D9099E1D46B14600EF15F4 /* NativeAdSmallCell.xib */; };
 		00D909A11D46B15000EF15F4 /* MySmallCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D909A01D46B15000EF15F4 /* MySmallCustomCell.xib */; };
-		00DCAF421D99ABA10020CA28 /* InLocoMediaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DCAF411D99ABA10020CA28 /* InLocoMediaAPI.framework */; };
 		260089D6190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 260089D3190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png */; };
 		260089D7190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 260089D4190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png */; };
 		260089DF190AF2E80064080B /* InLocoMediaNativeAdDiscountFlag.png in Resources */ = {isa = PBXBuildFile; fileRef = 260089DE190AF2E80064080B /* InLocoMediaNativeAdDiscountFlag.png */; };
@@ -70,13 +70,13 @@
 		00074EAE1CE6625E00228820 /* ILMStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMStartViewController.h; sourceTree = "<group>"; };
 		00074EAF1CE6625E00228820 /* ILMStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMStartViewController.m; sourceTree = "<group>"; };
 		001CEFE31D3D76B10019A195 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		001E75A81DC3C07D00DD97DC /* InLocoMediaAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InLocoMediaAPI.framework; path = ../InLocoMediaSDK/InLocoMediaAPI.framework; sourceTree = "<group>"; };
 		006FA32E1CD7D206009E6EEA /* NativeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeView.xib; sourceTree = "<group>"; };
 		00D909991D46AF7600EF15F4 /* ILMNativeAdTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMNativeAdTableView.h; sourceTree = "<group>"; };
 		00D9099A1D46AF7600EF15F4 /* ILMNativeAdTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMNativeAdTableView.m; sourceTree = "<group>"; };
 		00D9099C1D46B13C00EF15F4 /* NativeAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdCell.xib; sourceTree = "<group>"; };
 		00D9099E1D46B14600EF15F4 /* NativeAdSmallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdSmallCell.xib; sourceTree = "<group>"; };
 		00D909A01D46B15000EF15F4 /* MySmallCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySmallCustomCell.xib; sourceTree = "<group>"; };
-		00DCAF411D99ABA10020CA28 /* InLocoMediaAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoMediaAPI.framework; sourceTree = "<group>"; };
 		260089D3190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InLocoMediaNativeAdButtonNormal.png; sourceTree = "<group>"; };
 		260089D4190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InLocoMediaNativeAdButtonPressed.png; sourceTree = "<group>"; };
 		260089DE190AF2E80064080B /* InLocoMediaNativeAdDiscountFlag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InLocoMediaNativeAdDiscountFlag.png; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 				C09621991A9E3AFC0055EEEE /* AudioToolbox.framework in Frameworks */,
 				C09621971A9E38460055EEEE /* AdSupport.framework in Frameworks */,
 				26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */,
-				00DCAF421D99ABA10020CA28 /* InLocoMediaAPI.framework in Frameworks */,
+				001E75A91DC3C07D00DD97DC /* InLocoMediaAPI.framework in Frameworks */,
 				2685F0DC190013530016A650 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,7 +190,7 @@
 		2685F0DA190013530016A650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				00DCAF411D99ABA10020CA28 /* InLocoMediaAPI.framework */,
+				001E75A81DC3C07D00DD97DC /* InLocoMediaAPI.framework */,
 				C09621A41A9E3B1D0055EEEE /* MessageUI.framework */,
 				C09621A01A9E3B150055EEEE /* EventKit.framework */,
 				C09621A11A9E3B150055EEEE /* EventKitUI.framework */,
