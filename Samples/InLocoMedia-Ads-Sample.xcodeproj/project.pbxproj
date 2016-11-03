@@ -18,6 +18,7 @@
 		001CEFE41D3D76B10019A195 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001CEFE31D3D76B10019A195 /* Image.xcassets */; };
 		001E75A91DC3C07D00DD97DC /* InLocoMediaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001E75A81DC3C07D00DD97DC /* InLocoMediaAPI.framework */; };
 		006FA32F1CD7D206009E6EEA /* NativeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 006FA32E1CD7D206009E6EEA /* NativeView.xib */; };
+		00A323F91DB14FC600E46656 /* InLocoMediaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A323F81DB14FC600E46656 /* InLocoMediaAPI.framework */; };
 		00D9099B1D46AF7600EF15F4 /* ILMNativeAdTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D9099A1D46AF7600EF15F4 /* ILMNativeAdTableView.m */; };
 		00D9099D1D46B13C00EF15F4 /* NativeAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D9099C1D46B13C00EF15F4 /* NativeAdCell.xib */; };
 		00D9099F1D46B14600EF15F4 /* NativeAdSmallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D9099E1D46B14600EF15F4 /* NativeAdSmallCell.xib */; };
@@ -72,6 +73,7 @@
 		001CEFE31D3D76B10019A195 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		001E75A81DC3C07D00DD97DC /* InLocoMediaAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InLocoMediaAPI.framework; path = ../InLocoMediaSDK/InLocoMediaAPI.framework; sourceTree = "<group>"; };
 		006FA32E1CD7D206009E6EEA /* NativeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeView.xib; sourceTree = "<group>"; };
+		00A323F81DB14FC600E46656 /* InLocoMediaAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InLocoMediaAPI.framework; path = ../InLocoMediaSDK/InLocoMediaAPI.framework; sourceTree = "<group>"; };
 		00D909991D46AF7600EF15F4 /* ILMNativeAdTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMNativeAdTableView.h; sourceTree = "<group>"; };
 		00D9099A1D46AF7600EF15F4 /* ILMNativeAdTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMNativeAdTableView.m; sourceTree = "<group>"; };
 		00D9099C1D46B13C00EF15F4 /* NativeAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdCell.xib; sourceTree = "<group>"; };
