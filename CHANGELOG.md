@@ -1,5 +1,10 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
+
+## [2.3.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.3.1) (09/11/2016)
+
+#### Fixed:
+ * Removed wrong dependency embed (CocoaSecurity)
  
 ## [2.3.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.3.0) (03/11/2016)
 
