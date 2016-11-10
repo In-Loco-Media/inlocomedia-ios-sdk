@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [2.3.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.3.2) (10/11/2016)
+
+#### Updated:
+ * Raise supported version from iOS 7 to iOS 8.
+
 ## [2.3.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.3.1) (09/11/2016)
 
 #### Fixed:
