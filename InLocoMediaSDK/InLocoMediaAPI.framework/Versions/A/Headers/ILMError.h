@@ -38,6 +38,7 @@ enum {
     ILMUnauthorized = 3006,
     ILMInvalidURLFormat = 3007,
     ILMInvalidContent = 3008,
+    ILMRequestInterrupted = 3009,
 
     //Location 4xxx
     ILMLocationScanningError = 4000,
@@ -46,6 +47,8 @@ enum {
     ILMLocationInvalidRequestParams = 4003,
     ILMLocationUnavailable = 4004,
     ILMLocationUnauthorized = 4005,
+    ILMLocationUnableToLocate = 4006,
+    ILMLocationInternalServerError = 4007,
 
     //Ads 5xxx
     ILMInvalidAdType = 5000,
@@ -63,10 +66,14 @@ enum {
 
 @property (nonatomic, strong) NSDictionary *extraInfo;
 
-- (id)initWithDomain:(NSString *)domain code:(NSInteger)code description:(NSString *)description;
+- (instancetype)initWithDomain:(NSString *)domain code:(NSInteger)code description:(NSString *)description;
 
+- (instancetype)initWithException:(NSException *)exception;
+
+// DEPRECATED
 + (ILMError *)errorWithDomain:(NSString *)domain code:(NSInteger)code description:(NSString *)description;
 
+// DEPRECATED
 + (ILMError *)errorWithException:(NSException *)exception;
 
 @end
