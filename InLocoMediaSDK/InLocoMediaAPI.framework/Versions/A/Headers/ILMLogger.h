@@ -14,18 +14,19 @@
 
 @property (assign) BOOL enabled;
 
-+ (ILMLogger*)sharedInstance;
++ (ILMLogger *)sharedInstance;
 
 //Log errors to the developer
-- (void)log:(const char*)prettyFunction :(int)line :(NSString*)format, ...;
+- (void)log:(const char *)prettyFunction line:(int)line format:(NSString *)format, ...;
 
 //Logs errors to internal usage
-- (void)logD:(const char*)prettyFunction :(int)line :(NSString*)format, ...;
-- (void)logE:(const char*)prettyFunction :(int)line :(ILMError *)error;
-- (void)logOnFile:(const char*)prettyFunction :(int)line :(NSString*)format, ...;
-- (void)logTime:(const char*)prettyFunction :(int)line :(NSString*)format, ...;
-- (void)logCommunication:(const char*)prettyFunction :(int)line :(NSString*)format, ...;
-- (void)logException:(const char*)prettyFunction :(int)line :(NSString*)format, ...;
+- (void)logD:(const char *)prettyFunction line:(int)line format:(NSString *)format, ...;
+- (void)logE:(const char *)prettyFunction line:(int)line error:(NSError *)error;
+- (void)logOnFile:(const char *)prettyFunction line:(int)line format:(NSString *)format, ...;
+- (void)logTime:(const char *)prettyFunction line:(int)line format:(NSString *)format, ...;
+- (void)logCommunication:(const char *)prettyFunction line:(int)line format:(NSString *)format, ...;
+- (void)logException:(const char *)prettyFunction line:(int)line format:(NSString *)format, ...;
+
 + (NSString *)logFilePath;
 
 @end

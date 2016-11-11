@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ILMNativeAdDelegate.h"
 #import "ILMNativeAdResponse.h"
+#import "ILMAdRequest.h"
 
 @interface ILMNativeAdManager : NSObject
 
