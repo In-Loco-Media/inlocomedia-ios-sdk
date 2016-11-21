@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [2.3.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.3.2) (21/11/2016)
+
+#### Fixed:
+ * Adjust IndexPath for TableView calls on ILMNativeAdTableViewManager
+
 ## [2.3.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.3.2) (10/11/2016)
 
 #### Updated:
