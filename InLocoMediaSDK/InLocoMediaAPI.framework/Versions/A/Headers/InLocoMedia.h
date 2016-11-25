@@ -14,7 +14,6 @@
 #import "ILMOptions.h"
 #import "ILMAdView.h"
 #import "ILMURLParser.h"
-#import "ILMRetail.h"
 #import "ILMUserProfile.h"
 #import "ILMError.h"
 #import "ILMAdRequest.h"
@@ -73,7 +72,7 @@
 /**
  Method to request a list of the retails registered to your application
  **/
-+ (void)requestRetails:(NSObject <ILMRetailsDelegate> *)delegate;
+//+ (void)requestRetails:(NSObject <ILMRetailsDelegate> *)delegate;
 
 /**
  Call it in your:
@@ -99,5 +98,10 @@
  (Not recomended to use while in foreground)
  **/
 + (void)handleNotificationWithDefaultBackgroundBehavior:(ILMAdvertisement *)ad;
+
+/**
+ It will get the ILMId from the ILMDefaults class
+ **/
++ (NSString *)inlocomediaId;
 
 @end

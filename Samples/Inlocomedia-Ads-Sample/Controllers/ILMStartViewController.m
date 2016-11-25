@@ -21,6 +21,7 @@
     NSArray *_groups;
     UISwitch *_notificationSwitch;
 }
+@property (weak, nonatomic) IBOutlet UIButton *showInfoButton;
 
 @end
 
@@ -52,6 +53,7 @@
 
     _groups = @[DISPLAY_ADS, INTERSTITIAL_ADS, NATIVE_ADS, CUSTOM_ADS];
     _tableContents = @{[_groups objectAtIndex:0] : displayAds, [_groups objectAtIndex:1] : interstitialAds, [_groups objectAtIndex:2] : nativeAds, [_groups objectAtIndex:3] : customStyles};
+    [self.showInfoButton setTintColor:[UIColor whiteColor]];
 }
 
 - (ILMListElement *)listElementAtIndexPath:(NSIndexPath *)indexPath
@@ -70,6 +72,49 @@
     } else {
         [InLocoMedia disableNotificationAds];
     }
+}
+- (IBAction)actionShowInfo:(id)sender {
+    NSString *ilmId = [InLocoMedia inlocomediaId];
+    NSString *madId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+    BOOL trackingEnabled = [[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled];
+    NSString *strTrackingEnabled =  trackingEnabled ? @"YES" : @"NO";
+    NSString *info = [NSString stringWithFormat:@"Advertidsing ID: %@\nILM ID: %@\nAdvertising Tracking Enabled: %@", madId, ilmId, strTrackingEnabled];
+    
+    UIAlertController *alert = [UIAlertController
+                                alertControllerWithTitle:@"Informations"
+                                message:info
+                                preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *okButton = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler: ^(UIAlertAction *action) {}];
+    
+    UIAlertAction *shareButtton = [UIAlertAction
+                                   actionWithTitle:@"Share"
+                                   style:UIAlertActionStyleDefault
+                                   handler: ^(UIAlertAction *action) {
+                                       [self shareInformation:@[info]];
+                                   }];
+    
+    [alert addAction:okButton];
+    [alert addAction:shareButtton];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)shareInformation:(NSArray *)info
+{
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:info applicationActivities:nil];
+    
+    NSArray *excludeActivities = @[UIActivityTypeAirDrop,
+                                   UIActivityTypeAssignToContact,
+                                   UIActivityTypeSaveToCameraRoll,
+                                   UIActivityTypeAddToReadingList,
+                                   UIActivityTypePostToFlickr,
+                                   UIActivityTypePostToVimeo];
+    activityVC.excludedActivityTypes = excludeActivities;
+    
+    [self presentViewController:activityVC animated:YES completion:nil];
 }
 
 #pragma UITableViewDataSource
