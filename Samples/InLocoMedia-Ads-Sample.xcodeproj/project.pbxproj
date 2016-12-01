@@ -71,6 +71,7 @@
 		00074EAF1CE6625E00228820 /* ILMStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMStartViewController.m; sourceTree = "<group>"; };
 		001CEFE31D3D76B10019A195 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		001E75A81DC3C07D00DD97DC /* InLocoMediaAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InLocoMediaAPI.framework; path = ../InLocoMediaSDK/InLocoMediaAPI.framework; sourceTree = "<group>"; };
+		003B087A1DE8B3A900FC9F00 /* InLocoMedia-Ads-Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "InLocoMedia-Ads-Sample.entitlements"; path = "InLocoMedia-Ads-Sample/InLocoMedia-Ads-Sample.entitlements"; sourceTree = "<group>"; };
 		006FA32E1CD7D206009E6EEA /* NativeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeView.xib; sourceTree = "<group>"; };
 		00D909991D46AF7600EF15F4 /* ILMNativeAdTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMNativeAdTableView.h; sourceTree = "<group>"; };
 		00D9099A1D46AF7600EF15F4 /* ILMNativeAdTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMNativeAdTableView.m; sourceTree = "<group>"; };
@@ -172,6 +173,7 @@
 		2685F0CF190013530016A650 = {
 			isa = PBXGroup;
 			children = (
+				003B087A1DE8B3A900FC9F00 /* InLocoMedia-Ads-Sample.entitlements */,
 				001CEFE31D3D76B10019A195 /* Image.xcassets */,
 				2685F0DA190013530016A650 /* Frameworks */,
 				2685F0E1190013530016A650 /* InLocomedia-Ads-Sample */,
@@ -302,6 +304,9 @@
 								enabled = 1;
 							};
 							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
 								enabled = 0;
 							};
 						};

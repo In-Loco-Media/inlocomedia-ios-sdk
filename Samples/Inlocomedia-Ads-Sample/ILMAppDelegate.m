@@ -19,7 +19,7 @@
     ILMOptions *options = [[ILMOptions alloc] init];
     
     // Set the development mode for your test device
-    [options setDevelopmentDevices:@[[[UIDevice currentDevice] identifierForVendor].UUIDString]];
+    // [options setDevelopmentDevices:@[[[UIDevice currentDevice] identifierForVendor].UUIDString]];
     
     // Your production key
     [options setAdsKey:APP_KEY];
