@@ -1,7 +1,12 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
-## [2.3.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.3.2) (21/11/2016)
+## [2.3.4](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.3.4) (1/12/2016)
+
+#### Fixed:
+ * Geofence registering error
+
+## [2.3.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.3.3) (21/11/2016)
 
 #### Fixed:
  * Adjust IndexPath for TableView calls on ILMNativeAdTableViewManager
