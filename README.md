@@ -14,78 +14,8 @@ Some of our Ads needs location for targeting, we recommend you to enable this pe
 
 #How to get Started
 
-- [Request an account][createAccount] and log in at our [dashboard][accounts].
-- Register your app.
-- Integrate it to your project, to do it you have two options:
-    - Use CocoaPods
-    - Download our SDK directly and add to your project
-
-##Using CocoaPods
-
-> CocoaPods manages library dependencies for your Xcode projects and is the recommended approach for deploying the InLocoMedia iOS SDK. If you do not know about it, check the [installation guide][cocoapods].
-
-To install cocoapods:
-
-```bash
-$ gem install cocoapods
-```
-
-Add our SDK to your podfile
-
-```cocoapods
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
-
-pod 'InLocoMedia-Ads-SDK', '~> 2.3.4'
-```
-
-##Using the SDK download
-
-* Download the '.framework' [**here**] [framework]
-* In the project navigator, select the project or group within a project to which you want to add the framework.
-* Choose File > Add Files to “< App_Name >”.
-* Select the framework bundle, and click Add.
- 
- > Tip: You can also add a framework to a project by dragging the framework bundle from a Finder window into the project in the project navigator.
-
-##Initializing SDK
-
-You will need to use your application id (app_id) that you received when you created your application in our [dashboard][accounts].
-Just add the line below in the **application:didFinishLaunchingWithOptions:** method of the **AppDelegate**.
-
-```objective-c
-#import <InLocoMediaAPI/InLocoMedia.h>
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-	//...
-    ILMOptions *options = [[ILMOptions alloc] init];
-    
-    //Your production ads key
-    [options setAdsKey:@"<your_ads_key>"];
-    
-    //Init our framework
-    [InLocoMedia initWithOptions:options];
-    //...
-}
-```
-
-##Displaying an Banner Ad
-
-```objective-c
-#import <InLocoMediaAPI/InLocoMedia.h>
-
-- (void)viewDidLoad
-{
-    ILMAdView *adView = [[ILMAdView alloc] initWithDisplayAdType:ILMAdTypeDisplayAdBannerSmall];
-    [adView loadAd];
-    [self.view addSubview:adView];
-}
-```
-
-> Check out [Getting started][gettingStarted] section to learn the first steps of integration.
-
-> All documentation is available on our **[wiki] [documentation]**.
+- First, you need to register on our platform. To do so, follow the [sign up][signup] instructions.
+- To integrate the SDK to your app, and start to display ads, check our iOS [documentation].
 
 #Latest Updates
 
@@ -93,7 +23,7 @@ Check our [changelog]
 
 #Requirements
 
-* Minimum supported version: iOS 
+* Minimum supported version: iOS 8.0
 * Xcode 8+
 
 #Communication
@@ -101,12 +31,9 @@ Check our [changelog]
 If you have any problems with your integration open an issue on github or contact us at publishers@inlocomedia.com
 
 [cocoapods]: http://guides.cocoapods.org/using/getting-started.html
-[framework]: https://s3.amazonaws.com/mobile-api/IOS/v2/Release+Files/2.3/2.3.4/InLocoMediaAPI-2.3.4.zip
 [logo]: https://s3.amazonaws.com/mobile-api/IOS/v2/Documentation/Logo+Black.png
 [documentation]: https://github.com/In-Loco-Media/inlocomedia-ios-sdk/wiki
-[sign_up]: http://inlocomedia.com/
+[signup]: http://docs.inlocomedia.com/docs/sign-up
 [changelog]: https://github.com/In-Loco-Media/inlocomedia-ios-sdk/blob/master/CHANGELOG.md
 [website]: http://www.inlocomedia.com/
-[accounts]: https://accounts.inlocomedia.com/
-[gettingStarted]: https://github.com/In-Loco-Media/inlocomedia-ios-sdk/wiki/Getting-Started
-[createAccount]: https://accounts.inlocomedia.com/publishers/sign_up
+[documentation]: http://docs.inlocomedia.com/docs/ios

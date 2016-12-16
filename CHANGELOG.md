@@ -1,6 +1,12 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [2.3.5](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.3.5) (16/12/2016)
+
+#### Fixed:
+ * Bug on ILMNativeAdTableView on "didSelectedRowAtIndexPath"
+ * Fixed ILMNativeAdTableView cells that wasn't registering impressions correctly
+
 ## [2.3.4](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.3.4) (1/12/2016)
 
 #### Fixed:
