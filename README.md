@@ -32,7 +32,6 @@ If you have any problems with your integration open an issue on github or contac
 
 [cocoapods]: http://guides.cocoapods.org/using/getting-started.html
 [logo]: https://s3.amazonaws.com/mobile-api/IOS/v2/Documentation/Logo+Black.png
-[documentation]: https://github.com/In-Loco-Media/inlocomedia-ios-sdk/wiki
 [signup]: http://docs.inlocomedia.com/docs/sign-up
 [changelog]: https://github.com/In-Loco-Media/inlocomedia-ios-sdk/blob/master/CHANGELOG.md
 [website]: http://www.inlocomedia.com/
