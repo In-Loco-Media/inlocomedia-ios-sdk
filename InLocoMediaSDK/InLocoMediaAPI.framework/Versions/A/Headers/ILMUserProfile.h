@@ -5,6 +5,7 @@
 //  Created by InLocoMedia on 3/18/14.
 //  Copyright (c) 2014 InLocoMedia. All rights reserved.
 //
+#import "ILMModules.h"
 
 typedef enum
 {

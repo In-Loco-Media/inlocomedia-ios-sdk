@@ -26,6 +26,7 @@
 #import "ILMNativeAdResponse.h"
 #import "ILMNativeAdManager.h"
 #import "ILMNativeAdDelegate.h"
+#import "ILMAdErrorConstants.h"
 
 @interface InLocoMedia : NSObject
 
@@ -59,6 +60,7 @@
  */
 + (BOOL)isNotificationAdsEnabled;
 
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 /**
  Method to be called when you receive a local notification after enabling notification ads
  **/
