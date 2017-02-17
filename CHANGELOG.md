@@ -1,7 +1,7 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
-## [2.4.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.4.0) (17/02/2017)
+## [2.4.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.4.1) (17/02/2017)
 
 #### Fixed:
  * Location services are now being properly initiated
