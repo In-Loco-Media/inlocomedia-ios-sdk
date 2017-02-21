@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
  
   s.name         = "InLocoMedia-Ads-SDK"
 
-  s.version      = "2.3.6"
+  s.version      = "2.4.1"
   s.summary      = "Monetize your mobile apps with In Loco Media, the most profitable Ad Network in Latin America."
 
   s.description  = <<-DESC
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.documentation_url = "https://github.com/in-loco-media/inlocomedia-ios-sdk/wiki"
 
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/In-Loco-Media/inlocomedia-ios-sdk.git", :tag => "2.3.6" }
+  s.source       = { :git => "https://github.com/In-Loco-Media/inlocomedia-ios-sdk.git", :tag => "2.4.1" }
 
   s.vendored_frameworks = 'InLocoMediaSDK/InLocoMediaSDKAds.framework'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }

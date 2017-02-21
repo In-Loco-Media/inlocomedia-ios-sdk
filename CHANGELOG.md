@@ -1,6 +1,17 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [2.4.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.4.1) (17/02/2017)
+
+#### Fixed:
+ * Location services are now being properly initiated
+
+## [2.4.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.4.0) (27/01/2017)
+
+#### Updated:
+ * Enabled Calendar and StorePicture AdActions when the app has the required permissions on plist.
+ * Embedded Bitcode
+
 ## [2.3.6](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.3.6) (13/01/2017)
 
 #### Fixed:
