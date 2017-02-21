@@ -17,6 +17,10 @@
 #import "ILMGeofencingData.h"
 #import "ILMGeofencingRegion.h"
 #import "ILMGeofencingEvent.h"
+#import "ILMLogger.h"
+#import "ILMPublicMacros.h"
+#import "ILMUserProfile.h"
+#import "ILMWebImageView.h"
 
 @interface ILMInLoco : NSObject
 
