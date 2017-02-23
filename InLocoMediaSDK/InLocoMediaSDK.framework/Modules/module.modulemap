@@ -1,0 +1,9 @@
+
+framework module InLocoMediaSDK {
+  umbrella header "ILMInLocoMedia.h"
+  header "ILMInLoco.h"
+
+  export *
+  module * { export * }
+
+}
