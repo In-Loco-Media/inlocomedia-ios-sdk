@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [2.4.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.4.2) (14/03/2017)
+
+#### Fixed:
+ * Unnecessary symbols removed
+
 ## [2.4.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.4.1) (17/02/2017)
 
 #### Fixed:
