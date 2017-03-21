@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 ## [2.4.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.4.3) (21/03/2017)
 
 #### Fixed:
- * Fixing Native request logic, on NativeAdManger.
+ * Fixing Native request logic on NativeAdManger.
 
 ## [2.4.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.4.2) (14/03/2017)
 
