@@ -1,0 +1,9 @@
+
+framework module InLocoMediaSDKAds {
+  umbrella header "ILMInLocoMedia.h"
+  header "ILMInLoco.h"
+
+  export *
+  module * { export * }
+
+}

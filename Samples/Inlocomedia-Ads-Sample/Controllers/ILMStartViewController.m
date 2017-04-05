@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 InLocoMedia. All rights reserved.
 //
 
-#import <InLocoMediaSDK/ILMInLocoMedia.h>
+#import <InLocoMediaSDKAds/ILMInLocoMedia.h>
 
 #import "ILMNativeAdTableView.h"
 #import "ILMStartViewController.h"

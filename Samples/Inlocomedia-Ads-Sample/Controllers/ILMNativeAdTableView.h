@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <InLocoMediaSDK/ILMInLocoMedia.h>
+#import <InLocoMediaSDKAds/ILMInLocoMedia.h>
 
 @interface ILMNativeAdTableView : UIViewController
 
