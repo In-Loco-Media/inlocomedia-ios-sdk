@@ -1,7 +1,7 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
-## [3.0.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.4.3) (06/04/2017)
+## [3.0.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.0.0) (06/04/2017)
 
 ### Feature:
  * InLocoMedia SDK now has two public independent modules: Ads and Location
