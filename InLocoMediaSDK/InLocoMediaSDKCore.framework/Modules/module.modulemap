@@ -1,0 +1,8 @@
+
+framework module InLocoMediaSDKCore {
+  
+
+  export *
+  module * { export * }
+
+}

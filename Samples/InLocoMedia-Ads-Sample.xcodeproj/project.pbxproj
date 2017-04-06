@@ -499,7 +499,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/../InLocoMediaSDK",
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
@@ -536,7 +535,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/../InLocoMediaSDK",
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
