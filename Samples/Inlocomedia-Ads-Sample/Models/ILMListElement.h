@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <InLocoMediaAPI/InLocoMedia.h>
+#import <InLocoMediaSDKAds/ILMInLocoMedia.h>
 
 @interface ILMListElement : NSObject
 

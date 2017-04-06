@@ -1,6 +1,20 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [3.0.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.0.0) (06/04/2017)
+
+### Feature:
+ * InLocoMedia SDK now has two public independent modules: Ads and Location
+ * Background fetch method for the scheduler on the location module
+ * Location public interface
+
+### Fix:
+ * Fixed a problem on interstitial impression registering
+ * Fixed a problem on native table view ads when the method numberOfSectionsInTableView wasn't implemented
+
+### Refactor:
+ * Several classes were renamed
+
 ## [2.4.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.4.3) (21/03/2017)
 
 #### Fixed:
@@ -9,10 +23,9 @@ All notable changes to this project will be documented in this file.
 ## [2.4.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.4.2) (14/03/2017)
 
 #### Fixed:
- * Unnecessary symbols removed
+ * Remove unnecessary symbols from binaries
 
 ## [2.4.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.4.1) (17/02/2017)
-
 #### Fixed:
  * Location services are now being properly initiated
 
