@@ -16,15 +16,15 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation'
   
   s.subspec 'Ads' do |ads|
-    ads.vendored_frameworks = 'InLocoMediaSDKAds.framework'
+    ads.vendored_frameworks = 'InLocoMediaSDK/InLocoMediaSDKAds.framework'
     ads.dependency 'InLocoMedia-iOS-SDK/Core'
   end
   s.subspec 'Location' do |location|
-    location.vendored_frameworks = 'InLocoMediaSDKLocation.framework'
+    location.vendored_frameworks = 'InLocoMediaSDK/InLocoMediaSDKLocation.framework'
     location.dependency 'InLocoMedia-iOS-SDK/Core'
   end
   s.subspec 'Core' do |core|
-    core.vendored_frameworks = 'InLocoMediaSDKCore.framework'
+    core.vendored_frameworks = 'InLocoMediaSDK/InLocoMediaSDKCore.framework'
   end
   s.requires_arc = true
 end
