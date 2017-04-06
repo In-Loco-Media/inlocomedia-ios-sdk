@@ -9,8 +9,8 @@ All notable changes to this project will be documented in this file.
  * Location public interface
 
 ### Fix:
- * Fixed problem on interstitial impression registering
- * Fixed problem on native table view ads when the method numberOfSectionsInTableView wasn't implemented
+ * Fixed a problem on interstitial impression registering
+ * Fixed a problem on native table view ads when the method numberOfSectionsInTableView wasn't implemented
 
 ### Refactor:
  * Several classes were renamed
