@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license          = 'Copyright'
   s.author           = { "Ubee Desenvolvimento de Software S/A." => "hi@inlocomedia.com" }
   s.source           = { :git => "https://github.com/In-Loco-Media/inlocomedia-ios-sdk.git", :tag => "3.0.0" }
-  s.documentation_url = "https://github.com/in-loco-media/inlocomedia-ios-sdk/wiki"
+  s.documentation_url = "http://docs.inlocomedia.com/"
   s.ios.deployment_target = '8.0'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.license = 'LICENSE' 
