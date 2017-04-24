@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 InLocoMedia. All rights reserved.
 //
 
-#import <InLocoMediaSDK/ILMInLocoMedia.h>
+#import <InLocoMediaAPI/InLocoMedia.h>
 #import "ILMAdViewFromStoryboard.h"
 
 @interface ILMAdViewFromStoryboard () <ILMAdViewDelegate>

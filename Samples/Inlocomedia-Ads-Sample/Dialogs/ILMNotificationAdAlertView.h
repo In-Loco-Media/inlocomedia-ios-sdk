@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <InLocoMediaSDK/ILMInLocoMedia.h>
+#import <InLocoMediaAPI/InLocoMedia.h>
 
 @interface ILMNotificationAdAlertView : UIAlertView <UIAlertViewDelegate>
 

@@ -1,7 +1,18 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
-## [2.4.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.4.1) (14/03/2017)
+## [2.4.4](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.4.4) (24/04/2017)
+
+#### Fixed:
+* Enabled bitcode on dependencies.
+* Fixed logic on Interstitial.
+
+## [2.4.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.4.3) (21/03/2017)
+
+#### Fixed:
+* Fixing Native request logic on NativeAdManger.
+
+## [2.4.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/2.4.2) (14/03/2017)
 #### Fixed:
  * Remove unnecessary symbols from binaries
 

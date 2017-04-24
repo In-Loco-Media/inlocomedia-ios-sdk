@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 InLocoMedia. All rights reserved.
 //
 
-#import <InLocoMediaSDK/ILMInLocoMedia.h>
+#import <InLocoMediaAPI/InLocoMedia.h>
 
 #import "ILMNativeAdTableView.h"
 #import "ILMStartViewController.h"
@@ -68,13 +68,13 @@
 - (IBAction)actionNotificationSwitch:(id)sender
 {
     if ([_notificationSwitch isOn]) {
-       [ILMInLocoMedia enableNotificationAds];
+       [InLocoMedia enableNotificationAds];
     } else {
-        [ILMInLocoMedia disableNotificationAds];
+        [InLocoMedia disableNotificationAds];
     }
 }
 - (IBAction)actionShowInfo:(id)sender {
-    NSString *ilmId = [ILMInLocoMedia inlocomediaId];
+    NSString *ilmId = [InLocoMedia inlocomediaId];
     NSString *madId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
     BOOL trackingEnabled = [[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled];
     NSString *strTrackingEnabled =  trackingEnabled ? @"YES" : @"NO";
@@ -153,7 +153,7 @@
        [cell addSubview:theSwitch];
        cell.accessoryView = theSwitch;
        _notificationSwitch = theSwitch;
-       _notificationSwitch.on = [ILMInLocoMedia isNotificationAdsEnabled];
+       _notificationSwitch.on = [InLocoMedia isNotificationAdsEnabled];
        [_notificationSwitch addTarget:self action:@selector(actionNotificationSwitch:) forControlEvents:UIControlEventValueChanged];
     } else {
         cell.textLabel.text = element.adTypeValue;

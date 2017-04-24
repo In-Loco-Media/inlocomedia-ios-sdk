@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 InLocoMedia. All rights reserved.
 //
 
-#import <InLocoMediaSDK/ILMInLocoMedia.h>
+#import <InLocoMediaAPI/InLocoMedia.h>
 
 #import "ILMAppDelegate.h"
 #import "ILMNotificationAdAlertView.h"
@@ -16,7 +16,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Initialize the API
-    ILMAdsOptions *options = [[ILMAdsOptions alloc] init];
+    ILMOptions *options = [[ILMOptions alloc] init];
     
     // Set the development mode for your test device
     [options setDevelopmentDevices:@[[[UIDevice currentDevice] identifierForVendor].UUIDString]];
@@ -32,7 +32,7 @@
     [options setLocationEnabled:YES];
     
     // Initializating the InLocoMedia SDK
-    [ILMInLocoMedia initWithOptions:options];
+    [InLocoMedia initWithOptions:options];
     
     // Set user profile and save
     ILMUserProfile *userProfile = [[ILMUserProfile alloc] initWithMinAge:10 andMaxAge:25 andGender:ILMGenderMale];
@@ -47,11 +47,11 @@
     UILocalNotification *notification = launchOptions[UIApplicationLaunchOptionsLocalNotificationKey];
     if (notification) {
         
-        ILMAdvertisement *advertisement = [ILMInLocoMedia didReceiveNotification:notification];
+        ILMAdvertisement *advertisement = [InLocoMedia didReceiveNotification:notification];
         if (advertisement) {
             NSLog(@"Ads Sample: App launched with the notification");
             [self handleNotificationAdvertisement:advertisement];
-            [ILMInLocoMedia handleNotificationWithDefaultBackgroundBehavior:advertisement];
+            [InLocoMedia handleNotificationWithDefaultBackgroundBehavior:advertisement];
         }
     }
     
@@ -60,28 +60,28 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    [ILMInLocoMedia applicationDidBecomeActive];
+    [InLocoMedia applicationDidBecomeActive];
 }
 
 - (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
 {
-    [ILMInLocoMedia applicationDidRegisterUserNotificationSettings];
+    [InLocoMedia applicationDidRegisterUserNotificationSettings];
 }
 
 - (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
-    [ILMInLocoMedia applicationPerformFetchWithResult: ^(UIBackgroundFetchResult fetchResult) {
+    [InLocoMedia applicationPerformFetchWithResult: ^(UIBackgroundFetchResult fetchResult) {
         completionHandler(fetchResult);
     }];
 }
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
-    ILMAdvertisement *advertisement = [ILMInLocoMedia didReceiveNotification:notification];
+    ILMAdvertisement *advertisement = [InLocoMedia didReceiveNotification:notification];
     
     if (advertisement && [application applicationState] != UIApplicationStateActive) {
         NSLog(@"Ads Sample: Notification received as local notification");
-        [ILMInLocoMedia handleNotificationWithDefaultBackgroundBehavior:advertisement];
+        [InLocoMedia handleNotificationWithDefaultBackgroundBehavior:advertisement];
     } else {
         [self handleNotificationAdvertisement:advertisement];
     }
