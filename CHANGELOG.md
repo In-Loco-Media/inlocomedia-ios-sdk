@@ -5,8 +5,8 @@ Release 3.0.1 (04/05/2017)
 ===
 #### Fixed:
 * Enabled bitcode on dependencies
-* Fixed logic on Interstitial
-* Fixed problem on native table view ads
+* Fixed an Interstitial ad logic problem
+* Fixed a problem on native table view ads
 
 ## [3.0.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.0.0) (06/04/2017)
 
