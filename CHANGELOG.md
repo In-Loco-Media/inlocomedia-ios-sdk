@@ -1,18 +1,18 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
-## [3.0.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.0.3)(25/05/2017)
-===
+## [3.0.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.0.3) (25/05/2017)
+
 #### Fixed:
 * Fixed an issue in the Location Analytics
 
-## [3.0.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.0.2)(19/05/2017)
-===
+## [3.0.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.0.2) (19/05/2017)
+
 #### Fixed:
 * Fix an issue with development devices
 
-## [3.0.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.0.1)(04/05/2017)
-===
+## [3.0.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.0.1) (04/05/2017)
+
 #### Fixed:
 * Enabled bitcode on dependencies
 * Fixed an Interstitial ad logic problem
