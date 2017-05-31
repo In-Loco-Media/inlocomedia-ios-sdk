@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 ## [3.0.5](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.0.5) (31/05/2017)
 
 #### Fixed:
-* Fixed an issue in the Ads Analytics
+* Fixed json keys used in ad-related requests.
 
 ## [3.0.4](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.0.4) (26/05/2017)
 
