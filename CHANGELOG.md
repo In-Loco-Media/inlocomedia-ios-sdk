@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 ## [3.0.6](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.0.6) (15/06/2017)
 
 #### Fixed:
-* Fixed Ads serialization problem
+* Fixed an Ads serialization problem
 
 ## [3.0.5](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.0.5) (31/05/2017)
 
