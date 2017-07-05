@@ -52,6 +52,22 @@
 #define ILMAdTypeDisplayAdFullScreenTabletLandscape ILMAdType.displayFullScreenTabletLandscape
 #define ILMAdTypeDisplayAdTile ILMAdType.displayTile
 
+typedef enum {
+    kILMAdUnitTypeBanner,
+    kILMAdUnitTypeInterstitial,
+    kILMAdUnitTypeNotification,
+    kILMAdUnitTypeNative,
+    kILMAdUnitTypeUnknown
+} ILMAdUnitType;
+
+typedef enum {
+    kILMAdContentTypeDisplay,
+    kILMAdContentTypeNotification,
+    kILMAdContentTypeNative,
+    kILMAdContentTypeVideo,
+    kILMAdContentTypeUnknown
+} ILMAdContentType;
+
 @interface ILMAdType : NSObject
 
 @property (nonatomic, assign, readonly) CGSize size;
@@ -62,6 +78,7 @@
 @property (nonatomic, assign, readonly) BOOL isNative;
 @property (nonatomic, assign, readonly) BOOL isDisplay;
 @property (nonatomic, assign, readonly) BOOL isSmart;
+@property (nonatomic, assign, readonly) ILMAdUnitType unitType;
 
 - (instancetype)init NS_UNAVAILABLE;
 
