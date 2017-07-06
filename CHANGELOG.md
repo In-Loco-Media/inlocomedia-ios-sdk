@@ -1,6 +1,18 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [3.1.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.1.0) (05/07/2017)
+
+### Feature:
+ * Adds the support to present Native Ads using custom UIViews
+   - When using AdManager, views don't have to extend a NativeAdView or a NativeAdCell
+   - Custom cells can be used to present native ads on a tableview
+ * Improves the location module's precision 
+ * Interstitial Ads now automatically close by default after returning from a click
+
+### Fix:
+ * Fixes a problem with the ad viewability for ads that are not completely on screen
+
 ## [3.0.6](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.0.6) (15/06/2017)
 
 #### Fixed:

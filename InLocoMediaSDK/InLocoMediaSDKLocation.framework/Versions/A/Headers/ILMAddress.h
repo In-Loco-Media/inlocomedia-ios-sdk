@@ -8,7 +8,7 @@
 
 #import "ILMJsonSerializable.h"
 
-@interface ILMAddress : NSObject <NSCopying, ILMJsonSerializable>
+@interface ILMAddress : NSObject <NSCopying, ILMJsonSerializable, NSCoding>
 
 // The country name. E.g: Brazil
 @property (nonatomic, strong) NSString *countryName;
@@ -30,5 +30,8 @@
 @property (nonatomic, strong) NSString *postalCode;
 // Locale for the address information. E.g: pt-Br
 @property (nonatomic, strong) NSString *locale;
+
+- (instancetype)initWithCoder:(NSCoder *)coder;
+- (void)encodeWithCoder:(NSCoder *)encoder;
 
 @end
