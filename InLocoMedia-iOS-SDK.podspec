@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'InLocoMedia-iOS-SDK'
-  s.version          = '3.0.6'
+  s.version          = '3.1.0'
   s.summary          = 'Monetize your mobile apps with In Loco Media, the most profitable Ad Network in Latin America.'
   s.description      = <<-DESC
                    In Loco Media's SDK is easy to install, taking less than 1 hour to setup and start monetizing with relevant ads to the user, thanks to its powerful targeting capabilities. In Loco Media owns the most accurate global market positioning technology.
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://www.inlocomedia.com/'
   s.license          = 'Copyright'
   s.author           = { "Ubee Desenvolvimento de Software S/A." => "hi@inlocomedia.com" }
-  s.source           = { :git => "https://github.com/In-Loco-Media/inlocomedia-ios-sdk.git", :tag => "3.0.6" }
+  s.source           = { :git => "https://github.com/In-Loco-Media/inlocomedia-ios-sdk.git", :tag => "3.1.0" }
   s.documentation_url = "http://docs.inlocomedia.com/"
   s.ios.deployment_target = '8.0'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }

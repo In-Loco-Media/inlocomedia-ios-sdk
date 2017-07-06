@@ -18,22 +18,25 @@
 
 @optional
 
-//This will be called when the interstitial ad has been completed and is ready to be shown
+//Called when the interstitial ad is complete and ready to be shown.
 - (void)ilmInterstitialAdDidReceiveAd:(ILMInterstitialAd *)interstitialAd;
 
 //Called when an ad request has failed.
 - (void)ilmInterstitialAd:(ILMInterstitialAd *)adView didFailToReceiveAdWithError:(ILMError *)error;
 
-//Called before the Interstitial appear
+//Called before the Interstitial appears.
 - (void)ilmInterstitialAdWillAppear:(ILMInterstitialAd *)interstitialAd;
 
-//Called before the Interstitial will close
+//Called before the Interstitial is closed.
 - (void)ilmInterstitialAdWillDisappear:(ILMInterstitialAd *)interstitialAd;
 
-//Called after the Interstitial did close
+//Called after the Interstitial is closed.
 - (void)ilmInterstitialAdDidDisappear:(ILMInterstitialAd *)interstitialAd;
 
-//This will be called after the view is clicked and before leaving the application to open the content of the advertisement.
+//Called after the ad is clicked and before leaving the application to open the content of the advertisement.
 - (void)ilmInterstitialAdViewWillLeaveApplication:(ILMInterstitialAd *)interstitialAd;
+
+// Called when the application returns from a click.
+- (void)ilmInterstitialAdDidReturnFromClick:(ILMInterstitialAd *)interstitialAd;
 
 @end

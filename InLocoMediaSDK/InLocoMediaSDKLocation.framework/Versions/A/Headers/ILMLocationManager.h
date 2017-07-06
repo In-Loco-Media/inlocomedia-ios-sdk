@@ -12,33 +12,26 @@
 #import "ILMError.h"
 
 typedef void (^ILMLocationBlock)(ILMLocation *location, ILMError *err);
+typedef void (^ILMCLLocationBlock)(CLLocation *location, ILMError *err);
+typedef void (^ILMErrorBlock)(ILMError *err);
 typedef void (^ILMGeofencingBlock)(BOOL result);
-
-@protocol ILMLocationManagerDelegate <NSObject>
-
-- (void)locationReceived:(ILMLocation *)location;
-
-@end
 
 @interface ILMLocationManager : NSObject
 
 @property (nonatomic, assign) BOOL enabled;
+@property (nonatomic, assign) NSTimeInterval lastLocationRequestedTimestamp;
 
 + (ILMLocationManager *)sharedInstance;
 
 - (instancetype)init NS_UNAVAILABLE;
 
-- (void)addDelegate:(NSObject <ILMLocationManagerDelegate> *)delegate;
-
 - (void)setOptions:(ILMLocationOptions *)options;
 
-- (ILMLocation *)getLastLocation;
+- (CLLocation *)getLastLocation;
 
 - (void)requestLocationUpdate;
 
-- (ILMLocation *)requestLocationUpdateSync;
-
-- (void)requestLocationUpdate:(ILMLocationBlock)locationBlock;
+- (CLLocation *)requestLocationUpdateSync;
 
 - (BOOL)requestAuthorizationAlways;
 
