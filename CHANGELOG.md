@@ -1,6 +1,12 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [3.1.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.1.1) (17/07/2017)
+
+#### Fixed:
+* If the location module is enabled, now correctly uses the last known location when requesting Ads
+* Removes unused headers from the public interface
+
 ## [3.1.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.1.0) (05/07/2017)
 
 ### Feature:
