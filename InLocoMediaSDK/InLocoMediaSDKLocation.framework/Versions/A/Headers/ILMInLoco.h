@@ -9,9 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "ILMModules.h"
 #import "ILMLocationOptions.h"
-#import "ILMLocationManager.h"
-#import "ILMLocation.h"
-#import "ILMAddress.h"
 #import "ILMLogger.h"
 
 @interface ILMInLoco : NSObject
