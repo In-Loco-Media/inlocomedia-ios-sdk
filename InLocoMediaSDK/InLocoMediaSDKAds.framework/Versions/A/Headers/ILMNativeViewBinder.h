@@ -73,7 +73,7 @@ extern NSString* const kILMNativeViewBinderContentImageView;
  @param button The UIButton that will receive the Ad's click action.
  @param iconImage The UIImageView that will receive the Ad's icon image.
  @param contentImage The UIImageView that will receive the Ad's content image.
- @return An instance of an ILMNativeViewBinder if the parameters are valid, and NIL otherwise.
+ @return An instance of an ILMNativeViewBinderBuilder.
  */
 - (instancetype)initWithContainerView:(UIView *)containerView
                            titleLabel:(UILabel *)titleLabel
@@ -107,7 +107,7 @@ extern NSString* const kILMNativeViewBinderContentImageView;
 - (instancetype)initWithView:(UIView *)view keyPathPropertyMapping:(NSDictionary *)keyPathPropertyMapping;
 
 /**
- @brief Creates an ILMNativeViewBinder using the view and propertyMapping passed as parameters.
+ @brief Creates an ILMNativeViewBinderBuilder using the view and propertyMapping passed as parameters.
  @discussion This method tries to create an ILMNativeViewBinderBuilder using the view and dictionary
  passed as parameters. The propertyMapping expects the type <NSString *, NSNumber *>, in which
  the key is one of the kILMNativeViewBinder keys (i.e, kILMNativeViewBinderContainerView, kILMNativeViewBinderTitleLabel,
