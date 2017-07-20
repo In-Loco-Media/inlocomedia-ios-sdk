@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [3.1.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.1.3) (20/07/2017)
+
+#### Fixed:
+* Fixes a problem that prevented Notification Ads from appearing
+
 ## [3.1.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.1.2) (17/07/2017)
 
 #### Fixed:
