@@ -25,4 +25,7 @@
 //Method to load an Advertisement.
 - (void)loadAdWithRequest:(ILMAdRequest *)adRequest;
 
+//Method to access the current Ad View.
+- (UIView *)adView;
+
 @end
