@@ -7,7 +7,7 @@ All notable changes to this project will be documented in this file.
  * Solves problems related to wrong timestamps on device.
 
 #### Refactor:
- * AdView and Intertistial Ad now uses the AdManager
+ * Large refactor on Ads
 
 #### Fix:
  * Fixes on Notification Ad Delivery
