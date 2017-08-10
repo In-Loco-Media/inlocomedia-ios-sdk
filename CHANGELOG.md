@@ -1,6 +1,17 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [3.2.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.2.0) (10/08/2017)
+
+#### Feature
+ * Solves problems related to wrong timestamps on device.
+
+#### Refactor:
+ * Large refactor on Ads
+
+#### Fix:
+ * Fixes on Notification Ad Delivery
+
 ## [3.1.4](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.1.4) (24/07/2017)
 
 #### Fixed:
