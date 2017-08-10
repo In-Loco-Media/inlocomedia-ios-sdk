@@ -24,4 +24,5 @@
 #define ILMInvalidViewManager 5007
 #define ILMInvalidNativeViewBinder 5008
 #define ILMInvalidNativeNib 5009
+#define ILMInvalidDelegate 5010
 #endif

@@ -1,6 +1,23 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [3.2.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.2.0) (10/08/2017)
+
+#### Feature
+ * Solves problems related to wrong timestamps on device.
+
+#### Refactor:
+ * AdView and Intertistial Ad now uses the AdManager
+
+#### Fix:
+ * Fixes on Notification Ad Delivery
+
+## [3.1.4](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.1.4) (24/07/2017)
+
+#### Fixed:
+* Improves the performance on Native Ads inside lists
+* Improves the ILMAdManagerDelegate to pass the ILMAdManager as a parameter
+
 ## [3.1.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.1.3) (20/07/2017)
 
 #### Fixed:
