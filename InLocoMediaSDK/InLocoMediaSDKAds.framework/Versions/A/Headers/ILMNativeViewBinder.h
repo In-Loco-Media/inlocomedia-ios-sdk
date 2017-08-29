@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ILMImageViewContainer.h"
 #import "ILMNativeAdCell.h"
+#import "ILMNativeAdView.h"
 
 @interface ILMNativeViewBinder : NSObject
 
@@ -63,6 +64,7 @@ extern NSString* const kILMNativeViewBinderContentImageView;
 
 /**
  @brief Creates an ILMNativeViewBinderBuilder using the views passed as parameters.
+ 
  @discussion This method tries to create an ILMNativeViewBinderBuilder using the views passed as parameters.
  Each paramater is then checked to see if it complies with the minimum requirements of a
  native ad. The requirements of a binder validity can be found at the isValid method.
@@ -73,6 +75,7 @@ extern NSString* const kILMNativeViewBinderContentImageView;
  @param button The UIButton that will receive the Ad's click action.
  @param iconImage The UIImageView that will receive the Ad's icon image.
  @param contentImage The UIImageView that will receive the Ad's content image.
+
  @return An instance of an ILMNativeViewBinderBuilder.
  */
 - (instancetype)initWithContainerView:(UIView *)containerView
@@ -90,7 +93,14 @@ extern NSString* const kILMNativeViewBinderContentImageView;
 - (instancetype)initWithNativeAdCell:(ILMNativeAdCell *)nativeAdCell;
 
 /**
+ @brief Creates an ILMNativeViewBinderBuilder using an ILMNativeAdCell object.
+ @return An instance of an ILMNativeViewBinderBuilder.
+ */
+- (instancetype)initWithNativeAdView:(ILMNativeAdView *)nativeAdView;
+
+/**
  @brief Creates an ILMNativeViewBinderBuilder using the view and propertyMapping passed as parameters.
+ 
  @discussion This method tries to create an ILMNativeViewBinderBuilder using the view and dictionary
  passed as parameters. The propertyMapping expects the type <NSString *, NSString *>, in which
  the key is one of the kILMNativeViewBinder keys (i.e, kILMNativeViewBinderContainerView, kILMNativeViewBinderTitleLabel,
@@ -100,14 +110,18 @@ extern NSString* const kILMNativeViewBinderContentImageView;
  The views obtained from the keyPath must also respect the expected type (UILabel, UIButton or UIImage).
  The parameters are then checked to see if it complies with the minimum requirements of a
  native ad. The requirements of a binder validity can be found at the isValid method.
+ 
  @param view The view that contains all the subsequent views.
+ 
  @param keyPathPropertyMapping A mapping of type <NSString *, NSString *>.
+ 
  @return An instance of a ILMNativeViewBinderBuilder.
  */
 - (instancetype)initWithView:(UIView *)view keyPathPropertyMapping:(NSDictionary *)keyPathPropertyMapping;
 
 /**
  @brief Creates an ILMNativeViewBinderBuilder using the view and propertyMapping passed as parameters.
+
  @discussion This method tries to create an ILMNativeViewBinderBuilder using the view and dictionary
  passed as parameters. The propertyMapping expects the type <NSString *, NSNumber *>, in which
  the key is one of the kILMNativeViewBinder keys (i.e, kILMNativeViewBinderContainerView, kILMNativeViewBinderTitleLabel,
@@ -117,20 +131,25 @@ extern NSString* const kILMNativeViewBinderContentImageView;
  The views obtained from the keyPath must also respect the expected type (UILabel, UIButton or UIImage).
  The parameters are then checked to see if it complies with the minimum requirements of a
  native ad. The requirements of a binder validity can be found at the isValid method.
+ 
  @param view The view that contains all the subsequent views.
+ 
  @param tagPropertyMapping A mapping of type <NSString *, NSNumber *>.
+ 
  @return An instance of a ILMNativeViewBinderBuilder.
  */
 - (instancetype)initWithView:(UIView *)view tagPropertyMapping:(NSDictionary *)tagPropertyMapping;
 
 /**
  @brief Returns if the current instance is valid.
+ 
  @discussion This method verifies the validity of a binder. In order to be valid, the binder has to
  conform with the following rules:
  1. The container view must not be nil, and an instance of type UIView.
  2. The title label must not be nil, and an instance of type UILabel.
  3. Either the icon imageview or the content imageview must not be nil, and an instance of type UIImageView.
  4. All views that are used to show the ad information must be a descendant of the container view.
+ 
  @return YES if the instance is valid, NO otherwise.
  */
 - (BOOL)isValid;

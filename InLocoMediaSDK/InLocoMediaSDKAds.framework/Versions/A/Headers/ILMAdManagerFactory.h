@@ -25,6 +25,6 @@
  @param delegate An ILMAdManagerDelegate.
  @return An instance of an ILMAdManager specialized in managing Native Ads.
  */
-+ (ILMAdManager *)nativeAdManagerWithViewBinder:(ILMNativeViewBinder *)viewBinder delegate:(NSObject <ILMAdManagerDelegate> *)delegate;
-
++ (ILMAdManager *)nativeAdManagerWithViewBinder:(ILMNativeViewBinder *)viewBinder
+                                       delegate:(NSObject <ILMAdManagerDelegate> *)delegate;
 @end

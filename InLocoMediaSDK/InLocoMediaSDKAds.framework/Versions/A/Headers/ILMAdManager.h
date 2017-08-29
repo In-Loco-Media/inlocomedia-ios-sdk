@@ -1,3 +1,5 @@
+
+
 //
 //  ILMAdManager.h
 //  InLocoMedia-iOS-SDK
@@ -24,5 +26,11 @@
 
 //Method to load an Advertisement.
 - (void)loadAdWithRequest:(ILMAdRequest *)adRequest;
+
+//Method to access the current Ad View.
+- (UIView *)adView;
+
+//Method that returns the refresh interval of the ad.
+- (NSTimeInterval)refreshInterval;
 
 @end
