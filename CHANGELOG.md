@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [3.2.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.2.1) (29/08/2017)
+
+#### Fix
+ * Error on location data fetch for ads.
+
 ## [3.2.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.2.0) (10/08/2017)
 
 #### Feature
