@@ -8,7 +8,6 @@
 
 #import "ILMAdContentView.h"
 #import "ILMPublicMacros.h"
-#import "ILMNativeAd.h"
 
 @interface ILMNativeAdView : ILMAdContentView
 
