@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [3.2.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.2.2) (13/09/2017)
+
+#### Fix
+ * Remove imports to fix build issues.
+
 ## [3.2.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.2.1) (29/08/2017)
 
 #### Fix
