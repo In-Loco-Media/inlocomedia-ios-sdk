@@ -26,6 +26,12 @@
 #import "ILMNativeAdDelegate.h"
 #import "ILMAdErrorConstants.h"
 #import "ILMJsonSerializable.h"
+#import "ILMAdManager.h"
+#import "ILMAdManagerDelegate.h"
+#import "ILMAdManagerFactory.h"
+#import "ILMImageViewContainer.h"
+#import "ILMNativeViewBinder.h"
+#import "ILMNativeAdCell.h"
 
 @interface ILMInLocoMedia : NSObject
 

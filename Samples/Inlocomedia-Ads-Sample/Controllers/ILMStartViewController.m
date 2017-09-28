@@ -44,8 +44,7 @@
     NSArray *nativeAds =
         @[[[ILMListElement alloc] initAdType:ILMAdTypeNativeAdLarge value:NATIVE_STORYBOARD nibName:NATIVE_VIEW andCellIdentifier:NATIVE_STORYBOARD_CELL],
           [[ILMListElement alloc] initAdType:ILMAdTypeNativeAdLarge value:NATIVE nibName:NATIVE_VIEW andCellIdentifier:NATIVE_CELL],
-          [[ILMListElement alloc] initAdType:ILMAdTypeNativeAdLarge value:NATIVE_LIST_CELL_IMMEDIATE_LARGE nibName:NATIVE_AD_CELL andCellIdentifier:NATIVE_LIST],
-          [[ILMListElement alloc] initAdType:ILMAdTypeNativeAdSmall value:NATIVE_LIST_CELL_IMMEDIATE_SMALL nibName:NATIVE_AD_CELL andCellIdentifier:NATIVE_LIST],];
+          [[ILMListElement alloc] initAdType:ILMAdTypeNativeAdLarge value:NATIVE_LIST_CELL_IMMEDIATE_LARGE nibName:NATIVE_AD_CELL andCellIdentifier:NATIVE_LIST],];
 
     NSArray *interstitialAds = @[[[ILMListElement alloc] initAdType:0 value:INTERSTITIAL_ADS andCellIdentifier:INTERSTITIAL_AD_CELL]];
 
@@ -205,7 +204,7 @@
             [nativeAdViewController setElement:element];
         } else if ([[segue destinationViewController] isKindOfClass:[ILMNativeAdTableView class]]) {
             ILMNativeAdTableView *nativeAdTable = [segue destinationViewController];
-            nativeAdTable.immediate = [[element adTypeValue] isEqual:NATIVE_LIST_CELL_IMMEDIATE_SMALL] || [[element adTypeValue] isEqual:NATIVE_LIST_CELL_IMMEDIATE_LARGE];
+            nativeAdTable.immediate = [[element adTypeValue] isEqual:NATIVE_LIST_CELL_IMMEDIATE_LARGE];
             nativeAdTable.adType = [element adType];
         } else {
             ILMAdvertisementViewController *adViewController = [segue destinationViewController];

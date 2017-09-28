@@ -15,6 +15,11 @@
 
 - (id)init NS_UNAVAILABLE;
 - (id)initWithNibName:(NSString *)nibName andAdCellHeight:(CGFloat)height;
+// Receives a property mapping of keyPaths, which is used to populate a custom view with the ad data
+- (id)initWithNibName:(NSString *)nibName andAdCellHeight:(CGFloat)height keyPathPropertyMapping:(NSDictionary *)keyPathPropertyMapping;
+// Receives a property mapping of view tags, which is used to populate a custom view with the ad data
+- (id)initWithNibName:(NSString *)nibName andAdCellHeight:(CGFloat)height tagPropertyMapping:(NSDictionary *)tagPropertyMapping;
+
 // Link the manager with your tableView implementation
 - (void)linkTableView:(UITableView *)tableView withDelegate:(NSObject <UITableViewDelegate> *)delegate andDataSource:(NSObject <UITableViewDataSource> *)dataSource;
 // start loading ads

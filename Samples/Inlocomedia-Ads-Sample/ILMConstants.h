@@ -16,8 +16,8 @@
 #define MEDIATION_INTERSTITIAL_AD_UNIT_ID @"ca-app-pub-9313505358879389/2128455355"
 #define MEDIATION_BANNER_AD_UNIT_ID @"ca-app-pub-9313505358879389/9651722153"
 
-#define AD_UNIT_IMMEDIATE @"089d11543c63284ad2c898f27798defdf53df48b4ad7a4e92c8e21eccf8fc5c3"
-#define AD_UNIT_AFTER_SCROLL @"ab8aa56517b4b4d732950f6699aebcda3619dbdfe652616115d782985401acbc"
+#define AD_UNIT_AFTER_SCROLL @"089d11543c63284ad2c898f27798defdf53df48b4ad7a4e92c8e21eccf8fc5c3"
+#define AD_UNIT_IMMEDIATE @"ab8aa56517b4b4d732950f6699aebcda3619dbdfe652616115d782985401acbc"
 
 #define DATE_FORMAT @"dd/MM/yyyy"
 #define ANY_DATE @"27/05/1991"
@@ -53,14 +53,13 @@
 #define NATIVE_CELL @"NativeCell"
 #define NATIVE_AD_CELL @"NativeAdCell"
 #define NATIVE_LIST_CELL_IMMEDIATE_LARGE @"Native Large TableView Imediate"
-#define NATIVE_LIST_CELL_IMMEDIATE_SMALL @"Native Small TableView Imediate"
 
 #define MY_CELL_IDENTIFIER_LARGE @"MyCustomCell"
 #define MY_CELL_IDENTIFIER_SMALL @"MySmallCustomCell"
 #define MY_CELL_NIB_LARGE @"MyCustomCell"
 #define MY_CELL_NIB_SMALL @"MySmallCustomCell"
 
-#define NATIVE_CELL_NIB_LARGE @"NativeAdCell"
+#define NATIVE_CELL_NIB_LARGE @"NativeAdSmallCell"
 #define NATIVE_CELL_NIB_SMALL @"NativeAdSmallCell"
 #define AD_HEIGHT_LARGE 400
 #define AD_HEIGHT_SMALL 80
