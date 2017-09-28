@@ -20,6 +20,9 @@ extern NSTimeInterval const kILMAdRequestTimeoutMin;
 
 @property (nonatomic, assign) NSTimeInterval requestTimeout;
 
+// If set, returning from an ad click will automatically close the InterstitialAd.
+@property (nonatomic, assign) BOOL closeAfterClick;
+
 // Load interstitial ad with default request. The request will use the default UserProfile in case it exists.
 - (void)loadAd;
 
