@@ -1,6 +1,13 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [3.3.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.3.0) (28/09/2017)
+#### Feature
+* iOS 11 support
+
+#### Refactor
+* Removes protobuf dependency
+
 ## [3.2.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.2.2) (13/09/2017)
 
 #### Fix
