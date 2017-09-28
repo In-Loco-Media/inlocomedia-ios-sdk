@@ -6,7 +6,10 @@ All notable changes to this project will be documented in this file.
 * iOS 11 support
 
 #### Refactor
-* Removes protobuf dependency
+* Removes the Protocol Buffers dependency
+
+#### Fix
+* Fixes an issue that caused interstitial ads to not properly close 
 
 ## [3.2.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.2.2) (13/09/2017)
 
