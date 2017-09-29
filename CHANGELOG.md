@@ -1,6 +1,13 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [3.3.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.3.1) (29/09/2017)
+
+#### Fix
+* Fixes a timestamp issue for devices with a 12-hour clock
+* Corrects the remote configuration setup logic
+* Fixes an issue regarding ads reload time 
+
 ## [3.3.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.3.0) (28/09/2017)
 #### Feature
 * iOS 11 support
