@@ -9,9 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "ILMModules.h"
 #import "ILMLocationOptions.h"
-#import "ILMLocationManager.h"
-#import "ILMLocation.h"
-#import "ILMAddress.h"
 #import "ILMLogger.h"
 
 @interface ILMInLoco : NSObject
@@ -32,8 +29,6 @@
 /* This function enables the sdk to work properly on background. You can it from your app delgate method with same name.
     Look at our documentation in order to find more details about its usage */
 + (void)applicationPerformFetchWithResult:(void (^)(UIBackgroundFetchResult))fetchResultBlock;
-/* Request a location using InLocoMedia's API */
-+ (void)requestLocation:(ILMLocationBlock)completionBlock;
 /* Request 'when in use' location services user authorization */
 + (void)requestLocationAuthorizationWhenInUse;
 /* Request 'always' location services user authorization */

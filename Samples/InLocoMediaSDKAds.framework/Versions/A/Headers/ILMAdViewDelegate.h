@@ -17,31 +17,28 @@
 
 @optional
 
-///This will be called when the view has received an advertisement and will load the image
+//Called when the view has received an advertisement;
 - (void)ilmAdViewDidReceiveAd:(ILMAdView *)adView;
 
-///Called when an ad request has failed.
+//Called when an ad request has failed.
 - (void)ilmAdView:(ILMAdView *)adView didFailToReceiveAdWithError:(ILMError *)error;
 
 /**
- This will be called after the view is clicked and before the click action is performed
+ Called after the view is clicked and before the click action is performed
  Return YES if you allow the click action to be performed, NO otherwise.
  */
 - (BOOL)ilmAdViewWillPerformClick:(ILMAdView *)adView;
 
-/**
- This will be called after the view is clicked and before leaving the application to open the content of the advertisement.
- */
+ //Called after the view is clicked and before leaving the application to open the content of the advertisement.
 - (void)ilmAdViewWillLeaveApplication:(ILMAdView *)adView;
 
-/**
- This will be called when a rich media ad has been expanded into fullscreen.
- */
+ //Called when a rich media ad has been expanded into fullscreen.
 - (void)ilmAdViewExpanded:(ILMAdView *)adView;
 
-/**
- This will be called when a rich media ad has been resized in the current view controller;
- */
+ //Called when a rich media ad has been resized in the current view controller;
 - (void)ilmAdViewResized:(ILMAdView *)adView;
+
+ //Called when the application returns from a click.
+- (void)ilmAdViewDidReturnFromClick:(ILMAdView *)adView;
 
 @end

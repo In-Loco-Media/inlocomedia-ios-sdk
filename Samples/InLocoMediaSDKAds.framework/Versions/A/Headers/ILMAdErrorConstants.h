@@ -21,5 +21,8 @@
 #define ILMAdRequestNoFill 5004
 #define ILMAdsDisabled 5005
 #define ILMURLRegisterEmpty 5006
-
+#define ILMInvalidViewManager 5007
+#define ILMInvalidNativeViewBinder 5008
+#define ILMInvalidNativeNib 5009
+#define ILMInvalidDelegate 5010
 #endif

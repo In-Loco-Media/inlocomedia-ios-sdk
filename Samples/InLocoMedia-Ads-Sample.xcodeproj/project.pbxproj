@@ -16,11 +16,7 @@
 		00074EB81CE6625E00228820 /* ILMNativeAdvertisementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00074EAD1CE6625E00228820 /* ILMNativeAdvertisementViewController.m */; };
 		00074EB91CE6625E00228820 /* ILMStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00074EAF1CE6625E00228820 /* ILMStartViewController.m */; };
 		001CEFE41D3D76B10019A195 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001CEFE31D3D76B10019A195 /* Image.xcassets */; };
-		006FA32F1CD7D206009E6EEA /* NativeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 006FA32E1CD7D206009E6EEA /* NativeView.xib */; };
 		00D9099B1D46AF7600EF15F4 /* ILMNativeAdTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D9099A1D46AF7600EF15F4 /* ILMNativeAdTableView.m */; };
-		00D9099D1D46B13C00EF15F4 /* NativeAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D9099C1D46B13C00EF15F4 /* NativeAdCell.xib */; };
-		00D9099F1D46B14600EF15F4 /* NativeAdSmallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D9099E1D46B14600EF15F4 /* NativeAdSmallCell.xib */; };
-		00D909A11D46B15000EF15F4 /* MySmallCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D909A01D46B15000EF15F4 /* MySmallCustomCell.xib */; };
 		260089D6190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 260089D3190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png */; };
 		260089D7190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 260089D4190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png */; };
 		260089DF190AF2E80064080B /* InLocoMediaNativeAdDiscountFlag.png in Resources */ = {isa = PBXBuildFile; fileRef = 260089DE190AF2E80064080B /* InLocoMediaNativeAdDiscountFlag.png */; };
@@ -28,10 +24,8 @@
 		2638E99D195B6B1A00F067E6 /* ios7-arrow-left.png in Resources */ = {isa = PBXBuildFile; fileRef = 2638E99C195B6B1A00F067E6 /* ios7-arrow-left.png */; };
 		2638E9B5195B98D700F067E6 /* seta.png in Resources */ = {isa = PBXBuildFile; fileRef = 2638E9B4195B98D700F067E6 /* seta.png */; };
 		2638E9B9195B990900F067E6 /* seta@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2638E9B8195B990900F067E6 /* seta@2x.png */; };
-		26545DBC1901ABE80067A426 /* NativeSmall.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26545DB81901ABE80067A426 /* NativeSmall.xib */; };
 		26545DD71901B81E0067A426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26545DD61901B81E0067A426 /* Main.storyboard */; };
 		2674FDE61912FDFB0063CEEA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2674FDE51912FDFB0063CEEA /* SystemConfiguration.framework */; };
-		2674FE5F1914738D0063CEEA /* NativeLarge.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2674FE5E1914738D0063CEEA /* NativeLarge.xib */; };
 		2683705E1911695D00B39CB4 /* InLocoMediaNativeAdPlaceholderCoupon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2683705C1911695D00B39CB4 /* InLocoMediaNativeAdPlaceholderCoupon.png */; };
 		2683705F1911695D00B39CB4 /* InLocoMediaNativeAdPlaceholderIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2683705D1911695D00B39CB4 /* InLocoMediaNativeAdPlaceholderIcon.png */; };
 		2685F0DC190013530016A650 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2685F0DB190013530016A650 /* Foundation.framework */; };
@@ -40,7 +34,6 @@
 		26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A20B221921863B00B74DA5 /* CoreLocation.framework */; };
 		26F27626195397C600A88ACF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F27625195397C600A88ACF /* Default-568h@2x.png */; };
 		4927717C1CF4D005009174E6 /* ILMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4927717B1CF4D005009174E6 /* ILMAppDelegate.m */; };
-		C01B932B1A9BDD9300B555CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C01B932A1A9BDD9300B555CE /* LaunchScreen.xib */; };
 		C09621971A9E38460055EEEE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621961A9E38460055EEEE /* AdSupport.framework */; };
 		C09621991A9E3AFC0055EEEE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621981A9E3AFC0055EEEE /* AudioToolbox.framework */; };
 		C096219B1A9E3B020055EEEE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C096219A1A9E3B020055EEEE /* AVFoundation.framework */; };
@@ -49,7 +42,11 @@
 		C09621A21A9E3B150055EEEE /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A01A9E3B150055EEEE /* EventKit.framework */; };
 		C09621A31A9E3B150055EEEE /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A11A9E3B150055EEEE /* EventKitUI.framework */; };
 		C09621A51A9E3B1D0055EEEE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A41A9E3B1D0055EEEE /* MessageUI.framework */; };
-		CEBD3F351EBB9C5D009AA7F6 /* InLocoMediaSDKAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD3F341EBB9C5D009AA7F6 /* InLocoMediaSDKAds.framework */; };
+		CE0789F51F7D556400B7C3D4 /* InLocoMediaSDKAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0789F41F7D556400B7C3D4 /* InLocoMediaSDKAds.framework */; };
+		CE0789FD1F7D5ABD00B7C3D4 /* NativeLarge.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0789F61F7D5ABD00B7C3D4 /* NativeLarge.xib */; };
+		CE0789FE1F7D5ABD00B7C3D4 /* NativeAdSmallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0789F71F7D5ABD00B7C3D4 /* NativeAdSmallCell.xib */; };
+		CE0789FF1F7D5ABD00B7C3D4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0789F81F7D5ABD00B7C3D4 /* LaunchScreen.xib */; };
+		CE078A001F7D5ABD00B7C3D4 /* MySmallCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0789F91F7D5ABD00B7C3D4 /* MySmallCustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -84,12 +81,8 @@
 		00074EAF1CE6625E00228820 /* ILMStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMStartViewController.m; sourceTree = "<group>"; };
 		001CEFE31D3D76B10019A195 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		003B087A1DE8B3A900FC9F00 /* InLocoMedia-Ads-Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "InLocoMedia-Ads-Sample.entitlements"; path = "InLocoMedia-Ads-Sample/InLocoMedia-Ads-Sample.entitlements"; sourceTree = "<group>"; };
-		006FA32E1CD7D206009E6EEA /* NativeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeView.xib; sourceTree = "<group>"; };
 		00D909991D46AF7600EF15F4 /* ILMNativeAdTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMNativeAdTableView.h; sourceTree = "<group>"; };
 		00D9099A1D46AF7600EF15F4 /* ILMNativeAdTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMNativeAdTableView.m; sourceTree = "<group>"; };
-		00D9099C1D46B13C00EF15F4 /* NativeAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdCell.xib; sourceTree = "<group>"; };
-		00D9099E1D46B14600EF15F4 /* NativeAdSmallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdSmallCell.xib; sourceTree = "<group>"; };
-		00D909A01D46B15000EF15F4 /* MySmallCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySmallCustomCell.xib; sourceTree = "<group>"; };
 		260089D3190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InLocoMediaNativeAdButtonNormal.png; sourceTree = "<group>"; };
 		260089D4190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InLocoMediaNativeAdButtonPressed.png; sourceTree = "<group>"; };
 		260089DE190AF2E80064080B /* InLocoMediaNativeAdDiscountFlag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InLocoMediaNativeAdDiscountFlag.png; sourceTree = "<group>"; };
@@ -97,11 +90,9 @@
 		2638E99C195B6B1A00F067E6 /* ios7-arrow-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios7-arrow-left.png"; sourceTree = "<group>"; };
 		2638E9B4195B98D700F067E6 /* seta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seta.png; sourceTree = "<group>"; };
 		2638E9B8195B990900F067E6 /* seta@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seta@2x.png"; sourceTree = "<group>"; };
-		26545DB81901ABE80067A426 /* NativeSmall.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeSmall.xib; sourceTree = "<group>"; };
 		26545DD61901B81E0067A426 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2674FDE51912FDFB0063CEEA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2674FE001914205C0063CEEA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2674FE5E1914738D0063CEEA /* NativeLarge.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeLarge.xib; sourceTree = "<group>"; };
 		2683705C1911695D00B39CB4 /* InLocoMediaNativeAdPlaceholderCoupon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InLocoMediaNativeAdPlaceholderCoupon.png; sourceTree = "<group>"; };
 		2683705D1911695D00B39CB4 /* InLocoMediaNativeAdPlaceholderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InLocoMediaNativeAdPlaceholderIcon.png; sourceTree = "<group>"; };
 		2685F0D8190013530016A650 /* InLocoMedia-Ads-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InLocoMedia-Ads-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +106,6 @@
 		4927717A1CF4D005009174E6 /* ILMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMAppDelegate.h; sourceTree = "<group>"; };
 		4927717B1CF4D005009174E6 /* ILMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMAppDelegate.m; sourceTree = "<group>"; };
 		4995B2D31CEE31040084F8D6 /* ILMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMConstants.h; sourceTree = "<group>"; };
-		C01B932A1A9BDD9300B555CE /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		C09621961A9E38460055EEEE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		C09621981A9E3AFC0055EEEE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C096219A1A9E3B020055EEEE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -124,7 +114,11 @@
 		C09621A01A9E3B150055EEEE /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		C09621A11A9E3B150055EEEE /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		C09621A41A9E3B1D0055EEEE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		CEBD3F341EBB9C5D009AA7F6 /* InLocoMediaSDKAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoMediaSDKAds.framework; sourceTree = "<group>"; };
+		CE0789F41F7D556400B7C3D4 /* InLocoMediaSDKAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoMediaSDKAds.framework; sourceTree = "<group>"; };
+		CE0789F61F7D5ABD00B7C3D4 /* NativeLarge.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeLarge.xib; sourceTree = "<group>"; };
+		CE0789F71F7D5ABD00B7C3D4 /* NativeAdSmallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdSmallCell.xib; sourceTree = "<group>"; };
+		CE0789F81F7D5ABD00B7C3D4 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		CE0789F91F7D5ABD00B7C3D4 /* MySmallCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySmallCustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +131,7 @@
 				C09621A21A9E3B150055EEEE /* EventKit.framework in Frameworks */,
 				C09621A31A9E3B150055EEEE /* EventKitUI.framework in Frameworks */,
 				C096219F1A9E3B0E0055EEEE /* CoreTelephony.framework in Frameworks */,
-				CEBD3F351EBB9C5D009AA7F6 /* InLocoMediaSDKAds.framework in Frameworks */,
+				CE0789F51F7D556400B7C3D4 /* InLocoMediaSDKAds.framework in Frameworks */,
 				C096219D1A9E3B080055EEEE /* CoreGraphics.framework in Frameworks */,
 				C096219B1A9E3B020055EEEE /* AVFoundation.framework in Frameworks */,
 				C09621991A9E3AFC0055EEEE /* AudioToolbox.framework in Frameworks */,
@@ -153,7 +147,10 @@
 		26545DB41901ABE80067A426 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				00D9099C1D46B13C00EF15F4 /* NativeAdCell.xib */,
+				CE0789F61F7D5ABD00B7C3D4 /* NativeLarge.xib */,
+				CE0789F71F7D5ABD00B7C3D4 /* NativeAdSmallCell.xib */,
+				CE0789F81F7D5ABD00B7C3D4 /* LaunchScreen.xib */,
+				CE0789F91F7D5ABD00B7C3D4 /* MySmallCustomCell.xib */,
 				26F27625195397C600A88ACF /* Default-568h@2x.png */,
 				260089D3190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png */,
 				260089D4190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png */,
@@ -164,12 +161,6 @@
 				2638E9B4195B98D700F067E6 /* seta.png */,
 				2638E9B8195B990900F067E6 /* seta@2x.png */,
 				2638E98E195B598900F067E6 /* ub_bt_closed_press.png */,
-				C01B932A1A9BDD9300B555CE /* LaunchScreen.xib */,
-				00D909A01D46B15000EF15F4 /* MySmallCustomCell.xib */,
-				00D9099E1D46B14600EF15F4 /* NativeAdSmallCell.xib */,
-				2674FE5E1914738D0063CEEA /* NativeLarge.xib */,
-				26545DB81901ABE80067A426 /* NativeSmall.xib */,
-				006FA32E1CD7D206009E6EEA /* NativeView.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -205,7 +196,7 @@
 		2685F0DA190013530016A650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEBD3F341EBB9C5D009AA7F6 /* InLocoMediaSDKAds.framework */,
+				CE0789F41F7D556400B7C3D4 /* InLocoMediaSDKAds.framework */,
 				C09621A41A9E3B1D0055EEEE /* MessageUI.framework */,
 				C09621A01A9E3B150055EEEE /* EventKit.framework */,
 				C09621A11A9E3B150055EEEE /* EventKitUI.framework */,
@@ -351,25 +342,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				260089D7190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png in Resources */,
-				006FA32F1CD7D206009E6EEA /* NativeView.xib in Resources */,
 				2683705E1911695D00B39CB4 /* InLocoMediaNativeAdPlaceholderCoupon.png in Resources */,
-				2674FE5F1914738D0063CEEA /* NativeLarge.xib in Resources */,
-				26545DBC1901ABE80067A426 /* NativeSmall.xib in Resources */,
+				CE078A001F7D5ABD00B7C3D4 /* MySmallCustomCell.xib in Resources */,
 				2638E9B9195B990900F067E6 /* seta@2x.png in Resources */,
 				26F27626195397C600A88ACF /* Default-568h@2x.png in Resources */,
 				2683705F1911695D00B39CB4 /* InLocoMediaNativeAdPlaceholderIcon.png in Resources */,
-				00D9099D1D46B13C00EF15F4 /* NativeAdCell.xib in Resources */,
 				2638E98F195B598900F067E6 /* ub_bt_closed_press.png in Resources */,
 				2638E99D195B6B1A00F067E6 /* ios7-arrow-left.png in Resources */,
 				001CEFE41D3D76B10019A195 /* Image.xcassets in Resources */,
-				00D9099F1D46B14600EF15F4 /* NativeAdSmallCell.xib in Resources */,
+				CE0789FD1F7D5ABD00B7C3D4 /* NativeLarge.xib in Resources */,
 				260089D6190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png in Resources */,
 				26545DD71901B81E0067A426 /* Main.storyboard in Resources */,
 				2638E9B5195B98D700F067E6 /* seta.png in Resources */,
+				CE0789FF1F7D5ABD00B7C3D4 /* LaunchScreen.xib in Resources */,
 				2685F0E6190013530016A650 /* InfoPlist.strings in Resources */,
-				C01B932B1A9BDD9300B555CE /* LaunchScreen.xib in Resources */,
 				260089DF190AF2E80064080B /* InLocoMediaNativeAdDiscountFlag.png in Resources */,
-				00D909A11D46B15000EF15F4 /* MySmallCustomCell.xib in Resources */,
+				CE0789FE1F7D5ABD00B7C3D4 /* NativeAdSmallCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

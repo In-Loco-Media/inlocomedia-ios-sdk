@@ -1,6 +1,26 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [3.3.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.3.0) (28/09/2017)
+#### Feature
+* iOS 11 support
+
+#### Refactor
+* Removes the Protocol Buffers dependency
+
+#### Fix
+* Fixes an issue that caused interstitial ads to not properly close 
+
+## [3.2.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.2.2) (13/09/2017)
+
+#### Fix
+ * Remove imports to fix build issues.
+
+## [3.2.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.2.1) (29/08/2017)
+
+#### Fix
+ * Error on location data fetch for ads.
+
 ## [3.2.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.2.0) (10/08/2017)
 
 #### Feature
