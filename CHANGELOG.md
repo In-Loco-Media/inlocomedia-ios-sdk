@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [3.3.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.3.2) (17/10/2017)
+
+#### Fix
+* Fixes an issue on wifi data collection
+
 ## [3.3.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.3.1) (29/09/2017)
 
 #### Fix
