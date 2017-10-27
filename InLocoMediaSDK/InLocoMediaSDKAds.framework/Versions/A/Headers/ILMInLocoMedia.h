@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ILMModules.h"
+#import "ILMAdsModules.h"
 #import "ILMAdType.h"
 #import "ILMAdvertisement.h"
 #import "ILMAdsOptions.h"

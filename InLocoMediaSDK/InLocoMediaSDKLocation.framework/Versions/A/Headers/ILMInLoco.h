@@ -6,10 +6,9 @@
 //  Copyright © 2016 InLocoMedia. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "ILMModules.h"
 #import "ILMLocationOptions.h"
 #import "ILMLogger.h"
+#import "ILMLocationModules.h"
 
 @interface ILMInLoco : NSObject
 
