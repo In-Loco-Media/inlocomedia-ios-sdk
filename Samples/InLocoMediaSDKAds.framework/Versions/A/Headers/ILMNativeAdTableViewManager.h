@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "ILMAdRequest.h"
 
 @interface ILMNativeAdTableViewManager : NSObject
