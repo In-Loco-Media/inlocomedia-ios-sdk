@@ -1,6 +1,12 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [3.3.5](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.3.5) (09/11/2017)
+
+#### Fix
+* Removes Calendar and Store Picture ad events
+* Fix the Insterstitial close button placement when the status bar is present
+
 ## [3.3.4](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.3.4) (03/11/2017)
 
 #### Fix

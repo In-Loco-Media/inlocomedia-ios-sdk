@@ -48,5 +48,6 @@
 
 - (void)containerViewWillTransitionToSize:(CGSize)size;
 - (ILMAdvertisementModel *)ad;
+- (void)orientationDidChange;
 
 @end
