@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [3.3.6](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.3.6) (14/11/2017)
+
+#### Fix
+* Fixes a bug that could cause crashes when closing an interstitial ad on iPhone 4s or below
+
 ## [3.3.5](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.3.5) (09/11/2017)
 
 #### Fix
