@@ -14,11 +14,6 @@ All notable changes to this project will be documented in this file.
 
 ## [3.3.4](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.3.4) (03/11/2017)
 
-# CHANGELOG
-All notable changes to this project will be documented in this file.
-
-## [3.3.4](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.3.4) (03/11/2017)
-
 #### Fix
 * Fixes a synchronization problem that could happen on the sdk init.
 
