@@ -11,7 +11,5 @@
 @import Foundation;
 @import UIKit;
 @import CoreTelephony;
-@import EventKit;
-@import EventKitUI;
 @import MediaPlayer;
 #endif
