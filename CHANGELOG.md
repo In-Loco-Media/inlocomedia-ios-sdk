@@ -1,5 +1,18 @@
 # CHANGELOG
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file
+
+## [3.4.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.4.0) (17/11/2017)
+
+### Feature
+* Makes the ILMUserProfile setting available for the location SDK
+* Improvements on visit monitoring
+
+### Refactor
+* Greatly improves the initialization performance
+
+### Fix
+* Fixes Interstitial rotation for iOS >= iOS 9
+* Fixes on rich media calls to expand and resize for architeture armv7 on iOS 8
 
 ## [3.3.6](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.3.6) (14/11/2017)
 

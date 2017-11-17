@@ -20,6 +20,7 @@ typedef enum {
 
 @interface ILMAdCloseButton : UIButton
 
-+ (instancetype)buttonAtPosition:(ILMAdCloseButtonPosition)position insideFrame:(CGRect)frame withImage:(BOOL)image;
+- (instancetype)initAtPosition:(ILMAdCloseButtonPosition)position insideFrame:(CGRect)frame withImage:(BOOL)image;
+- (void)reposition;
 
 @end
