@@ -47,7 +47,7 @@
 
 #define NATIVE_ADS @"Native Ads"
 #define NATIVE_STORYBOARD @"Native on Storyboard"
-#define NATIVE_VIEW @"NativeView"
+#define NATIVE_VIEW @"NativeLarge"
 #define NATIVE @"Native"
 #define NATIVE_STORYBOARD_CELL @"NativeOnStoryboardCell"
 #define NATIVE_CELL @"NativeCell"

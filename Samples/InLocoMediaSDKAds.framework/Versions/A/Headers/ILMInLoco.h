@@ -8,6 +8,7 @@
 
 #import "ILMLocationOptions.h"
 #import "ILMLogger.h"
+#import "ILMUserProfile.h"
 #import "ILMLocationModules.h"
 
 @interface ILMInLoco : NSObject
@@ -20,12 +21,12 @@
     Also, with this configuration false, you will not be able to activate any service individually.
     If you set it true, you may have to activate each service individually later. */
 + (void)setLocationServicesEnabled:(BOOL)enable;
-/* Enables or disables location monitoring services
-   Visit tracking and significant location changes. Location monitoring will be active in background and even if the app closes this configuration will persist. */
+/* Enables or disables location monitoring services: Visit tracking and significant location changes. 
+ Location monitoring will be active in background and this configuration will persist even if the app closes. */
 + (void)setLocationMonitoringEnabled:(BOOL)enable;
 // Returns whether the location monitoring is active or not
 + (BOOL)isMonitoringLocation;
-/* This function enables the sdk to work properly on background. You can it from your app delgate method with same name.
+/* This function enables the sdk to work properly on background. You can call it from your app delegate method with the same name.
     Look at our documentation in order to find more details about its usage */
 + (void)applicationPerformFetchWithResult:(void (^)(UIBackgroundFetchResult))fetchResultBlock;
 /* Request 'when in use' location services user authorization */
