@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [3.4.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.4.1) (02/01/2018)
+
+### Fix
+* Fixes location monitoring restart.
+
 ## [3.4.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.4.0) (17/11/2017)
 
 ### Feature
