@@ -1,6 +1,6 @@
 ![Alt logoImage][logo]
 
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/InLocoMedia-Ads-SDK.svg)](https://cocoapods.org/pods/InLocoMedia-Ads-SDK)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/InLocoMedia-iOS-SDK.svg)](https://cocoapods.org/pods/InLocoMedia-Ads-SDK)
 [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&InLocoMediaTwitter)](https://twitter.com/inlocomedia)
 
 #InLocoMedia iOS SDK
