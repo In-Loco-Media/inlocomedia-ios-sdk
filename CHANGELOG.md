@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [3.5.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.5.0) (30/01/2018)
+
+### Feature
+* Engage iOS Alpha Release
+
 ## [3.4.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.4.2) (23/01/2018)
 
 ### Fix
