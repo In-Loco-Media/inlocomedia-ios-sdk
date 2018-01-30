@@ -1,6 +1,20 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [3.5.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.5.0) (30/01/2018)
+
+### Feature
+* Engage iOS Alpha Release
+
+### Refactor
+* Improves code reuse across the SDKs
+
+## [3.4.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.4.2) (23/01/2018)
+
+### Fix
+* Fixes a synchronization problem on the communication layer
+* Fixes an unprefixed symbol that could cause symbol collision
+
 ## [3.4.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.4.1) (02/01/2018)
 
 ### Fix
