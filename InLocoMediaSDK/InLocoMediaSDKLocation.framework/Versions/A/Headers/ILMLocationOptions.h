@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "ILMError.h"
 
+/**
+ This class holds the necessary properties to configure the Location SDK initialization.
+ */
 @interface ILMLocationOptions : NSObject
 
 // Location key identifies your app to our Location server, you get this value when you register your app on our dashboard
@@ -26,6 +29,13 @@
 // Says to the api to refresh user location as soon as the app open in foreground.
 @property (nonatomic, assign, getter = isLocationAtStartEnabled, setter = setLocationRequestAtStartEnabled :) BOOL locationRequestAtStart;
 
+/**
+ Validates the ILMLocationOptions properties.
+ 
+ @param options The ILMLocationOptions object to be validated.
+ @param error An error pointer.
+ @return Returns YES if the applicationId is not nil, NO otherwise. In case of errors, sets the error pointer.
+ */
 + (BOOL)checkCredentialsForOptions:(ILMLocationOptions *)options error:(ILMError **)error;
 
 @end
