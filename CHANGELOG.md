@@ -1,6 +1,12 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [3.5.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.5.1) (16/02/2018)
+
+### Fix
+* Prevents a bug that could cause Engage pushes to be received when leaving a place
+* Fixes to the Engage event registering retry logic
+
 ## [3.5.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.5.0) (30/01/2018)
 
 ### Feature
