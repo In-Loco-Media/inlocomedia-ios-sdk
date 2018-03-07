@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [3.5.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.5.3) (07/03/2018)
+
+### Fix
+* Fixes error-handling issues
+
 ## [3.5.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.5.2) (21/02/2018)
 
 ### Fix
