@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [3.5.4](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.5.4) (08/03/2018)
+
+### Fix
+* Fixes an error that prevented registering for Engage notifications after using multiple application Ids
+
 ## [3.5.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.5.3) (07/03/2018)
 
 ### Fix
