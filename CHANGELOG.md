@@ -1,6 +1,16 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [3.5.5](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.5.5) (22/03/2018)
+
+### Feature:
+* Adds the properties locationEnabled and locationRequestAtStartEnabled to ILMEngageOptions
+* Adds the property canRequestPermissions to ILMLocationOptions
+* Adds the setLocationServicesEnabled method to ILMInLocoEngage
+
+### Fix
+* Fixes an error that caused the location authorization to be requested when starting the Engage SDK
+
 ## [3.5.4](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.5.4) (08/03/2018)
 
 ### Fix
