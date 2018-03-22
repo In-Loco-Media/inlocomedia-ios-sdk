@@ -38,6 +38,14 @@ typedef void (^ILMFetchResultBlock)(UIBackgroundFetchResult);
 + (void)initWithOptions:(ILMEngageOptions *)options;
 
 /**
+ Enables and disables location services
+ 
+ The ILMEngageOptions used to start the SDK contains the locationEnabled property. This method allows changing this configuration after the SDK is initiated.
+ Settings this property to NO will automatically disable all geofencing and location monitoring, and clean any cached location data.
+ */
++ (void)setLocationServicesEnabled:(BOOL)enabled;
+
+/**
  Requests the Location Always Authorization.
 */
 + (void)requestLocationAuthorization;

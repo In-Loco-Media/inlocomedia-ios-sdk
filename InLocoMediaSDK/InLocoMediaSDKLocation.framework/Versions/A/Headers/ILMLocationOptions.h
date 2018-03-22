@@ -20,14 +20,17 @@
 // This array identifies the devices used in development. This way, these devices will receive only test ads. You must use this while developing.
 @property (nonatomic, strong) NSArray *developmentDevices;
 
-// Will activate verbose mode if set to true
+// Activates verbose mode. Default: NO
 @property (nonatomic, assign) BOOL logEnabled;
 
-// Tells the api that your application will use location.
+// Tells the api that your application will use location. Default: YES
 @property (nonatomic, assign, getter = isLocationEnabled) BOOL locationEnabled;
 
-// Says to the api to refresh user location as soon as the app open in foreground.
+// Says to the api to refresh user location as soon as the app open in foreground. Default: YES
 @property (nonatomic, assign, getter = isLocationAtStartEnabled, setter = setLocationRequestAtStartEnabled :) BOOL locationRequestAtStart;
+
+// Allows the Location SDK to automatically request permissions when needed. Default: YES
+@property (nonatomic, assign) BOOL canRequestPermissions;
 
 /**
  Validates the ILMLocationOptions properties.

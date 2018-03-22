@@ -20,9 +20,19 @@
 @property (nonatomic) NSString *applicationId;
 
 /**
- Activates the verbose mode logging.
+ Activates the verbose mode logging. Default: NO
  */
 @property (nonatomic, assign) BOOL logEnabled;
+
+/**
+ Allows the SDK to use location events. Setting this option to NO disables every type of location detection. Default: YES
+ */
+@property (nonatomic, assign) BOOL locationEnabled;
+
+/**
+ Requests a location update when starting the Engage SDK. This option will request the location authorization if enabled. Default: YES
+ */
+@property (nonatomic, assign) BOOL locationRequestAtStart;
 
 /**
  Validates the ILMEngageOptions properties.
