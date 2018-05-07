@@ -1,6 +1,13 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [3.5.6](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.5.6) (07/05/2018)
+
+### Fix:
+* Fixes memory-management errors on the Location Module
+* Fixes visit timestamps on devices below iPhone 5S
+* Fixes the Engage device registering after user identifier changes
+
 ## [3.5.5](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.5.5) (22/03/2018)
 
 ### Feature:
