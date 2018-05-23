@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ILMError.h"
+#import "ILMOptions.h"
 
 @interface ILMAdsOptions : NSObject
 

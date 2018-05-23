@@ -9,12 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "ILMEngageOptions.h"
+#import "ILMError.h"
 #import "ILMFirebaseRegisterDeviceRequest.h"
+#import "ILMOptInDeviceRequest.h"
+#import "ILMOptOutDeviceRequest.h"
 #import "ILMPushProviders.h"
 #import "ILMRegisterDeviceRequest.h"
 #import "ILMPushMessage.h"
-#import "ILMOptInDeviceRequest.h"
-#import "ILMOptOutDeviceRequest.h"
+#import "ILMUserProfile.h"
 #import "ILMWebhookRegisterDeviceRequest.h"
 
 typedef void (^ILMBlock)(void);
