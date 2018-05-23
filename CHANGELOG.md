@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [3.5.7](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.5.7) (23/05/2018)
+
+### Fix:
+* Fixes umbrella header include warnings
+
 ## [3.5.6](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.5.6) (07/05/2018)
 
 ### Fix:

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ILMOptions.h"
 #import "ILMError.h"
 
 /**
