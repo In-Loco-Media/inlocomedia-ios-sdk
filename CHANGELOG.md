@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [3.5.8](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.5.7) (02/07/2018)
+
+### Fix:
+* Fixes memory-management errors on the Location SDK
+
 ## [3.5.7](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.5.7) (23/05/2018)
 
 ### Fix:
