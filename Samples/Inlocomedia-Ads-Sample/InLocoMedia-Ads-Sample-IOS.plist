@@ -40,10 +40,12 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>The app will need location to improve the content</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>The app will need location to improve the content</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>In Loco Media wants this permission to send you location-based ads.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>In Loco Media wants this permission to send you location-based ads.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>In Loco Media wants this permission to send you location-based ads.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
