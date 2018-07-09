@@ -10,14 +10,12 @@
 #import <UIKit/UIKit.h>
 #import "ILMEngageOptions.h"
 #import "ILMError.h"
-#import "ILMFirebaseRegisterDeviceRequest.h"
-#import "ILMOptInDeviceRequest.h"
-#import "ILMOptOutDeviceRequest.h"
+#import "ILMFirebaseProvider.h"
+#import "ILMPushProvider.h"
 #import "ILMPushProviders.h"
-#import "ILMRegisterDeviceRequest.h"
 #import "ILMPushMessage.h"
 #import "ILMUserProfile.h"
-#import "ILMWebhookRegisterDeviceRequest.h"
+#import "ILMEngageUser.h"
 
 typedef void (^ILMBlock)(void);
 typedef void (^ILMNSErrorBlock)(NSError *);
@@ -40,36 +38,81 @@ typedef void (^ILMFetchResultBlock)(UIBackgroundFetchResult);
 + (void)initWithOptions:(ILMEngageOptions *)options;
 
 /**
- Enables and disables location services
+ Sets the current user information. This information will be used on the engage services (i.e., when device registering occurs and for analytics events).
+ This value is persisted.
+*/
++ (void)setUser:(ILMEngageUser *)user;
+
+/**
+ Returns the current persisted user.
+*/
++ (ILMEngageUser *)user;
+
+/**
+ Clears the current persisted user.
+*/
++ (void)clearUser;
+
+/**
+ If the SDK is set to require the user's privacy consent, this method should be called once the user does or
+ doesn't provide privacy consent. This value is persisted through initializations.
+*/
++ (void)giveUserPrivacyConsent:(BOOL)userPrivacyConsent;
+
+/**
+ Returns if the SDK is waiting for the user privacy consent to be set.
  
- The ILMEngageOptions used to start the SDK contains the locationEnabled property. This method allows changing this configuration after the SDK is initiated.
- Settings this property to NO will automatically disable all geofencing and location monitoring, and clean any cached location data.
+ If YES, the method [ILMInLocoEngage giveUserPrivacyConsent:] has not been called yet - neither to give or deny the consent.
+ If NO, the method [ILMInLocoEngage giveUserPrivacyConsent:] has already been called or the SDK isn't set to require privacy consent.
+*/
++ (BOOL)isWaitingUserPrivacyConsent;
+
+/**
+ Returns if the SDK has the user privacy consent.
+ 
+ If YES, either the user has already provided consent or the SDK isn't set to require privacy consent.
+ If NO, the SDK hasn't received the user's privacy consent yet.
+*/
++ (BOOL)hasUserPrivacyConsent;
+
+/**
+ Sets the Push Provider. This method should be called everytime that a new push provider token is generated. This value is persisted.
+*/
++ (void)setPushProvider:(ILMPushProvider *)pushProvider;
+
+/**
+ Returns the last set Push Provider.
+*/
++ (ILMPushProvider *)pushProvider;
+
+/**
+ Enables or disables the device from targeted push notifications. This value is persisted. Default: YES.
+*/
++ (void)setPushNotificationsEnabled:(BOOL)pushNotificationsEnabled;
+
+/**
+ Returns whether push notifications are enabled or not.
+ */
++ (BOOL)pushNotificationsEnabled;
+
+/**
+ Enables or disables the SDK location services.
+ 
+ Setting this property to NO will automatically disable all geofencing and location monitoring, and clean any cached location data. Default: YES.
  */
 + (void)setLocationServicesEnabled:(BOOL)enabled;
 
 /**
- Requests the Location Always Authorization.
-*/
+ Requests the Location 'Always' Authorization.
+ */
 + (void)requestLocationAuthorization;
 
 /**
- Registers the device to our services. This should be called everytime that a new push provider token is generated.
- This automatically opts the device in to receive targeted pushes.
+ Register an in-app event in the Engage dashboard.
+ Note that custom properties must have key-value pairs of NSStrings.
 */
-+ (void)registerDevice:(ILMRegisterDeviceRequest *)registerDeviceRequest;
-+ (void)registerDevice:(ILMRegisterDeviceRequest *)registerDeviceRequest completionBlock:(ILMNSErrorBlock)completionBlock;
-
-/**
- Opts the device in for targeted pushes.
- */
-+ (void)optInDevice:(ILMOptInDeviceRequest *)optInDeviceRequest;
-+ (void)optInDevice:(ILMOptInDeviceRequest *)optInDeviceRequest completionBlock:(ILMNSErrorBlock)completionBlock;
-
-/**
- Opts the device out from targeted pushes.
-*/
-+ (void)optOutDevice:(ILMOptOutDeviceRequest *)optOutDeviceRequest;
-+ (void)optOutDevice:(ILMOptOutDeviceRequest *)optOutDeviceRequest completionBlock:(ILMNSErrorBlock)completionBlock;
++ (void)trackEvent:(NSString *)eventName;
++ (void)trackEvent:(NSString *)eventName properties:(NSDictionary<NSString *, NSString *> *)properties;
 
 /**
  Registers tapped pushes that caused the application to start.
@@ -77,7 +120,6 @@ typedef void (^ILMFetchResultBlock)(UIBackgroundFetchResult);
  Must be called inside [-application:didFinishLaunchingWithOptions:].
 */
 + (void)appDidFinishLaunchingWithMessage:(ILMPushMessage *)message;
-+ (void)appDidFinishLaunchingWithMessage:(ILMPushMessage *)message completionBlock:(ILMBlock)completionBlock;
 
 /**
  Registers push messages received through the [-application:didReceiveRemoteNotification:] methods.
@@ -108,7 +150,7 @@ typedef void (^ILMFetchResultBlock)(UIBackgroundFetchResult);
  Registers tapped pushes.
  
  Must be called inside [-userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:].
- */
+*/
 + (void)didReceiveNotificationResponse:(ILMPushMessage *)message;
 + (void)didReceiveNotificationResponse:(ILMPushMessage *)message
                        completionBlock:(ILMBlock)completionBlock;
@@ -117,9 +159,9 @@ typedef void (^ILMFetchResultBlock)(UIBackgroundFetchResult);
 #endif
 
 /**
-Allows background operations, such as retrying failed device registers.
+ Allows background operations, such as retrying failed device registers.
  
-Should be called inside [-application:performFetchWithCompletionHandler:].
+ Should be called inside [-application:performFetchWithCompletionHandler:].
 */
 + (void)performFetchWithCompletionBlock:(ILMFetchResultBlock)fetchResultBlock;
 
