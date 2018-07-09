@@ -11,8 +11,6 @@ All notable changes to this project will be documented in this file
 ### Refactor:
 * Major changes to the ILMInLocoEngage Public Interface
 * Updates the public classes documentation
-* Removes Installation Tracker and First Opening Tracker
-* Removes Opt In and Out routes from Engage
 * Removes unused classes
 * Fixes Xcode warnings
 
