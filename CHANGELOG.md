@@ -1,6 +1,21 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [4.0.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.0.0) (09/07/2018)
+
+### Feature:
+* Privacy consent support
+* Engage analytics
++ Adds custom events and screen events support
+
+### Refactor:
+* Major changes to the ILMInLocoEngage Public Interface
+* Updates the public classes documentation
+* Removes Installation Tracker and First Opening Tracker
+* Removes Opt In and Out routes from Engage
+* Removes unused classes
+* Fixes Xcode warnings
+
 ## [3.5.8](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/3.5.8) (02/07/2018)
 
 ### Fix:
