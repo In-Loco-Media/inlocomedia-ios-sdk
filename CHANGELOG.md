@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file
 ### Feature:
 * Privacy consent support
 * Engage analytics
-+ Adds custom events and screen events support
+* Adds custom events and screen events support
 
 ### Refactor:
 * Major changes to the ILMInLocoEngage Public Interface
