@@ -16,7 +16,6 @@
 #import "ILMError.h"
 #import "ILMAdRequest.h"
 #import "ILMInterstitialAd.h"
-#import "ILMLogger.h"
 #import "ILMPublicMacros.h"
 #import "ILMWebImageView.h"
 #import "ILMNotificationAdRequest.h"
@@ -25,7 +24,6 @@
 #import "ILMNativeAdManager.h"
 #import "ILMNativeAdDelegate.h"
 #import "ILMAdErrorConstants.h"
-#import "ILMJsonSerializable.h"
 #import "ILMAdManager.h"
 #import "ILMAdManagerDelegate.h"
 #import "ILMAdManagerFactory.h"
@@ -33,77 +31,94 @@
 #import "ILMNativeViewBinder.h"
 #import "ILMNativeAdCell.h"
 
+/**
+ Ads SDK interface.
+*/
 @interface ILMInLocoMedia : NSObject
 
 /**
- Initialize the API
- **/
+ Initializes the In Loco Media SDK.
+ 
+ @param options A valid ILMAdsOptions instance.
+*/
 + (void)initWithOptions:(ILMAdsOptions *)options;
 
 /**
- Method to enable Notification Ads with location tracking. Notification can be created both when the app is running in background and when is in foreground.
+ If the SDK is set to require the user's privacy consent, this method should be called once the user does or
+ doesn't provide privacy consent. This value is persisted through initializations.
+*/
++ (void)giveUserPrivacyConsent:(BOOL)userPrivacyConsent;
+
+/**
+ Returns if the SDK has the user privacy consent.
+
+ If YES, either the user has already provided consent or the SDK isn't set to require privacy consent.
+ If NO, the SDK hasn't received the user's privacy consent yet.
+*/
++ (BOOL)hasUserPrivacyConsent;
+
+/**
+ Returns if the SDK is waiting for the user privacy consent to be set.
+ 
+ If YES, the method [ILMInLocoMedia giveUserPrivacyConsent:] has not been called yet - neither to give or deny the consent.
+ If NO, the method [ILMInLocoMedia giveUserPrivacyConsent:] has already been called or the SDK isn't set to require privacy consent.
  */
++ (BOOL)isWaitingUserPrivacyConsent;
+
+/**
+ Enables Notification Ads with location tracking. Notifications will be received both in background and foreground.
+*/
 + (void)enableNotificationAds;
 
 /**
- Method to enable Notification Ads with location tracking. Notification can be created only whe app is in background.
+ Enables Notification Ads with location tracking. Notifications will only be received in background.
  */
 + (void)enableNotificationAdsOnlyInBackground;
 
 /**
- Method to disable Notification Ads.
- */
+ Disables Notification Ads.
+*/
 + (void)disableNotificationAds;
 
 /**
- Method sets the notificationAdRequest to be used on notificationAds requested
+ Sets the ILMNotificationAdRequest to be used when Notification Ads are requested.
  */
-+ (void)setNotiticationAdRequest:(ILMNotificationAdRequest *)notificationAdRequest;
++ (void)setNotificationAdRequest:(ILMNotificationAdRequest *)notificationAdRequest;
 
 /**
- Method to verify if NotificationAds is enabled
- */
+  Returns whether Notification Ads are enabled or not.
+*/
 + (BOOL)isNotificationAdsEnabled;
 
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+
 /**
- Method to be called when you receive a local notification after enabling notification ads
- **/
+ Method to be called when you receive a Local Notification after enabling Notification Ads.
+*/
 + (ILMAdvertisement *)didReceiveNotification:(UILocalNotification *)notification;
 
-/**
- This method is deprecated. Please use [InLocoMedia didReceiveNotification:notification]
- **/
-+ (ILMAdvertisement *)didReceivedNotification:(UILocalNotification *)notification __deprecated_msg("Use didReceiveNotification instead.");
-
-/**
- Call it in your:
- - (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+/*
+ Enables the SDK to verify that the application should monitor location changes for Notification Ads.
  
- In its execution, it will verify if the application should monitor location changes for notification ads.
- */
+ Should be called inside [-application:performFetchWithCompletionHandler:].
+*/
 + (void)applicationPerformFetchWithResult:(void (^)(UIBackgroundFetchResult))fetchResultBlock;
 
 /**
- Signal to the API that your application registered to receive notifications. With this information we will start to send notification ads to your user.
- **/
+ Alerts the SDK that your application is registered to receive notifications. This will be used to start sending Notification Ads to your user.
+*/
 + (void)applicationDidRegisterUserNotificationSettings;
 
 /**
- Alert the API that your application has entered in foreground state.
- **/
+ Alerts the SDK that your application has entered the foreground state.
+*/
 + (void)applicationDidBecomeActive;
 
 /**
- If application is in Background it will open the url associated with the notification ad clicked by the user.
- In case the application is in foreground, it will directly open the url of a received notification.
- (Not recomended to use while in foreground)
- **/
+ Opens the URL of the clicked Notification Ad.
+ 
+ This should not be used while in foreground, as it may interrupt the user.
+*/
 + (void)handleNotificationWithDefaultBackgroundBehavior:(ILMAdvertisement *)ad;
-
-/**
- It will get the ILMId from the ILMDefaults class
- **/
-+ (NSString *)inlocomediaId;
 
 @end

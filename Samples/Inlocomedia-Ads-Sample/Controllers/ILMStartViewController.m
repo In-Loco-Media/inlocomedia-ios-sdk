@@ -73,11 +73,10 @@
     }
 }
 - (IBAction)actionShowInfo:(id)sender {
-    NSString *ilmId = [ILMInLocoMedia inlocomediaId];
     NSString *madId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
     BOOL trackingEnabled = [[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled];
     NSString *strTrackingEnabled =  trackingEnabled ? @"YES" : @"NO";
-    NSString *info = [NSString stringWithFormat:@"Advertidsing ID: %@\nILM ID: %@\nAdvertising Tracking Enabled: %@", madId, ilmId, strTrackingEnabled];
+    NSString *info = [NSString stringWithFormat:@"Advertidsing ID: %@\nAdvertising Tracking Enabled: %@", madId, strTrackingEnabled];
     
     UIAlertController *alert = [UIAlertController
                                 alertControllerWithTitle:@"Informations"
