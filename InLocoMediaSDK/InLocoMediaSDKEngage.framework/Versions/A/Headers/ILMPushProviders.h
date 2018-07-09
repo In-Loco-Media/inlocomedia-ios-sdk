@@ -9,4 +9,5 @@
 #import <Foundation/Foundation.h>
 
 #define ILM_PUSH_PROVIDER_FIREBASE @"google_fcm"
+#define ILM_PUSH_PROVIDER_URBAN_AIRSHIP @"urban_airship"
 #define ILM_PUSH_PROVIDER_WEBHOOK @"webhook"

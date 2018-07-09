@@ -20,7 +20,7 @@
 @property (nonatomic) NSString *applicationId;
 
 /**
- Activates the verbose mode logging. Default: NO
+ Activates the verbose mode logging. Default: YES
  */
 @property (nonatomic, assign) BOOL logEnabled;
 
@@ -33,6 +33,21 @@
  Requests a location update when starting the Engage SDK. This option will request the location authorization if enabled. Default: YES
  */
 @property (nonatomic, assign) BOOL locationRequestAtStart;
+
+/**
+ This property delays the full SDK initialization until your application calls [ILMInLocoEngage giveUserPrivacyConsent:YES].
+ If consent is not given, the SDK will initialize in limited mode.
+ 
+ It should be set to YES for GDPR users.
+ 
+ Default: NO
+ */
+@property (nonatomic, assign) BOOL requiresUserPrivacyConsent;
+
+/**
+ Allows the SDK to track the user's screen navigation. This is used to improve app analytics in the dashboard. Default: NO
+*/
+@property (nonatomic, assign) BOOL screenTrackingEnabled;
 
 /**
  Validates the ILMEngageOptions properties.

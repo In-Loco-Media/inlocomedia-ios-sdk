@@ -11,82 +11,116 @@
 #import "ILMAdViewDelegate.h"
 #import "ILMAdRequest.h"
 
-//Minimum AdView refresh interval, value = 30
+/**
+ Minimum AdView refresh interval. Default: 30
+*/
 extern NSTimeInterval const kILMAdRefreshIntervalMin;
 
-//Maximum AdView refresh interval, value = 120
+/**
+ Maximum AdView refresh interval. Default: 120
+*/
 extern NSTimeInterval const kILMAdRefreshIntervalMax;
 
-//AdView refresh deactivated, value = 0
+/**
+ AdView refresh deactivated. Default: 0
+*/
 extern NSTimeInterval const kILMAdRefreshDeactivated;
 
-//AdView minimum request timeout interval, value = 5
+/**
+ AdView minimum request timeout interval. Default: 5
+*/
 extern NSTimeInterval const kILMAdRequestTimeoutMin;
 
-//AdView request timeout, value = 7
+/**
+ AdView default request timeout interval. Default: 7
+*/
 extern NSTimeInterval const kILMAdRequestTimeoutDefault;
 
-//AdView long request timeout, value = 10
+/**
+ AdView long request timeout interval. Default: 10
+ */
 extern NSTimeInterval const kILMAdRequestTimeoutLong;
 
 @interface ILMAdView : UIView
 
-/// The object that acts as a delegate of the ILMAdView
+/**
+ The object that acts as a delegate of the ILMAdView
+*/
 @property (nonatomic, weak) NSObject <ILMAdViewDelegate> *delegate;
 
-/// The timeout of the requests that searches for Ads.
+/**
+ The timeout of Ad requests.
+*/
 @property (nonatomic, assign) NSTimeInterval requestTimeout;
 
-/// Property to determine the adType in a NSString value from the Interface Builder.
+/**
+ Property that determines the adType in a NSString value from the Interface Builder.
+*/
 @property (nonatomic, strong) IBInspectable NSString *adTypeKey;
 
-/// Loads ad when it is awaken from nib file
+/**
+ Loads an Ad when it is awaken from NIB file
+*/
 @property (nonatomic, assign) IBInspectable BOOL loadOnAwake;
 
-/// Property to determine the Native XIB file name in a NSString value from the Interface Builder.
+/**
+ Property to determine the Native XIB file name in a NSString value from the Interface Builder.
+*/
 @property (nonatomic, strong) IBInspectable NSString *nibName;
 
-/// Default init constructor is not available.
+/**
+ The default init constructor is not available.
+*/
 - (instancetype)init NS_UNAVAILABLE;
 
-/// Default initWithFrame constructor is not available.
+/**
+ The default initWithFrame constructor is not available.
+*/
 - (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;
 
 /**
  Constructor initWithCoder is available when creating ILMAdView in the Interface Builder.
- Certify that the ILMAdView in the nib file contains all required properties or an exception may be thrown.
- */
+ Certify that the ILMAdView in the NIB file contains all required properties or an exception may be thrown.
+*/
 - (instancetype)initWithCoder:(NSCoder *)aDecoder;
 
 /**
  Constructor for Display Ad types.
  The origin of the Ad is considered {0,0}.
  The size is automatically set according to the adType.
- */
+*/
 - (instancetype)initWithDisplayAdType:(ILMAdType *)adType;
 
 /**
  Constructor for Display Ad types.
  The size is automatically set according to the adType.
- */
+*/
 - (instancetype)initWithDisplayAdType:(ILMAdType *)adType andOrigin:(CGPoint)origin;
 
 /**
  Constructor for Native Ad Types.
  Certify that in the nib file all required properties are set or an exception may be thrown.
- */
+*/
 - (instancetype)initWithNativeAdType:(ILMAdType *)adType andNibName:(NSString *)nibName;
 
-//Sets the AdView request timeout. This timeout is only for searching if there is Ads Available.
+/**
+ Sets the AdView request timeout.
+*/
 - (void)setRequestTimeout:(NSTimeInterval)requestTimeout;
 
-//Method to load an Advertisement. It uses the default ILMAdRequest
+/**
+ Loads an Advertisement with a default ILMAdRequest object.
+*/
 - (void)loadAd;
 
-//Method to load an Advertisement.
+/**
+ Loads an Advertisement.
+*/
 - (void)loadAdWithRequest:(ILMAdRequest *)request;
 
-//Method returns the refresh interval of the view
+/**
+ Returns the refresh interval of the view.
+*/
 - (NSTimeInterval)refreshInterval;
 
 @end
