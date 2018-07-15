@@ -17,6 +17,7 @@
 		00074EB91CE6625E00228820 /* ILMStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00074EAF1CE6625E00228820 /* ILMStartViewController.m */; };
 		001CEFE41D3D76B10019A195 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001CEFE31D3D76B10019A195 /* Image.xcassets */; };
 		00D9099B1D46AF7600EF15F4 /* ILMNativeAdTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D9099A1D46AF7600EF15F4 /* ILMNativeAdTableView.m */; };
+		1F749B9F20FAD9CE005491DF /* InLocoMediaSDKEngage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F749B9E20FAD9CE005491DF /* InLocoMediaSDKEngage.framework */; };
 		260089D6190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 260089D3190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png */; };
 		260089D7190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 260089D4190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png */; };
 		260089DF190AF2E80064080B /* InLocoMediaNativeAdDiscountFlag.png in Resources */ = {isa = PBXBuildFile; fileRef = 260089DE190AF2E80064080B /* InLocoMediaNativeAdDiscountFlag.png */; };
@@ -83,6 +84,7 @@
 		003B087A1DE8B3A900FC9F00 /* InLocoMedia-Ads-Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "InLocoMedia-Ads-Sample.entitlements"; path = "InLocoMedia-Ads-Sample/InLocoMedia-Ads-Sample.entitlements"; sourceTree = "<group>"; };
 		00D909991D46AF7600EF15F4 /* ILMNativeAdTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMNativeAdTableView.h; sourceTree = "<group>"; };
 		00D9099A1D46AF7600EF15F4 /* ILMNativeAdTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMNativeAdTableView.m; sourceTree = "<group>"; };
+		1F749B9E20FAD9CE005491DF /* InLocoMediaSDKEngage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoMediaSDKEngage.framework; sourceTree = "<group>"; };
 		260089D3190AE3AA0064080B /* InLocoMediaNativeAdButtonNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InLocoMediaNativeAdButtonNormal.png; sourceTree = "<group>"; };
 		260089D4190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InLocoMediaNativeAdButtonPressed.png; sourceTree = "<group>"; };
 		260089DE190AF2E80064080B /* InLocoMediaNativeAdDiscountFlag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InLocoMediaNativeAdDiscountFlag.png; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				CE0789F51F7D556400B7C3D4 /* InLocoMediaSDKAds.framework in Frameworks */,
 				C096219D1A9E3B080055EEEE /* CoreGraphics.framework in Frameworks */,
 				C096219B1A9E3B020055EEEE /* AVFoundation.framework in Frameworks */,
+				1F749B9F20FAD9CE005491DF /* InLocoMediaSDKEngage.framework in Frameworks */,
 				C09621991A9E3AFC0055EEEE /* AudioToolbox.framework in Frameworks */,
 				C09621971A9E38460055EEEE /* AdSupport.framework in Frameworks */,
 				26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */,
@@ -196,6 +199,7 @@
 		2685F0DA190013530016A650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F749B9E20FAD9CE005491DF /* InLocoMediaSDKEngage.framework */,
 				CE0789F41F7D556400B7C3D4 /* InLocoMediaSDKAds.framework */,
 				C09621A41A9E3B1D0055EEEE /* MessageUI.framework */,
 				C09621A01A9E3B150055EEEE /* EventKit.framework */,
