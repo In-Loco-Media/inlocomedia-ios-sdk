@@ -1,6 +1,12 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [4.0.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.0.1) (15/07/2018)
+
+#### Fix:
+* Fixes the timestamps of non-realtime visits
+* Fixes backwards compatibility with previous SDK Versions
+
 ## [4.0.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.0.0) (09/07/2018)
 
 ### Feature:

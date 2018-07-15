@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'Engage' do |eng|
     eng.vendored_frameworks = 'InLocoMediaSDK/InLocoMediaSDKEngage.framework'
-    eng.dependency 'InLocoMedia-iOS-SDK/Location'
+    eng.dependency 'InLocoMedia-iOS-SDK/Location', '4.0.1'
   end
    s.requires_arc = true
 end
