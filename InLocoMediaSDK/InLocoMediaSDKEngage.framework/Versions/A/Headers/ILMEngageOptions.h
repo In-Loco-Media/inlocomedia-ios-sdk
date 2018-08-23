@@ -20,6 +20,11 @@
 @property (nonatomic) NSString *applicationId;
 
 /**
+ An NSArray that identifies the devices used in development. Development devices send information related to your integration in near real-time to help troubleshooting.
+ */
+@property (nonatomic, strong) NSArray *developmentDevices;
+
+/**
  Activates the verbose mode logging. Default: YES
  */
 @property (nonatomic, assign) BOOL logEnabled;
