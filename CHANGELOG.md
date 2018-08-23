@@ -1,6 +1,14 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [4.1.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.1.0) (23/08/2018)
+
+### Feature:
+* Adds integration status logging on developer mode for the Engage SDK
+
+### Refactor:
+* Fixes Xcode warnings
+
 ## [4.0.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.0.1) (15/07/2018)
 
 #### Fix:
