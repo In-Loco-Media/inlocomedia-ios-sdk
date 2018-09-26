@@ -13,7 +13,7 @@
 */
 @interface ILMEngageUser : NSObject
 
-@property (readonly) NSString *userId;
+@property (nonatomic, strong, readonly) NSString *userId;
 
 - (instancetype)initWithId:(NSString *)userId;
 - (instancetype)init NS_UNAVAILABLE;
