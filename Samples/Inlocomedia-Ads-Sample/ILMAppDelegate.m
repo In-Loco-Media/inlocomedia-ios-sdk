@@ -35,7 +35,7 @@
     [ILMInLocoMedia initWithOptions:options];
     
     // Set user profile and save
-    ILMUserProfile *userProfile = [[ILMUserProfile alloc] initWithMinAge:10 andMaxAge:25 andGender:ILMGenderMale];
+    ILMUserProfile *userProfile = [[ILMUserProfile alloc] initWithMinAge:20 andMaxAge:60 andGender:ILMGenderMale];
     [userProfile saveAsDefaultUserProfile];
     
     // InLocoMedia Ads Sample appearence

@@ -13,7 +13,7 @@
 
 @interface ILMNativeAdManager : NSObject
 
-@property NSObject <ILMNativeAdDelegate> *delegate;
+@property (nonatomic, weak) NSObject <ILMNativeAdDelegate> *delegate;
 
 + (void)requestNativeAdWithAdRequest:(ILMAdRequest *)request andDelegate:(NSObject <ILMNativeAdDelegate> *)delegate;
 + (void)requestNativeAdWithDelegate:(NSObject <ILMNativeAdDelegate> *)delegate;

@@ -16,6 +16,7 @@
 #import "ILMPushMessage.h"
 #import "ILMUserProfile.h"
 #import "ILMEngageUser.h"
+#import "ILMUserAddress.h"
 
 typedef void (^ILMBlock)(void);
 typedef void (^ILMNSErrorBlock)(NSError *);
@@ -54,6 +55,38 @@ typedef void (^ILMFetchResultBlock)(UIBackgroundFetchResult);
 + (void)clearUser;
 
 /**
+ Sets the current user id. This information will be used on the engage services (i.e., when device registering occurs and for analytics events).
+ This value is persisted.
+ */
++ (void)setUserId:(NSString *)userId;
+
+/**
+ Returns the current persisted user id.
+ */
++ (NSString *)userId;
+
+/**
+ Clears the current persisted user id.
+ */
++ (void)clearUserId;
+
+/**
+ Sets the user address.
+ This value is persisted locally.
+ */
++ (void)setUserAddress:(ILMUserAddress *)userAddress;
+
+/**
+ Returns the current persisted user address.
+ */
++ (ILMUserAddress *)userAddress;
+
+/**
+ Clears the current persisted user address.
+ */
++ (void)clearUserAddress;
+
+/**
  If the SDK is set to require the user's privacy consent, this method should be called once the user does or
  doesn't provide privacy consent. This value is persisted through initializations.
 */
@@ -84,6 +117,11 @@ typedef void (^ILMFetchResultBlock)(UIBackgroundFetchResult);
  Returns the last set Push Provider.
 */
 + (ILMPushProvider *)pushProvider;
+
+/**
+ Clears last set Push Provider.
+*/
++ (void)clearPushProvider;
 
 /**
  Enables or disables the device from targeted push notifications. This value is persisted. Default: YES.
