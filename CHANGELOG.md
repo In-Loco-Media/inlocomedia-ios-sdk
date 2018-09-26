@@ -1,6 +1,18 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [4.2.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.2.0) (26/09/2018)
+
+### Feature:
+* Adds the setUserId and setUserAddress to the Engage public interface
+
+### Fix:
+* Fixes an ILMDefaults unarchive error when upgrading from version 3.0 to 4.0+
+* Fixes possible memory leaks when using Native Ads
+
+### Refactor:
+* Remakes the location authorization request logic to be asynchronous
+
 ## [4.1.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.1.0) (23/08/2018)
 
 ### Feature:
