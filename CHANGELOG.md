@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [4.2.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.2.2) (16/10/2018)
+
+### Fix:
+* Prevents requests from being executed when network connection is not available
+
 ## [4.2.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.2.1) (09/10/2018)
 
 ### Fix:
