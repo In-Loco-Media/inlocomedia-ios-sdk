@@ -1,9 +1,14 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [4.3.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.3.1) (23/11/2018)
+
+### Fix:
+* Fixes an issue with location services initialization
+
 ## [4.3.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.3.0) (29/10/2018)
 
-### Feature
+### Feature:
 * Signed requests
 * Address enrichment with forward-geocoding
 
