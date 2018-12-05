@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [4.3.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.3.3) (05/12/2018)
+
+### Fix:
+* Fixes issue with click registration on Ads SDK push notifications
+
 ## [4.3.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.3.2) (30/11/2018)
 
 ### Fix:
