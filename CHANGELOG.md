@@ -1,7 +1,7 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
-## [4.3.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.3.4) (17/12/2018)
+## [4.3.4](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.3.4) (17/12/2018)
 
 ### Fix:
 * Protects the In Loco Media initialization against memory errors
