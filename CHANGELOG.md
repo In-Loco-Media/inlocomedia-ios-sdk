@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [4.3.5](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.3.5) (06/02/2018)
+
+### Fix:
+* Fixes incorrect remote configuration value
+
 ## [4.3.4](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.3.4) (17/12/2018)
 
 ### Fix:
