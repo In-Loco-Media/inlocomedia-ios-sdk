@@ -4,13 +4,10 @@ All notable changes to this project will be documented in this file
 ## [4.4.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.4.0) (22/04/2019)
 
 ### Feature:
-* New Analytics events
+* Updates Media notifications to use UserNotifications 
 
 ### Refactor:
-* Major refactor on the SDK structure
-* Remote configuration refactor
-* Removes some analytics events
-* Notifications refactor
+* Major SDK structure refactor
 
 ## [4.3.5](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.3.5) (06/02/2019)
 
