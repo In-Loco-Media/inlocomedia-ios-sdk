@@ -22,6 +22,8 @@ typedef void (^ILMBlock)(void);
 typedef void (^ILMNSErrorBlock)(NSError *);
 typedef void (^ILMFetchResultBlock)(UIBackgroundFetchResult);
 
+#define DEPRECATED_METHOD_STRING "Invoking this method is no longer necessary and will have no effect"
+
 #if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
 @import UserNotifications;
 #endif
@@ -160,29 +162,24 @@ typedef void (^ILMFetchResultBlock)(UIBackgroundFetchResult);
 + (void)appDidFinishLaunchingWithMessage:(ILMPushMessage *)message;
 
 /**
- Registers push messages received through the [-application:didReceiveRemoteNotification:] methods.
- 
- Must be called inside [-application:didReceiveRemoteNotification:] and/or [-application:didReceiveRemoteNotification:fetchCompletionHandler:].
+ These methods are deprecated and their invocation will have no effect.
 */
-+ (void)appDidReceiveRemoteNotification:(ILMPushMessage *)message;
++ (void)appDidReceiveRemoteNotification:(ILMPushMessage *)message __attribute__((deprecated(DEPRECATED_METHOD_STRING)));
 + (void)appDidReceiveRemoteNotification:(ILMPushMessage *)message
-                        completionBlock:(ILMFetchResultBlock)completionBlock;
+                        completionBlock:(ILMFetchResultBlock)completionBlock __attribute__((deprecated(DEPRECATED_METHOD_STRING)));
 
 #if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wpartial-availability"
 
 /**
- Registers push messages received through the [-userNotificationCenter:willPresentNotification:withCompletionHandler:] method.
- 
- Must be called inside [-userNotificationCenter:willPresentNotification:withCompletionHandler:],
- with the same notificationOptions passed to the method's completion handler.
+ These methods are deprecated and their invocation will have no effect.
 */
 + (void)willPresentNotification:(ILMPushMessage *)message
-            notificationOptions:(UNNotificationPresentationOptions)notificationOptions;
+            notificationOptions:(UNNotificationPresentationOptions)notificationOptions __attribute__((deprecated(DEPRECATED_METHOD_STRING)));
 + (void)willPresentNotification:(ILMPushMessage *)message
             notificationOptions:(UNNotificationPresentationOptions)notificationOptions
-                completionBlock:(ILMBlock)completionBlock;
+                completionBlock:(ILMBlock)completionBlock __attribute__((deprecated(DEPRECATED_METHOD_STRING)));
 
 /**
  Registers tapped pushes.
