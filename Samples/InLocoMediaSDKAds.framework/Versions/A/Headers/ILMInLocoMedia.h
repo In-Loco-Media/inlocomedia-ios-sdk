@@ -31,6 +31,8 @@
 #import "ILMNativeViewBinder.h"
 #import "ILMNativeAdCell.h"
 
+@import UserNotifications;
+
 /**
  Ads SDK interface.
 */
@@ -96,6 +98,11 @@
  Method to be called when you receive a Local Notification after enabling Notification Ads.
 */
 + (ILMAdvertisement *)didReceiveNotification:(UILocalNotification *)notification;
+
+/**
+ Method to be called when you receive a Local Notification after enabling Notification Ads.
+ */
++ (ILMAdvertisement *)didReceiveUserNotification:(UNNotification *)notification API_AVAILABLE(ios(10.0));
 
 /*
  Enables the SDK to verify that the application should monitor location changes for Notification Ads.

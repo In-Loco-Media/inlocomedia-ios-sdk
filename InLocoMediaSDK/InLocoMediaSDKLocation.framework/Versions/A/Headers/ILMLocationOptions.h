@@ -13,7 +13,7 @@
 /**
  This class holds the necessary properties to configure the Location SDK initialization.
  */
-@interface ILMLocationOptions : NSObject
+@interface ILMLocationOptions : ILMOptions
 
 /**
  The Location key identifies your app to our Location server. This key is obtained when you register your app in our dashboard.

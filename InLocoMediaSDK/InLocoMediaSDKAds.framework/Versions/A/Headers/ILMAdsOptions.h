@@ -13,7 +13,7 @@
 /**
  This class holds the necessary properties to configure the Ads SDK initialization.
 */
-@interface ILMAdsOptions : NSObject
+@interface ILMAdsOptions : ILMOptions
 
 /**
  The Ads key identifies your app to our Ads server. This key is obtained when you register your app in our dashboard.
