@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file
 * Major refactor on the SDK structure
 * Remote configuration refactor
 * Removes some analytics events
+* Notifications refactor
 
 ## [4.3.5](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.3.5) (06/02/2019)
 
