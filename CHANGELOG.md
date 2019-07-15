@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [4.4.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.4.2) (15/07/2019)
+
+### Fix:
+* Adds security fixes
+
 ## [4.4.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.4.1) (08/05/2019)
 
 ### Fix:
