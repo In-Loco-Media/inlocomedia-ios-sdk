@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 InLocoMedia. All rights reserved.
 //
 
-#import <InLocoMediaSDKAds/ILMInLocoMedia.h>
+@import InLocoSDK;
 #import "ILMAdvertisementViewController.h"
 
 @interface ILMAdvertisementViewController () <ILMAdViewDelegate>

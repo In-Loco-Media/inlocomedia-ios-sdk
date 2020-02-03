@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00074E951CE6622E00228820 /* ILMNotificationAdAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00074E941CE6622E00228820 /* ILMNotificationAdAlertView.m */; };
 		00074E981CE6623800228820 /* ILMListElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 00074E971CE6623800228820 /* ILMListElement.m */; };
 		00074EB01CE6625E00228820 /* ILMAdvertisementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00074E9D1CE6625E00228820 /* ILMAdvertisementViewController.m */; };
 		00074EB11CE6625E00228820 /* ILMAdViewFromStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 00074E9F1CE6625E00228820 /* ILMAdViewFromStoryboard.m */; };
@@ -42,11 +41,16 @@
 		C09621A21A9E3B150055EEEE /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A01A9E3B150055EEEE /* EventKit.framework */; };
 		C09621A31A9E3B150055EEEE /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A11A9E3B150055EEEE /* EventKitUI.framework */; };
 		C09621A51A9E3B1D0055EEEE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621A41A9E3B1D0055EEEE /* MessageUI.framework */; };
-		CE0789F51F7D556400B7C3D4 /* InLocoMediaSDKAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0789F41F7D556400B7C3D4 /* InLocoMediaSDKAds.framework */; };
 		CE0789FD1F7D5ABD00B7C3D4 /* NativeLarge.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0789F61F7D5ABD00B7C3D4 /* NativeLarge.xib */; };
 		CE0789FE1F7D5ABD00B7C3D4 /* NativeAdSmallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0789F71F7D5ABD00B7C3D4 /* NativeAdSmallCell.xib */; };
 		CE0789FF1F7D5ABD00B7C3D4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0789F81F7D5ABD00B7C3D4 /* LaunchScreen.xib */; };
 		CE078A001F7D5ABD00B7C3D4 /* MySmallCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0789F91F7D5ABD00B7C3D4 /* MySmallCustomCell.xib */; };
+		CEACB39923E8A18500E755D4 /* InLocoOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEACB39823E8A18500E755D4 /* InLocoOptions.plist */; };
+		CEEFE26A23E8AC0E00F22B07 /* InLocoSDKAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEFE26523E8AC0E00F22B07 /* InLocoSDKAds.framework */; };
+		CEEFE26B23E8AC0E00F22B07 /* InLocoSDKEngage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEFE26623E8AC0E00F22B07 /* InLocoSDKEngage.framework */; };
+		CEEFE26C23E8AC0E00F22B07 /* InLocoSDKLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEFE26723E8AC0E00F22B07 /* InLocoSDKLocation.framework */; };
+		CEEFE26D23E8AC0E00F22B07 /* InLocoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEFE26823E8AC0E00F22B07 /* InLocoSDK.framework */; };
+		CEEFE26E23E8AC0E00F22B07 /* InLocoSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEFE26923E8AC0E00F22B07 /* InLocoSDKCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,8 +67,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		00074E931CE6622E00228820 /* ILMNotificationAdAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMNotificationAdAlertView.h; sourceTree = "<group>"; };
-		00074E941CE6622E00228820 /* ILMNotificationAdAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMNotificationAdAlertView.m; sourceTree = "<group>"; };
 		00074E961CE6623800228820 /* ILMListElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMListElement.h; sourceTree = "<group>"; };
 		00074E971CE6623800228820 /* ILMListElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMListElement.m; sourceTree = "<group>"; };
 		00074E9C1CE6625E00228820 /* ILMAdvertisementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMAdvertisementViewController.h; sourceTree = "<group>"; };
@@ -114,11 +116,16 @@
 		C09621A01A9E3B150055EEEE /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		C09621A11A9E3B150055EEEE /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		C09621A41A9E3B1D0055EEEE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		CE0789F41F7D556400B7C3D4 /* InLocoMediaSDKAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoMediaSDKAds.framework; sourceTree = "<group>"; };
 		CE0789F61F7D5ABD00B7C3D4 /* NativeLarge.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeLarge.xib; sourceTree = "<group>"; };
 		CE0789F71F7D5ABD00B7C3D4 /* NativeAdSmallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdSmallCell.xib; sourceTree = "<group>"; };
 		CE0789F81F7D5ABD00B7C3D4 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		CE0789F91F7D5ABD00B7C3D4 /* MySmallCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySmallCustomCell.xib; sourceTree = "<group>"; };
+		CEACB39823E8A18500E755D4 /* InLocoOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InLocoOptions.plist; sourceTree = "<group>"; };
+		CEEFE26523E8AC0E00F22B07 /* InLocoSDKAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKAds.framework; sourceTree = "<group>"; };
+		CEEFE26623E8AC0E00F22B07 /* InLocoSDKEngage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKEngage.framework; sourceTree = "<group>"; };
+		CEEFE26723E8AC0E00F22B07 /* InLocoSDKLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKLocation.framework; sourceTree = "<group>"; };
+		CEEFE26823E8AC0E00F22B07 /* InLocoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDK.framework; sourceTree = "<group>"; };
+		CEEFE26923E8AC0E00F22B07 /* InLocoSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,15 +135,19 @@
 			files = (
 				2674FDE61912FDFB0063CEEA /* SystemConfiguration.framework in Frameworks */,
 				C09621A51A9E3B1D0055EEEE /* MessageUI.framework in Frameworks */,
+				CEEFE26E23E8AC0E00F22B07 /* InLocoSDKCore.framework in Frameworks */,
 				C09621A21A9E3B150055EEEE /* EventKit.framework in Frameworks */,
 				C09621A31A9E3B150055EEEE /* EventKitUI.framework in Frameworks */,
+				CEEFE26A23E8AC0E00F22B07 /* InLocoSDKAds.framework in Frameworks */,
 				C096219F1A9E3B0E0055EEEE /* CoreTelephony.framework in Frameworks */,
-				CE0789F51F7D556400B7C3D4 /* InLocoMediaSDKAds.framework in Frameworks */,
+				CEEFE26B23E8AC0E00F22B07 /* InLocoSDKEngage.framework in Frameworks */,
 				C096219D1A9E3B080055EEEE /* CoreGraphics.framework in Frameworks */,
 				C096219B1A9E3B020055EEEE /* AVFoundation.framework in Frameworks */,
 				C09621991A9E3AFC0055EEEE /* AudioToolbox.framework in Frameworks */,
 				C09621971A9E38460055EEEE /* AdSupport.framework in Frameworks */,
+				CEEFE26D23E8AC0E00F22B07 /* InLocoSDK.framework in Frameworks */,
 				26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */,
+				CEEFE26C23E8AC0E00F22B07 /* InLocoSDKLocation.framework in Frameworks */,
 				2685F0DC190013530016A650 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +207,11 @@
 		2685F0DA190013530016A650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CE0789F41F7D556400B7C3D4 /* InLocoMediaSDKAds.framework */,
+				CEEFE26823E8AC0E00F22B07 /* InLocoSDK.framework */,
+				CEEFE26523E8AC0E00F22B07 /* InLocoSDKAds.framework */,
+				CEEFE26923E8AC0E00F22B07 /* InLocoSDKCore.framework */,
+				CEEFE26623E8AC0E00F22B07 /* InLocoSDKEngage.framework */,
+				CEEFE26723E8AC0E00F22B07 /* InLocoSDKLocation.framework */,
 				C09621A41A9E3B1D0055EEEE /* MessageUI.framework */,
 				C09621A01A9E3B150055EEEE /* EventKit.framework */,
 				C09621A11A9E3B150055EEEE /* EventKitUI.framework */,
@@ -221,7 +236,6 @@
 				4927717B1CF4D005009174E6 /* ILMAppDelegate.m */,
 				26545DD61901B81E0067A426 /* Main.storyboard */,
 				2685F117190013D50016A650 /* Controllers */,
-				C01065341AF1742D00A9D5F8 /* Dialogs */,
 				26545DBE1901AC350067A426 /* Models */,
 				26545DB41901ABE80067A426 /* Resources */,
 				2685F0E2190013530016A650 /* Supporting Files */,
@@ -233,6 +247,7 @@
 		2685F0E2190013530016A650 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CEACB39823E8A18500E755D4 /* InLocoOptions.plist */,
 				2685F0E7190013530016A650 /* main.m */,
 				2685F0E9190013530016A650 /* InLocoMedia-Ads-Sample-Prefix.pch */,
 				2685F0E3190013530016A650 /* InLocoMedia-Ads-Sample-IOS.plist */,
@@ -260,15 +275,6 @@
 				00074EAF1CE6625E00228820 /* ILMStartViewController.m */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		C01065341AF1742D00A9D5F8 /* Dialogs */ = {
-			isa = PBXGroup;
-			children = (
-				00074E931CE6622E00228820 /* ILMNotificationAdAlertView.h */,
-				00074E941CE6622E00228820 /* ILMNotificationAdAlertView.m */,
-			);
-			path = Dialogs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +329,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -344,6 +351,7 @@
 				260089D7190AE3AA0064080B /* InLocoMediaNativeAdButtonPressed.png in Resources */,
 				2683705E1911695D00B39CB4 /* InLocoMediaNativeAdPlaceholderCoupon.png in Resources */,
 				CE078A001F7D5ABD00B7C3D4 /* MySmallCustomCell.xib in Resources */,
+				CEACB39923E8A18500E755D4 /* InLocoOptions.plist in Resources */,
 				2638E9B9195B990900F067E6 /* seta@2x.png in Resources */,
 				26F27626195397C600A88ACF /* Default-568h@2x.png in Resources */,
 				2683705F1911695D00B39CB4 /* InLocoMediaNativeAdPlaceholderIcon.png in Resources */,
@@ -378,7 +386,6 @@
 				00074EB81CE6625E00228820 /* ILMNativeAdvertisementViewController.m in Sources */,
 				00D9099B1D46AF7600EF15F4 /* ILMNativeAdTableView.m in Sources */,
 				2685F0E8190013530016A650 /* main.m in Sources */,
-				00074E951CE6622E00228820 /* ILMNotificationAdAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

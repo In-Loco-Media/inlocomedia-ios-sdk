@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <InLocoMediaSDKAds/ILMInLocoMedia.h>
+
+@import InLocoSDK;
 
 @interface ILMListElement : NSObject
 
@@ -22,3 +23,4 @@
 - (id)initAdType:(ILMAdType *)adType value:(NSString *)value nibName:(NSString *)nibName andCellIdentifier:(NSString *)cellIdentifier;
 
 @end
+
