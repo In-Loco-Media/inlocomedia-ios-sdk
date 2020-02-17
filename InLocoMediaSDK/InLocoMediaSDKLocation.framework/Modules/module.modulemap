@@ -1,8 +1,0 @@
-
-framework module InLocoMediaSDKLocation {
-  umbrella header "ILMInLoco.h"
-
-  export *
-  module * { export * }
-
-}

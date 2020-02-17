@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 InLocoMedia. All rights reserved.
 //
 
-#import <InLocoMediaSDKAds/ILMInLocoMedia.h>
+@import InLocoSDK;
 
 #import "ILMNativeAdTableView.h"
 #import "ILMStartViewController.h"
@@ -67,9 +67,7 @@
 - (IBAction)actionNotificationSwitch:(id)sender
 {
     if ([_notificationSwitch isOn]) {
-       [ILMInLocoMedia enableNotificationAds];
     } else {
-        [ILMInLocoMedia disableNotificationAds];
     }
 }
 - (IBAction)actionShowInfo:(id)sender {
@@ -151,7 +149,6 @@
        [cell addSubview:theSwitch];
        cell.accessoryView = theSwitch;
        _notificationSwitch = theSwitch;
-       _notificationSwitch.on = [ILMInLocoMedia isNotificationAdsEnabled];
        [_notificationSwitch addTarget:self action:@selector(actionNotificationSwitch:) forControlEvents:UIControlEventValueChanged];
     } else {
         cell.textLabel.text = element.adTypeValue;

@@ -7,7 +7,7 @@
 //
 
 #import "ILMNativeAdTableView.h"
-#import <InLocoMediaSDKAds/ILMInLocoMedia.h>
+@import InLocoSDK;
 
 @interface ILMNativeAdTableView () <UITableViewDelegate, UITableViewDataSource>
 

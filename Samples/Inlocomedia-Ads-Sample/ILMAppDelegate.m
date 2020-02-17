@@ -6,33 +6,16 @@
 //  Copyright (c) 2014 InLocoMedia. All rights reserved.
 //
 
-#import <InLocoMediaSDKAds/ILMInLocoMedia.h>
+@import InLocoSDK;
 
 #import "ILMAppDelegate.h"
-#import "ILMNotificationAdAlertView.h"
 
 @implementation ILMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Initialize the API
-    ILMAdsOptions *options = [[ILMAdsOptions alloc] init];
-    
-    // Set the development mode for your test device
-    [options setDevelopmentDevices:@[[[UIDevice currentDevice] identifierForVendor].UUIDString]];
-    
-    // Your production key
-    [options setAdsKey:APP_KEY];
-    
-    // Verbose mode activated, remember to set NO for production
-    [options setLogEnabled:YES];
-    
-    // Enables a location request at the start of the application. Will request the user to enable location permission. The default value is Yes.
-    [options setLocationRequestAtStartEnabled:YES];
-    [options setLocationEnabled:YES];
-    
     // Initializating the InLocoMedia SDK
-    [ILMInLocoMedia initWithOptions:options];
+    [ILMInLoco initSdk];
     
     // Set user profile and save
     ILMUserProfile *userProfile = [[ILMUserProfile alloc] initWithMinAge:20 andMaxAge:60 andGender:ILMGenderMale];
@@ -43,59 +26,14 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil]];
     
-    // Initialize a local notification for the app to process
-    UILocalNotification *notification = launchOptions[UIApplicationLaunchOptionsLocalNotificationKey];
-    if (notification) {
-        
-        ILMAdvertisement *advertisement = [ILMInLocoMedia didReceiveNotification:notification];
-        if (advertisement) {
-            NSLog(@"Ads Sample: App launched with the notification");
-            [self handleNotificationAdvertisement:advertisement];
-            [ILMInLocoMedia handleNotificationWithDefaultBackgroundBehavior:advertisement];
-        }
-    }
-    
     return YES;
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    [ILMInLocoMedia applicationDidBecomeActive];
-}
-
-- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
-{
-    [ILMInLocoMedia applicationDidRegisterUserNotificationSettings];
 }
 
 - (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
-    [ILMInLocoMedia applicationPerformFetchWithResult: ^(UIBackgroundFetchResult fetchResult) {
+    [ILMInLoco performFetchWithCompletionBlock: ^(UIBackgroundFetchResult fetchResult) {
         completionHandler(fetchResult);
     }];
-}
-
-- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
-{
-    ILMAdvertisement *advertisement = [ILMInLocoMedia didReceiveNotification:notification];
-    
-    if (advertisement && [application applicationState] != UIApplicationStateActive) {
-        NSLog(@"Ads Sample: Notification received as local notification");
-        [ILMInLocoMedia handleNotificationWithDefaultBackgroundBehavior:advertisement];
-    } else {
-        [self handleNotificationAdvertisement:advertisement];
-    }
-}
-
-#pragma ILMAppDelegate
-
-- (void)handleNotificationAdvertisement:(ILMAdvertisement *)advertisement
-{
-    /**
-     A Notification Ad was received. Implement here what your app should do.
-     (i.e. open a dialog, the browser or another view controller.)
-     **/
-    [[[ILMNotificationAdAlertView alloc] initWithAdvertisement:advertisement] show];
 }
 
 @end
