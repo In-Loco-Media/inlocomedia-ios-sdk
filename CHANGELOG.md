@@ -1,6 +1,19 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [5.0.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.0.0) (18/02/2020)
+
+### Feature:
+* Creates the Common SDK
+* Public interface semantic reorganization
+* Asynchronous initialization
+* Adds support for initialization file
+* Unified SDK initialization
+* Adds support for granular user consent
+* Removes public method to request permissions
+* Several security improvements
+* Several minor fixes and improvements
+
 ## [4.4.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/4.4.3) (04/10/2019)
 
 ### Fix:
