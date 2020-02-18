@@ -33,11 +33,11 @@
 		26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A20B221921863B00B74DA5 /* CoreLocation.framework */; };
 		26F27626195397C600A88ACF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F27625195397C600A88ACF /* Default-568h@2x.png */; };
 		4927717C1CF4D005009174E6 /* ILMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4927717B1CF4D005009174E6 /* ILMAppDelegate.m */; };
-		62DF6E9F23F73C3D0003E915 /* InLocoSDKEngage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DF6E9A23F73C3C0003E915 /* InLocoSDKEngage.framework */; };
-		62DF6EA023F73C3D0003E915 /* InLocoSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DF6E9B23F73C3C0003E915 /* InLocoSDKCore.framework */; };
-		62DF6EA123F73C3D0003E915 /* InLocoSDKAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DF6E9C23F73C3D0003E915 /* InLocoSDKAds.framework */; };
-		62DF6EA223F73C3D0003E915 /* InLocoSDKLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DF6E9D23F73C3D0003E915 /* InLocoSDKLocation.framework */; };
-		62DF6EA323F73C3D0003E915 /* InLocoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DF6E9E23F73C3D0003E915 /* InLocoSDK.framework */; };
+		621A500623FC526F00BBF433 /* InLocoSDKEngage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621A500123FC526E00BBF433 /* InLocoSDKEngage.framework */; };
+		621A500723FC526F00BBF433 /* InLocoSDKAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621A500223FC526E00BBF433 /* InLocoSDKAds.framework */; };
+		621A500823FC526F00BBF433 /* InLocoSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621A500323FC526E00BBF433 /* InLocoSDKCore.framework */; };
+		621A500923FC526F00BBF433 /* InLocoSDKLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621A500423FC526E00BBF433 /* InLocoSDKLocation.framework */; };
+		621A500A23FC526F00BBF433 /* InLocoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621A500523FC526F00BBF433 /* InLocoSDK.framework */; };
 		C09621971A9E38460055EEEE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621961A9E38460055EEEE /* AdSupport.framework */; };
 		C09621991A9E3AFC0055EEEE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09621981A9E3AFC0055EEEE /* AudioToolbox.framework */; };
 		C096219B1A9E3B020055EEEE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C096219A1A9E3B020055EEEE /* AVFoundation.framework */; };
@@ -108,11 +108,11 @@
 		4927717A1CF4D005009174E6 /* ILMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMAppDelegate.h; sourceTree = "<group>"; };
 		4927717B1CF4D005009174E6 /* ILMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMAppDelegate.m; sourceTree = "<group>"; };
 		4995B2D31CEE31040084F8D6 /* ILMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMConstants.h; sourceTree = "<group>"; };
-		62DF6E9A23F73C3C0003E915 /* InLocoSDKEngage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKEngage.framework; sourceTree = "<group>"; };
-		62DF6E9B23F73C3C0003E915 /* InLocoSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKCore.framework; sourceTree = "<group>"; };
-		62DF6E9C23F73C3D0003E915 /* InLocoSDKAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKAds.framework; sourceTree = "<group>"; };
-		62DF6E9D23F73C3D0003E915 /* InLocoSDKLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKLocation.framework; sourceTree = "<group>"; };
-		62DF6E9E23F73C3D0003E915 /* InLocoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDK.framework; sourceTree = "<group>"; };
+		621A500123FC526E00BBF433 /* InLocoSDKEngage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKEngage.framework; sourceTree = "<group>"; };
+		621A500223FC526E00BBF433 /* InLocoSDKAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKAds.framework; sourceTree = "<group>"; };
+		621A500323FC526E00BBF433 /* InLocoSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKCore.framework; sourceTree = "<group>"; };
+		621A500423FC526E00BBF433 /* InLocoSDKLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKLocation.framework; sourceTree = "<group>"; };
+		621A500523FC526F00BBF433 /* InLocoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDK.framework; sourceTree = "<group>"; };
 		C09621961A9E38460055EEEE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		C09621981A9E3AFC0055EEEE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C096219A1A9E3B020055EEEE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -133,20 +133,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				621A500723FC526F00BBF433 /* InLocoSDKAds.framework in Frameworks */,
 				2674FDE61912FDFB0063CEEA /* SystemConfiguration.framework in Frameworks */,
 				C09621A51A9E3B1D0055EEEE /* MessageUI.framework in Frameworks */,
 				C09621A21A9E3B150055EEEE /* EventKit.framework in Frameworks */,
 				C09621A31A9E3B150055EEEE /* EventKitUI.framework in Frameworks */,
+				621A500A23FC526F00BBF433 /* InLocoSDK.framework in Frameworks */,
 				C096219F1A9E3B0E0055EEEE /* CoreTelephony.framework in Frameworks */,
-				62DF6EA323F73C3D0003E915 /* InLocoSDK.framework in Frameworks */,
+				621A500823FC526F00BBF433 /* InLocoSDKCore.framework in Frameworks */,
 				C096219D1A9E3B080055EEEE /* CoreGraphics.framework in Frameworks */,
-				62DF6E9F23F73C3D0003E915 /* InLocoSDKEngage.framework in Frameworks */,
+				621A500623FC526F00BBF433 /* InLocoSDKEngage.framework in Frameworks */,
 				C096219B1A9E3B020055EEEE /* AVFoundation.framework in Frameworks */,
-				62DF6EA023F73C3D0003E915 /* InLocoSDKCore.framework in Frameworks */,
 				C09621991A9E3AFC0055EEEE /* AudioToolbox.framework in Frameworks */,
-				62DF6EA123F73C3D0003E915 /* InLocoSDKAds.framework in Frameworks */,
 				C09621971A9E38460055EEEE /* AdSupport.framework in Frameworks */,
-				62DF6EA223F73C3D0003E915 /* InLocoSDKLocation.framework in Frameworks */,
+				621A500923FC526F00BBF433 /* InLocoSDKLocation.framework in Frameworks */,
 				26A20B231921863B00B74DA5 /* CoreLocation.framework in Frameworks */,
 				2685F0DC190013530016A650 /* Foundation.framework in Frameworks */,
 			);
@@ -207,11 +207,11 @@
 		2685F0DA190013530016A650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				62DF6E9E23F73C3D0003E915 /* InLocoSDK.framework */,
-				62DF6E9C23F73C3D0003E915 /* InLocoSDKAds.framework */,
-				62DF6E9B23F73C3C0003E915 /* InLocoSDKCore.framework */,
-				62DF6E9A23F73C3C0003E915 /* InLocoSDKEngage.framework */,
-				62DF6E9D23F73C3D0003E915 /* InLocoSDKLocation.framework */,
+				621A500523FC526F00BBF433 /* InLocoSDK.framework */,
+				621A500223FC526E00BBF433 /* InLocoSDKAds.framework */,
+				621A500323FC526E00BBF433 /* InLocoSDKCore.framework */,
+				621A500123FC526E00BBF433 /* InLocoSDKEngage.framework */,
+				621A500423FC526E00BBF433 /* InLocoSDKLocation.framework */,
 				C09621A41A9E3B1D0055EEEE /* MessageUI.framework */,
 				C09621A01A9E3B150055EEEE /* EventKit.framework */,
 				C09621A11A9E3B150055EEEE /* EventKitUI.framework */,
