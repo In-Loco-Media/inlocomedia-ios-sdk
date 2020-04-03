@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [5.0.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.0.1) (03/04/2020)
+
+### Fix:
+* Fixes duplicated symbols issue
+
 ## [5.0.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.0.0) (18/02/2020)
 
 ### Feature:
