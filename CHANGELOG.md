@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file
 * Adds check-in event registration
 * New user consent individualized structure
 
+
+## [5.0.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.0.2) (16/04/2020)
+
+### Feature:
+* Fixes concurrency issues 
+
 ## [5.0.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.0.1) (03/04/2020)
 
 ### Fix:
