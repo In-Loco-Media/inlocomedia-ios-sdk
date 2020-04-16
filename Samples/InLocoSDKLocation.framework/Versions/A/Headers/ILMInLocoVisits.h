@@ -7,14 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ILMCheckIn.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ILMInLocoVisits : NSObject
 
 + (void)setEnabled:(BOOL)enabled;
-+ (void)registerCheckIn:(ILMCheckIn *)checkIn;
 
 @end
 

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 /**
- This class holds the user address to be used during Check In or Address Validation.
+ This class holds the user address to be used during Engage registration.
  */
 @interface ILMUserAddress : NSObject
 
