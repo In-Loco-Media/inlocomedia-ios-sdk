@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file
 ## [5.1.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.1.2) (20/04/2020)
 
 ### Fix:
-* Security fixes and improvements
+* Adds security fixes and improvements
 
 ## [5.1.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.1.1) (16/04/2020)
 
