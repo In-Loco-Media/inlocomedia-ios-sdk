@@ -1,9 +1,14 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [5.1.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.1.2) (20/04/2020)
+
+### Fix:
+* Security fixes and improvements
+
 ## [5.1.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.1.1) (16/04/2020)
 
-### Feature:
+### Fix:
 * Fixes concurrency issues 
 
 ## [5.1.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.1.0) (15/04/2020)
@@ -15,7 +20,7 @@ All notable changes to this project will be documented in this file
 
 ## [5.0.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.0.2) (16/04/2020)
 
-### Feature:
+### Fix:
 * Fixes concurrency issues 
 
 ## [5.0.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.0.1) (03/04/2020)

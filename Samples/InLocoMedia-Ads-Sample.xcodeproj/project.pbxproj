@@ -46,11 +46,11 @@
 		CE0789FF1F7D5ABD00B7C3D4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0789F81F7D5ABD00B7C3D4 /* LaunchScreen.xib */; };
 		CE078A001F7D5ABD00B7C3D4 /* MySmallCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0789F91F7D5ABD00B7C3D4 /* MySmallCustomCell.xib */; };
 		CEACB39923E8A18500E755D4 /* InLocoOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEACB39823E8A18500E755D4 /* InLocoOptions.plist */; };
-		CEB062492449134800FDEFF3 /* InLocoSDKAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB062442449134800FDEFF3 /* InLocoSDKAds.framework */; };
-		CEB0624A2449134800FDEFF3 /* InLocoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB062452449134800FDEFF3 /* InLocoSDK.framework */; };
-		CEB0624B2449134800FDEFF3 /* InLocoSDKEngage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB062462449134800FDEFF3 /* InLocoSDKEngage.framework */; };
-		CEB0624C2449134800FDEFF3 /* InLocoSDKLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB062472449134800FDEFF3 /* InLocoSDKLocation.framework */; };
-		CEB0624D2449134800FDEFF3 /* InLocoSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB062482449134800FDEFF3 /* InLocoSDKCore.framework */; };
+		CEFDB6E3244E003C00D248A1 /* InLocoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFDB6DE244E003C00D248A1 /* InLocoSDK.framework */; };
+		CEFDB6E4244E003C00D248A1 /* InLocoSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFDB6DF244E003C00D248A1 /* InLocoSDKCore.framework */; };
+		CEFDB6E5244E003C00D248A1 /* InLocoSDKEngage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFDB6E0244E003C00D248A1 /* InLocoSDKEngage.framework */; };
+		CEFDB6E6244E003C00D248A1 /* InLocoSDKAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFDB6E1244E003C00D248A1 /* InLocoSDKAds.framework */; };
+		CEFDB6E7244E003C00D248A1 /* InLocoSDKLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFDB6E2244E003C00D248A1 /* InLocoSDKLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -121,11 +121,11 @@
 		CE0789F81F7D5ABD00B7C3D4 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		CE0789F91F7D5ABD00B7C3D4 /* MySmallCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySmallCustomCell.xib; sourceTree = "<group>"; };
 		CEACB39823E8A18500E755D4 /* InLocoOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InLocoOptions.plist; sourceTree = "<group>"; };
-		CEB062442449134800FDEFF3 /* InLocoSDKAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKAds.framework; sourceTree = "<group>"; };
-		CEB062452449134800FDEFF3 /* InLocoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDK.framework; sourceTree = "<group>"; };
-		CEB062462449134800FDEFF3 /* InLocoSDKEngage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKEngage.framework; sourceTree = "<group>"; };
-		CEB062472449134800FDEFF3 /* InLocoSDKLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKLocation.framework; sourceTree = "<group>"; };
-		CEB062482449134800FDEFF3 /* InLocoSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKCore.framework; sourceTree = "<group>"; };
+		CEFDB6DE244E003C00D248A1 /* InLocoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDK.framework; sourceTree = "<group>"; };
+		CEFDB6DF244E003C00D248A1 /* InLocoSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKCore.framework; sourceTree = "<group>"; };
+		CEFDB6E0244E003C00D248A1 /* InLocoSDKEngage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKEngage.framework; sourceTree = "<group>"; };
+		CEFDB6E1244E003C00D248A1 /* InLocoSDKAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKAds.framework; sourceTree = "<group>"; };
+		CEFDB6E2244E003C00D248A1 /* InLocoSDKLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InLocoSDKLocation.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,11 +133,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB062492449134800FDEFF3 /* InLocoSDKAds.framework in Frameworks */,
-				CEB0624A2449134800FDEFF3 /* InLocoSDK.framework in Frameworks */,
-				CEB0624B2449134800FDEFF3 /* InLocoSDKEngage.framework in Frameworks */,
-				CEB0624C2449134800FDEFF3 /* InLocoSDKLocation.framework in Frameworks */,
-				CEB0624D2449134800FDEFF3 /* InLocoSDKCore.framework in Frameworks */,
+				CEFDB6E3244E003C00D248A1 /* InLocoSDK.framework in Frameworks */,
+				CEFDB6E4244E003C00D248A1 /* InLocoSDKCore.framework in Frameworks */,
+				CEFDB6E5244E003C00D248A1 /* InLocoSDKEngage.framework in Frameworks */,
+				CEFDB6E6244E003C00D248A1 /* InLocoSDKAds.framework in Frameworks */,
+				CEFDB6E7244E003C00D248A1 /* InLocoSDKLocation.framework in Frameworks */,
 				2674FDE61912FDFB0063CEEA /* SystemConfiguration.framework in Frameworks */,
 				C09621A51A9E3B1D0055EEEE /* MessageUI.framework in Frameworks */,
 				C09621A21A9E3B150055EEEE /* EventKit.framework in Frameworks */,
@@ -207,11 +207,11 @@
 		2685F0DA190013530016A650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEB062452449134800FDEFF3 /* InLocoSDK.framework */,
-				CEB062442449134800FDEFF3 /* InLocoSDKAds.framework */,
-				CEB062482449134800FDEFF3 /* InLocoSDKCore.framework */,
-				CEB062462449134800FDEFF3 /* InLocoSDKEngage.framework */,
-				CEB062472449134800FDEFF3 /* InLocoSDKLocation.framework */,
+				CEFDB6DE244E003C00D248A1 /* InLocoSDK.framework */,
+				CEFDB6E1244E003C00D248A1 /* InLocoSDKAds.framework */,
+				CEFDB6DF244E003C00D248A1 /* InLocoSDKCore.framework */,
+				CEFDB6E0244E003C00D248A1 /* InLocoSDKEngage.framework */,
+				CEFDB6E2244E003C00D248A1 /* InLocoSDKLocation.framework */,
 				C09621A41A9E3B1D0055EEEE /* MessageUI.framework */,
 				C09621A01A9E3B150055EEEE /* EventKit.framework */,
 				C09621A11A9E3B150055EEEE /* EventKitUI.framework */,
