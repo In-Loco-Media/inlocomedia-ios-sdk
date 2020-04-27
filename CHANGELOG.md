@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [5.1.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.1.3) (27/04/2020)
+
+### Fix:
+* Adds user consent info to health event
+
 ## [5.1.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.1.2) (20/04/2020)
 
 ### Fix:
