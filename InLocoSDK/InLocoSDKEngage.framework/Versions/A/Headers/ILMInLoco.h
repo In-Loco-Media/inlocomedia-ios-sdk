@@ -14,6 +14,7 @@
 
 typedef void (^ILMFetchResultBlock)(UIBackgroundFetchResult);
 typedef void (^ILMBoolBlock)(BOOL);
+typedef void (^ILMStringBlock)(NSString *_Nullable);
 typedef void (^ILMConsentBlock)(ILMConsentResult *);
 
 NS_ASSUME_NONNULL_BEGIN
@@ -121,6 +122,11 @@ Returns through a block a NSDictionary containing the consent status for each co
  Clears the current persisted user id.
  */
 + (void)clearUserId;
+
+/**
+Asynchronously retrieves the current installation id.
+*/
++ (void)getInstallationId:(ILMStringBlock)block;
 
 @end
 

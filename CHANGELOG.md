@@ -1,6 +1,13 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [5.2.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.2.0) (05/05/2020)
+
+### Feature:
+* Adds method to obtain the installation ID
+* Adds localized custom events support
+* Adds location improvements 
+
 ## [5.1.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.1.3) (27/04/2020)
 
 ### Fix:
