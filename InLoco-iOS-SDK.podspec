@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation'
   s.vendored_frameworks = 'InLocoSDK/InLocoSDKLocation.framework'
   s.requires_arc = true
-  s.dependency 'InLocoCommon-iOS-SDK', '~> 5.2.1'
+  s.dependency 'InLocoCommon-iOS-SDK', '5.2.1'
 end
 
