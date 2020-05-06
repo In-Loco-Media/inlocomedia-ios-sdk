@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file
 
 ### Fix:
 * Fixes podspecs bug that could cause version mismatch
-* Fixes bug on RegisterCheckIn
+* Fixes bug on check-in registration
 
 
 ## [5.2.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.2.0) (05/05/2020)
