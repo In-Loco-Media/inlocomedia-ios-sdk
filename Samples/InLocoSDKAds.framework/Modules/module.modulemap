@@ -1,8 +1,0 @@
-
-framework module InLocoSDKAds {
-  umbrella header "InLocoAds.h"
-
-  export *
-  module * { export * }
-
-}
