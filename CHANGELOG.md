@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [5.2.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.2.2) (29/05/2020)
+
+### Fix:
+* Fixes consent types
+
 ## [5.2.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.2.1) (06/05/2020)
 
 ### Fix:
