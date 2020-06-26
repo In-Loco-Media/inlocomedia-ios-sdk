@@ -1,6 +1,12 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [5.3.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.3.0) (26/06/2020)
+
+### Feature:
+* Improves registration process
+* Moves address registration to the Common SDK
+
 ## [5.2.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.2.2) (29/05/2020)
 
 ### Fix:

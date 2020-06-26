@@ -11,6 +11,7 @@
 #import "ILMConsentTypes.h"
 #import "ILMConsentDialogOptions.h"
 #import "ILMConsentResult.h"
+#import "ILMUserAddress.h"
 
 typedef void (^ILMFetchResultBlock)(UIBackgroundFetchResult);
 typedef void (^ILMBoolBlock)(BOOL);
@@ -122,6 +123,17 @@ Returns through a block a NSDictionary containing the consent status for each co
  Clears the current persisted user id.
  */
 + (void)clearUserId;
+
+/**
+ Sets the user address.
+ This value is persisted locally.
+*/
++ (void)setUserAddress:(ILMUserAddress *)userAddress;
+
+/**
+ Clears the current persisted user address.
+*/
++ (void)clearUserAddress;
 
 /**
 Asynchronously retrieves the current installation id.
