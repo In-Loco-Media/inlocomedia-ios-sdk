@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ILMAuthenticationRegisterDelegate.h"
 #import "ILMCheckIn.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -14,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ILMInLocoVisits : NSObject
 
 + (void)setEnabled:(BOOL)enabled;
++ (void)registerAuthenticationEvent:(NSObject<ILMAuthenticationRegisterDelegate> *)delegate;
 
 /**
  Registers a check-in event.
