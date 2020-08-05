@@ -1,6 +1,12 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [5.4.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.4.0) (05/08/2020)
+
+### Feature:
+* Refactor location module
+* Refactor storage module
+
 ## [5.3.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.3.0) (26/06/2020)
 
 ### Feature:
