@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file
 ### Feature:
 * Refactor location module
 * Refactor storage module
+* Adds method to register authentication events
 
 ## [5.3.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.3.0) (26/06/2020)
 
