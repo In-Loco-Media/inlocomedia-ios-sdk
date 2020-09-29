@@ -1,7 +1,12 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
-## [5.4.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.4.1) (05/08/2020)
+## [5.4.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.4.2) (29/09/2020)
+
+### Fix:
+* Fixes location event issue
+
+## [5.4.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.4.1) (16/09/2020)
 
 ### Fix:
 * Fixes related to iOS 14 support
