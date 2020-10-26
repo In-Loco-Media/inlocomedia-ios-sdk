@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [5.4.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.4.3) (26/10/2020)
+
+### Fix:
+* Fixes internal database issue
+
 ## [5.4.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.4.2) (29/09/2020)
 
 ### Fix:
