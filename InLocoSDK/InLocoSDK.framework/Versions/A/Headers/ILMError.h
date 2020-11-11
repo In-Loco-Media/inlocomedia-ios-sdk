@@ -17,6 +17,8 @@
 
 @property (nonatomic, strong) NSDictionary *extraInfo;
 
+- (instancetype)init NS_UNAVAILABLE;
+
 - (instancetype)initWithDomain:(NSString *)domain code:(NSInteger)code description:(NSString *)description;
 
 - (instancetype)initWithException:(NSException *)exception;
