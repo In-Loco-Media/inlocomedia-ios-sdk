@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [5.6.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.6.0) (09/12/2020)
+
+### Feature:
+* Adds demo public interface
+
 ## [5.5.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.5.1) (19/11/2020)
 
 ### Fix:

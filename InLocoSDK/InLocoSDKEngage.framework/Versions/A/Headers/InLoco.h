@@ -11,6 +11,7 @@
 
 #import "ILMInLoco.h"
 #import "ILMInLocoEvents.h"
+#import "ILMInLocoDemo.h"
 
 #if !defined(__has_include)
 #error "InLoco.h won't import headers because your compiler doesn't support __has_include. Please import the headers individually."
