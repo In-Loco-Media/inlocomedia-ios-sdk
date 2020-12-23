@@ -6,6 +6,11 @@ All notable changes to this project will be documented in this file
 ### Feature:
 * Adds demo public interface
 
+## [5.5.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.5.2) (23/12/2020)
+
+### Fix:
+* Fixes internal event issue
+
 ## [5.5.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.5.1) (19/11/2020)
 
 ### Fix:
