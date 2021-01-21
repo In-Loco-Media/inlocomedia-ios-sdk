@@ -1,6 +1,14 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [5.7.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.7.0) (21/01/2021)
+
+### Feature:
+* Improves data collection
+
+### Fix:
+* Fixes internal event issue
+
 ## [5.6.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.6.1) (23/12/2020)
 
 ### Fix:
