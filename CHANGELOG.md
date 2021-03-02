@@ -1,6 +1,17 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [5.8.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.8.0) (02/03/2021)
+
+### Feature:
+* Adds transaction PoV methods
+* Adds new trackLogin PoV method with loginId
+* Changes installation id to be url safe
+* Adds log to inform the develop that the app_id does not match a valid pattern
+
+### Fix:
+* Fixes internal event issue
+
 ## [5.7.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.7.0) (21/01/2021)
 
 ### Feature:
