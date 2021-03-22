@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [5.8.1](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.8.1) (02/03/2021)
+
+### Fix:
+* Fixes event not being logged 
+
 ## [5.8.0](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.8.0) (02/03/2021)
 
 ### Feature:
