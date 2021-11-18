@@ -1,6 +1,11 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file
 
+## [5.8.3](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.8.3) (18/11/2021)
+
+### Fix:
+* Fixes internal memory allocation issues
+
 ## [5.8.2](https://github.com/In-Loco-Media/inlocomedia-ios-sdk/releases/tag/5.8.2) (01/09/2021)
 
 ### Fix:
